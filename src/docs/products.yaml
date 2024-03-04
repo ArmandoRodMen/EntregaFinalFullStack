@@ -1,0 +1,166 @@
+paths:
+  /api/products:
+    get:
+      summary: Retrieve a list of products
+      description: Returns a list of products with optional pagination and filtering parameters.
+      tags:
+        - Products
+      responses:
+        "200":
+          description: A list of products
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Product'
+        "400":
+          description: Invalid request parameters
+        "500":
+          description: Internal server error
+
+    post:
+      summary: Create a new product
+      description: Adds a new product to the collection.
+      tags:
+        - Products
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Product'
+      responses:
+        "201":
+          description: Product created successfully
+        "400":
+          description: Invalid input, object invalid
+        "500":
+          description: Internal server error
+
+  /api/products/{id}:
+    get:
+      summary: Get a product by its ID
+      description: Returns a single product by its unique identifier.
+      tags:
+        - Products
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: Unique identifier of the product
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Details of the product
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Product'
+        "404":
+          description: Product not found
+        "500":
+          description: Internal server error
+
+    put:
+      summary: Update a product
+      description: Updates an existing product identified by its ID.
+      tags:
+        - Products
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: Unique identifier of the product to update
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Product'
+      responses:
+        "200":
+          description: Product updated successfully
+        "400":
+          description: Invalid input, object invalid
+        "404":
+          description: Product not found
+        "500":
+          description: Internal server error
+
+    delete:
+      summary: Delete a product
+      description: Deletes a product identified by its ID.
+      tags:
+        - Products
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: Unique identifier of the product to delete
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Product deleted successfully
+        "404":
+          description: Product not found
+        "500":
+          description: Internal server error
+
+components:
+  schemas:
+    Product:
+      type: object
+      required:
+        - title
+        - description
+        - price
+        - code
+        - category
+        - statues
+      properties:
+        id:
+          type: string
+          description: Unique identifier for the product
+        title:
+          type: string
+          description: Name of the product
+        description:
+          type: string
+          description: Detailed description of the product
+        price:
+          type: number
+          description: Price of the product
+        thumbnail:
+          type: string
+          description: URL of the product image
+        code:
+          type: string
+          description: Product code or SKU
+        stock:
+          type: number
+          description: Available stock of the product
+        category:
+          type: string
+          description: Category of the product
+        statues:
+          type: boolean
+          description: Status of the product (active/inactive)
+        owner:
+          type: string
+          description: ID of the user who owns the product
+      example:
+        id: "123456789"
+        title: "Example Product"
+        description: "This is an example product description."
+        price: 99.99
+        thumbnail: "http://example.com/product.jpg"
+        code: "EX1234"
+        stock: 10
+        category: "Electronics"
+        statues: true
+        owner: "5f50c31e468cbb34e4883f48"
