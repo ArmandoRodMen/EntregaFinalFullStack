@@ -8,16 +8,16 @@ import bcrypt from "bcrypt";
 import { compareData, hashData } from "../utils.js";
 import jwt from "jsonwebtoken";
 
-
 const router = Router();
 
-router.get("/chat", async (req, res) => {
+router.get("/chat", async (req,res)=>{
+  console.log(req.session.user);
   if(!req.session.user){
     res.redirect(`/login`);
   }else{
-  const messages = await messagesDao.findAll();
-  const {username } = username;
-  res.render("chat", { messages, username });
+    const messages = await messagesDao.findAll();
+    const username = req.session.username
+    res.render("chat", { messages, username});
   }
 });
 
@@ -41,38 +41,33 @@ router.get("/signup", (req, res) => {
 });
 
 router.get("/login", async (req, res) => {
-  const { username, password } = req.body;
-  // Aquí deberías validar las credenciales del usuario
-  const user = { username }; // Objeto de usuario simulado
-
-  // Genera un token JWT
-  const accessToken = jwt.sign(user, process.env.SECRET_KEY_JWT, { expiresIn: '1h' });
-
-  // Envía el token al cliente en una cookie segura
-  res.cookie('token', accessToken, {
-    httpOnly: true, // La cookie solo es accesible por el servidor web
-    secure: true, // La cookie solo se envía sobre HTTPS
-    sameSite: 'strict', // La cookie solo se envía con solicitudes del mismo sitio
-    maxAge: 3600000 // Tiempo de vida de la cookie en milisegundos
-  }).send('Autenticación exitosa y token enviado en cookie.');
-  res.render("login");
-  /*
   if(req.session.user){
     res.redirect(`/profile/${req.session.user.userId}`);
   }else{
     res.render("login");
-  }*/
+  }
+});
+
+router.post("/login", async(req, res)=>{
+  const { username, password } = req.body;
+  req.session.user = { username }; 
+  const accessToken = jwt.sign(user, process.env.SECRET_KEY_JWT);
+  res.cookie('token', accessToken, {
+    httpOnly: true, 
+    secure: true, 
+    sameSite: 'strict'
+  }).send('Autenticación exitosa y token enviado en cookie.');
 });
 
 router.get("/profile/:idUser", async (req, res) => {
   if(!req.session.user){
     res.redirect(`/login`);
   }else{
-  const { idUser } = req.params;
-  const user = await usersDao.findById(idUser);
-  const products = await productsDao.findAll();
-  const { first_name, last_name, username } = user;
-  res.render("profile", { first_name, last_name, username, products });
+    const { idUser } = req.params;
+    const user = await usersDao.findById(idUser);
+    const products = await productsDao.findAll();
+    const { first_name, last_name, username } = user;
+    res.render("profile", { first_name, last_name, username, products });
   }
 });
 
@@ -140,7 +135,6 @@ router.post("/restaurar", async (req, res) => {
     await transporter.sendMail(mailOptions);
     res.redirect("/login");
   } else {
-    console.log("User not found");
     res.redirect("/login");
   }
 });

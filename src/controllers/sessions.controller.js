@@ -64,7 +64,7 @@ try {
     
     res
         .status(200)
-        .cookie("token", token, {maxAge:60000, httpOnly: true})
+        .cookie("token", token, {maxAge:60606, httpOnly: true})
         .redirect("/products");
 } catch (error) {
     done(error);;

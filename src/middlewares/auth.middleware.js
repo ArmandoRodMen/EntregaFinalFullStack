@@ -16,15 +16,14 @@ export const authMiddleware = (roles) => {
         }
         try {      
             const decoded = jwt.verify(token, SECRET_KEY_JWT);
-            console.log("entrando aca", decoded)
             req.user = decoded;
-            console.log(req.user, "estamos aca dentro")
+                console.log(req.user.role, "estamos aca dentro")
         if (roles && !roles.includes(req.user.role)) {
-            return res.status(403).json({ message: 'Forbidden' });
+            return res.status(403).json({ message: 'Your role is not authorized' });
         }
         next();
         } catch (error) {
-        return res.status(401).json({ message: 'Unauthorized error' });
+            return res.status(401).json({ message: 'Unauthorized error' });
         }
     };
 };

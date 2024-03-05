@@ -1,13 +1,9 @@
 import { Router } from "express";
 import {
-    createCookie,
     viewCookie,
 } from "../controllers/cookie.controller.js"
 
 const router = Router();
-
-//Session
-router.post("/", createCookie);
 router.get("/view", viewCookie);
 
 export default router;

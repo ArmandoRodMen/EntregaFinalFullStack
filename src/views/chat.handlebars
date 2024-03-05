@@ -1,5 +1,4 @@
 <div class="section">
-    <h3 class="subtitle is-3">Chat de {{username}}</h3>
 
 {{#each messages}}
 <article class="message is-link">
@@ -12,9 +11,11 @@
 </article>
 {{/each}}
 
-<form action="/api/chat" method="post">
+<h3 class="subtitle is-3">Chat de {{username}}</h3>
+
+<form action="/chat" method="post">
         <div class="mb-3">
-            <input type="text" name="username" class="form-control" value="{{username}}" aria-label="Disabled input example" readonly>
+            <input type="text" name="username" class="form-control" value="{{username}}">
         </div>
         <div class="mb-3">
             <label for="exampleFormControlTextarea1" class="form-label">Manda un mensaje</label>
@@ -24,3 +25,5 @@
         </div>
     </form>
 </div>
+
+<!-- aria-label="Disabled input example" readonly-->

@@ -33,8 +33,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(express.static(__dirname + "/public"));
 app.use(cors({
-        origin: ['http://localhost:8080'], // Ajusta este valor según sea necesario
-        credentials: true, // Esto permite que las cookies sean enviadas con solicitudes CORS
+        origin: ['http://localhost:8080'],
+        credentials: true
     }));
 
 const URI = config.MONGO_URI;
@@ -97,7 +97,7 @@ app.use(errorMiddleware);
 
 
 const socketServer = new Server(httpServer);
-/* const messages = []; */
+
 socketServer.on("connection", (socket) => {
     logger.info(`Cliente conectado: ${socket.id}`);
     socket.on("newUser", (user) => {
