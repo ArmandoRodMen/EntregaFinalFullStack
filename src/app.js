@@ -39,16 +39,17 @@ app.use(cors({
 
 const URI = config.MONGO_URI;
 
+//mongo
 //const URI = "mongodb+srv://ArmandoRod:coderhouse@cluster0.yl8erzs.mongodb.net/ecommerce?retryWrites=true&w=majority";
 
-//mongo
+//sessions
 app.use(
     session({
         store: new MongoStore({
             mongoUrl: URI,
         }), 
         secret: "secretSession", 
-        cookie:{maxAge:60000},
+        cookie:{maxAge:86400*1000},
     })
 );
 
@@ -67,9 +68,9 @@ app.use("/api/carts", cartsRouter);
 app.use("/api/users", usersRouter);
 app.use("/api/chat", messageRouter);
 app.use("/", viewsRouter);
-app.use("/api/docs", swaggerUi.serve, swaggerUi.setup(swaggerSetup));
+app.use("/api/docs", swaggerUi.serve, swaggerUi.setup(swaggerSetup)); // :)
 
-app.get("/mockingproducts",(req, res) =>{
+app.get("/mockingproducts",(req, res) =>{ // :)
     const products = [];
     for (let i=0; i<100; i++) {
         const product = generateProuct();
@@ -78,7 +79,7 @@ app.get("/mockingproducts",(req, res) =>{
     res.json({products});
 });
 
-app.get("/loggerTest", (req, res) => {
+app.get("/loggerTest", (req, res) => { // :)
     logger.debug("Prueba debug");
     logger.http("Prueba http");
     logger.information("Prueba information"); 
@@ -90,11 +91,9 @@ app.get("/loggerTest", (req, res) => {
 
 const httpServer = app.listen(8080, () => {
     logger.information("Escuchando puerto 8080 con logger");
-    logger.error("Test error");
 });
 
 app.use(errorMiddleware);
-
 
 const socketServer = new Server(httpServer);
 

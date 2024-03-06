@@ -5,7 +5,7 @@ import { productsDao } from "../DAL/DAO/mongodb/products.dao.js";
             const products = await productsDao.findAggregation(query);
             return products;
         } catch (error) {
-            throw new Error("Product not found");
+            throw new Error("Products not found");
         }
     };
 

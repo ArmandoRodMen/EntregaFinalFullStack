@@ -102,7 +102,6 @@ export const getProductInCart = async (req, res) => {
     const productInCart = await addProductToCart(idCart);
     res.status(200).json({ message: "Product added to cart", cart: updatedCart });
     } catch (error) {
-    //res.status(500).json({ message: "Error adding product to cart", error: error.message });
     CustomError.generateError(
         ErrorMessages.CAN_NOT_GET_PRODUCT_IN_CART,
         500,
@@ -117,7 +116,6 @@ export const getTotal = async (req, res) =>{
         const response = await purchase(idCart);
         res.status(200).json({ message: "Purchase done", purchase: response});
     }catch(error){
-        //res.status(500).json({ message: "Error in purchase", error: error.message });
         CustomError.generateError(
             ErrorMessages.CAN_NOT_GET_TOTAL,
             500,
@@ -133,7 +131,6 @@ export const updateProductQuantity = async (req, res) => {
         const updatedCart = await updateProductInCart(idCart, idProduct, quantity);
         res.status(200).json({ message: "Product quantity updated in cart", cart: updatedCart });
     } catch (error) {
-        //res.status(500).json({ message: "Error updating product quantity in cart", error: error.message });
         CustomError.generateError(
             ErrorMessages.CAN_NOT_UPDATE_PRODUCT_QUANTITY,
             500,
@@ -150,7 +147,6 @@ export const removeProductFromCart = async (req, res) => {
                 const updatedCart = await deleteProductInCart(idCart, idProduct);
                 res.status(200).json({ message: "Product removed from cart", cart: updatedCart });
             } catch (error) {
-                //res.status(500).json({ message: "Error removing product from cart", error: error.message });
                 CustomError.generateError(
                     ErrorMessages.CAN_NOT_UPDATE_PRODUCT_QUANTITY,
                     500,
@@ -169,7 +165,6 @@ export const removeAllProductsFromCart = async (req, res) => {
                 await deleteProductsInCart(idCart);
                 res.status(200).json({ message: "All products removed from cart", cartId: idCart });
             } catch (error) {
-                //res.status(500).json({ message: "Error removing all products from cart", error: error.message });
                 CustomError.generateError(
                     ErrorMessages.REMOVE_ALL_PRODUCTS_FROM_CART,
                     500,
@@ -187,7 +182,6 @@ export const updateAllProductsInCart = async (req, res) => {
         const updatedCart = await updateAllProducts(idCart, products);
         res.status(200).json({ message: "All products in cart updated", cart: updatedCart });
     } catch (error) {
-        //res.status(500).json({ message: "Error updating all products in cart", error: error.message });
         CustomError.generateError(
             ErrorMessages.UPDATE_ALL_PRODUCTS_IN_CART,
             500,
@@ -201,7 +195,6 @@ export const getAllCartsData = async (req, res) => {
         const carts = await getCarts();
         res.status(200).json({ message: "All carts retrieved", carts });
     } catch (error) {
-        //res.status(500).json({ message: "Error retrieving all carts", error: error.message });
         CustomError.generateError(
             ErrorMessages.REMOVE_CART_BY_ID,
             500,
@@ -216,7 +209,6 @@ export const removeCartById = async (req, res) => {
     const result = await deleteCart(idCart);
     res.status(200).json({ message: "Cart deleted", result });
     } catch (error) {
-    //res.status(500).json({ message: "Error deleting cart", error: error.message });
     CustomError.generateError(
         ErrorMessages.REMOVE_CART_BY_ID,
         500,

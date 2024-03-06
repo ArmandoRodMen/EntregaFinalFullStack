@@ -25,13 +25,13 @@ class ProductsDao {
             prevLink: response.hasPrevPage ? `http://localhost:8080/api/products?page=${response.prevPage}` : null,
             nextLink: response.hasNextPage ? `http://localhost:8080/api/products?page=${response.nextPage}` : null,
         };
-        logger.information(info);
+        copnsole.log(info);
         const result = response.docs.map(doc => ({ product: doc.toObject() }));
         return result;
         } catch (error) {
-        const info = {
-            status: "error",
-            message: "Ha ocurrido un error en la búsqueda de productos.",
+            const info = {
+                status: "error",
+                message: "Ha ocurrido un error en la búsqueda de productos.",
         };
             logger.error(error);
             return { result: [] };

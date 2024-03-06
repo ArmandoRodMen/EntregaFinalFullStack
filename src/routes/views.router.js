@@ -11,19 +11,20 @@ import jwt from "jsonwebtoken";
 const router = Router();
 
 router.get("/chat", async (req,res)=>{
-  console.log(req.session.user);
   if(!req.session.user){
     res.redirect(`/login`);
   }else{
+    const username = req.session.user.username;
+    const role = req.session.user.role
     const messages = await messagesDao.findAll();
-    const username = req.session.username
-    res.render("chat", { messages, username});
+    res.render("chat", { username, role, messages});
   }
 });
 
 router.get("/products", async (req, res) => {
+  const logOut = req.session.user.id
   const products = await productsDao.findAggregation(req.query);
-  res.render("products", { products: products });
+  res.render("products", { products: products, idUser: logOut });
 });
 
 router.get("/cart/:idCart", async (req, res) => {
@@ -34,7 +35,7 @@ router.get("/cart/:idCart", async (req, res) => {
 
 router.get("/signup", (req, res) => {
   if(req.session.user){
-    res.redirect(`/profile/${req.session.user.userId}`);
+    res.redirect(`/products`);
   }else{
     res.render("signup");
   }
@@ -42,21 +43,10 @@ router.get("/signup", (req, res) => {
 
 router.get("/login", async (req, res) => {
   if(req.session.user){
-    res.redirect(`/profile/${req.session.user.userId}`);
+    res.redirect(`/products`);
   }else{
     res.render("login");
   }
-});
-
-router.post("/login", async(req, res)=>{
-  const { username, password } = req.body;
-  req.session.user = { username }; 
-  const accessToken = jwt.sign(user, process.env.SECRET_KEY_JWT);
-  res.cookie('token', accessToken, {
-    httpOnly: true, 
-    secure: true, 
-    sameSite: 'strict'
-  }).send('Autenticación exitosa y token enviado en cookie.');
 });
 
 router.get("/profile/:idUser", async (req, res) => {
@@ -85,6 +75,10 @@ router.get("/restaurar",(req, res) =>{
 
 router.get("/documents", (req, res)=>{
   res.render("documents");
+});
+
+router.get("/admin", (req,res)=>{
+  res.render("admin");
 });
 
 router.post("/restaurar", async (req, res) => {
@@ -152,38 +146,25 @@ router.get("/reset", async(req, res) =>{
 router.post("/reset/:token", async (req, res) => {
   const { password, confirmPassword } = req.body;
   const { token } = req.params;
-
-  // Busca al usuario por el token de reinicio
   const user = await usersDao.findByResetToken(token);
-
-  // Verifica si el token es válido y no ha expirado
   if (user && user.resetTokenExpiration > Date.now()) {
     try {
-      const isPasswordInValid = await compareData(password, user.password);
-      console.log(password,"\n =",user.password,"\n", isPasswordInValid);
-      // Verifica que la nueva contraseña no sea igual a la contraseña actual
-      if (isPasswordInValid) {
-        // Genera el hash de la nueva contraseña
-        const hashedPassword = await hashData(password);
-        // Actualiza la contraseña del usuario en la base de datos
+      const hashedPassword = await hashData(password);
+      const isPasswordInValid = await compareData(hashedPassword, user.password);
+      if(!isPasswordInValid){
+        console.log("anterior password",user.password);
         user.password = hashedPassword;
         user.resetToken = undefined;
         user.resetTokenExpiration = undefined;
-
         await user.save();
-
-        // Redirige al usuario a una página de éxito o página de inicio de sesión
+        console.log("nuevo password",user.password);
         return res.redirect("/login");
-      }
-      console.log("El password debe ser distinto")
+      };
     } catch (error) {
-      // Manejo de errores al guardar en la base de datos
       console.error("Error al guardar la nueva contraseña:", error);
       return res.render("reset", { error: "Error al restablecer la contraseña", token });
     }
   }
-
-  // Maneja el caso en que el token es inválido o ha expirado
   res.render("reset", { error: "Token no válido o expirado", token });
 });
 

@@ -12,11 +12,11 @@ import { ErrorMessages } from "../errors/errors.enum.js";
 import { authMiddleware } from '../middlewares/auth.middleware.js';
 
     export const findProductAggregation = async (req, res) => {
+        console.log(req.query);
         try {
             const products = await findAggregation(req.query);
             res.status(200).json({ message: "Products found", products });
         } catch (error) {
-            //res.status(500).json({ message: error.message });
             CustomError.generateError(
                 ErrorMessages.CAN_NOT_FIND_AGGREGATION,
                 500,
@@ -34,7 +34,6 @@ import { authMiddleware } from '../middlewares/auth.middleware.js';
             }
             res.status(200).json({ message: "Product found", product });
         } catch (error) {
-            //res.status(500).json({ message: error.message });
             CustomError.generateError(
                 ErrorMessages.CAN_NOT_FIND_PRODUCT_BY_ID,
                 500,
@@ -79,6 +78,7 @@ import { authMiddleware } from '../middlewares/auth.middleware.js';
     };
     
     export const deleteProduct = async (req, res) => {
+        //owner === premium => nodemailer
         //passport.authenticate('jwt', { session: false })(req, res, async () => {
             //authMiddleware(['admin', 'premium'])(req, res, async () => {
                 const { idProduct } = req.params;

@@ -10,16 +10,14 @@ export const findAll = async () => {
 };
 
 export const createOne = async (messageData) => {
-    authMiddleware(['user'])(req, res, async () => {
-        const { username, message } = messageData; 
-        if (!message) {
-            throw new Error("Required data is missing");
-        }
-        try {
-            const newMessage = await messagesDao.createOne(messageData);
-            return newMessage; 
-        } catch (error) {
-            throw new Error("Error creating messages");
-        }
-    });
+    const { username, message } = messageData; 
+    if (!message) {
+        throw new Error("Required data is missing");
+    }
+    try {
+        const newMessage = await messagesDao.createOne(messageData);
+        return newMessage; 
+    } catch (error) {
+        throw new Error("Error creating messages");
+    }
 };

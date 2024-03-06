@@ -1,3 +1,4 @@
+/*
 import { usersManager } from "../DAO/mongodb/managers/usersManager.js";
 import { hashData, compareData, generateToken } from "../utils.js";
 import passport from "passport";
@@ -131,3 +132,4 @@ export const restore = async (req, res) => {
         res.status(500).json({ error });
     }
 };
+*/

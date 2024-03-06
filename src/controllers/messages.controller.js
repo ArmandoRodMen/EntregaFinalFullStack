@@ -23,12 +23,13 @@ export const findMessages = async (req, res) => {
 
 export const createMessage = async (req, res) => {
     const { username, message} = req.body;
-    logger.information("/////////\n",username,message);
-    if (!message) {
+    if (!username && !message) {
         CustomError.generateError(
             ErrorMessages.BAD_DATA,
             400,
             ErrorMessages.BAD_DATA
         );
+    }else{
+        message = createOne(username, message)
     }
 };

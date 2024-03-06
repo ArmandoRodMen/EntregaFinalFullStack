@@ -9,6 +9,7 @@ import { authMiddleware } from "../middlewares/auth.middleware.js";
 const router = Router();
 
 router.get("/", findMessages);
-router.post("/", authMiddleware(["premium"]), avoidMessages(),createMessage,);
+router.post("/", avoidMessages(), createMessage);
+//router.post("/", authMiddleware(["premium"]), avoidMessages(), createMessage);
 
 export default router;

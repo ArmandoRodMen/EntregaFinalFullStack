@@ -1,29 +1,48 @@
 <div class="section">
 
-{{#each messages}}
-<article class="message is-link">
-    <div class="message-header">
-        <h3>{{username}} dice:</h3>
+    <div class="section">
+        <a class="btn btn-warning" href="/api/sessions/current">Checar mi rol</a>
+        <a class="btn btn-info" href="/chat">Chat</a>
+        <a class="btn btn-danger" href="/api/sessions/{{idUser}}/signout">Logout</a>
+        <a class="btn btn-success" href="/products">Productos</a>
     </div>
-    <div class="message-body">
-        <p>{{message}}</p>
+
+    <div class="mb-3">
+        {{#each messages}}
+        <article class="message is-link">
+            <div class="message-header">
+                <h3>{{username}} dice:</h3>
+            </div>
+            <div class="message-body">
+                <p>{{message}}</p>
+            </div>
+        </article>
+        {{/each}}
     </div>
-</article>
-{{/each}}
 
-<h3 class="subtitle is-3">Chat de {{username}}</h3>
+    <h3 class="subtitle is-3">Chat de {{username}}</h3>
+    <h4 class="subtitle is-4" id="role">con role: {{role}}</h4>
 
-<form action="/chat" method="post">
+    <form action="/api/chat" method="post">
         <div class="mb-3">
-            <input type="text" name="username" class="form-control" value="{{username}}">
+            <input type="text" name="username" id="username" class="form-control" value="{{username}}" aria-label="Disabled input example" readonly>
         </div>
         <div class="mb-3">
             <label for="exampleFormControlTextarea1" class="form-label">Manda un mensaje</label>
             <textarea type="text" class="form-control" name="message" id="message" rows="3"></textarea>
             <br>
-            <button type="button submit" class="btn btn-primary" value="SEND">Enviar</button>
+            <button type="submit" class="btn btn-primary" value="SEND" id="enviar">Enviar</button>
         </div>
     </form>
-</div>
 
-<!-- aria-label="Disabled input example" readonly-->
+    <script>
+        function validateRole(){
+            var role = document.getElementById("role").value;
+            if(role === "premium"){
+                document.getElementById("enviar").disabled = true;
+                return false;
+            }
+            return true;
+        }
+    </script>
+</div>

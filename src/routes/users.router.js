@@ -3,6 +3,7 @@ import {
     findUsers,
     findUser,
     deleteUser,
+    deleteUserWithNoConnection,
     createUser,
     updateUser,
     findUserByEmail,
@@ -18,6 +19,7 @@ const router = Router();
 router.get("/", findUsers);
 router.get("/:idUser", findUser);
 router.delete("/:idUser", deleteUser);
+router.delete("/", deleteUserWithNoConnection);
 router.post("/", createUser);
 router.put("/:idUser", updateUser); 
 router.get("/email/:email", findUserByEmail); 

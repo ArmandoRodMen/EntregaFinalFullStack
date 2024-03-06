@@ -75,3 +75,3523 @@
   level: 'information',
   timestamp: '2024-03-05T16:18:41.210Z'
 }
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-05T16:31:09.364Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-05T16:31:09.367Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-05T16:31:16.254Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-05T16:31:57.013Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-05T16:31:57.016Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-05T16:31:58.495Z'
+}
+{
+  message: {
+    status: 'success',
+    payload: 12,
+    totalPages: 2,
+    prevPage: null,
+    nextPage: 2,
+    page: 1,
+    hasPrevPage: null,
+    hasNextPage: true,
+    prevLink: null,
+    nextLink: 'http://localhost:8080/api/products?page=2'
+  },
+  level: 'information',
+  timestamp: '2024-03-05T16:59:30.995Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-05T17:01:01.659Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-05T17:01:01.661Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-05T17:01:03.457Z'
+}
+{
+  message: {
+    status: 'success',
+    payload: 12,
+    totalPages: 2,
+    prevPage: null,
+    nextPage: 2,
+    page: 1,
+    hasPrevPage: null,
+    hasNextPage: true,
+    prevLink: null,
+    nextLink: 'http://localhost:8080/api/products?page=2'
+  },
+  level: 'information',
+  timestamp: '2024-03-05T17:01:32.672Z'
+}
+{
+  message: {
+    status: 'success',
+    payload: 12,
+    totalPages: 2,
+    prevPage: null,
+    nextPage: 2,
+    page: 1,
+    hasPrevPage: null,
+    hasNextPage: true,
+    prevLink: null,
+    nextLink: 'http://localhost:8080/api/products?page=2'
+  },
+  level: 'information',
+  timestamp: '2024-03-05T17:01:46.159Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-05T17:02:15.416Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-05T17:02:15.419Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-05T17:02:19.772Z'
+}
+{
+  message: {
+    status: 'success',
+    payload: 12,
+    totalPages: 2,
+    prevPage: null,
+    nextPage: 2,
+    page: 1,
+    hasPrevPage: null,
+    hasNextPage: true,
+    prevLink: null,
+    nextLink: 'http://localhost:8080/api/products?page=2'
+  },
+  level: 'information',
+  timestamp: '2024-03-05T17:03:33.454Z'
+}
+{
+  message: {
+    status: 'success',
+    payload: 12,
+    totalPages: 2,
+    prevPage: null,
+    nextPage: 2,
+    page: 1,
+    hasPrevPage: null,
+    hasNextPage: true,
+    prevLink: null,
+    nextLink: 'http://localhost:8080/api/products?page=2'
+  },
+  level: 'information',
+  timestamp: '2024-03-05T17:04:53.026Z'
+}
+{
+  level: 'information',
+  message: 'signout',
+  timestamp: '2024-03-05T17:04:57.775Z'
+}
+{
+  stringValue: '"{ _id: undefined }"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: { _id: undefined },
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\node_modules\bson\lib\bson.cjs:2055:23)
+      at castObjectId (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\schema\objectid.js:248:12)
+      at SchemaType.applySetters (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\schematype.js:1219:12)
+      at SchemaType.castForQuery (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\schematype.js:1633:15)
+      at cast (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\cast.js:304:34)
+      at Query.cast (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\query.js:4909:12)
+      at Query._castConditions (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\query.js:2232:10)
+      at model.Query._updateThunk (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\query.js:3854:8)
+      at model.Query._updateOne (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\query.js:3964:23),
+  valueType: 'Object',
+  model: Model { users },
+  level: 'error',
+  message: 'Error actualizando lastConnection en signout: Cast to ObjectId failed for value "{ _id: undefined }" (type Object) at path "_id" for model "users"',
+  stack: 'CastError: Cast to ObjectId failed for value "{ _id: undefined }" (type Object) at path "_id" for model "users"\n' +
+    '    at ObjectId.cast (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\schema\\objectid.js:250:11)\n' +
+    '    at SchemaType.applySetters (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\schematype.js:1219:12)\n' +
+    '    at SchemaType.castForQuery (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\schematype.js:1633:15)\n' +
+    '    at cast (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\cast.js:304:34)\n' +
+    '    at Query.cast (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\query.js:4909:12)\n' +
+    '    at Query._castConditions (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\query.js:2232:10)\n' +
+    '    at model.Query._updateThunk (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\query.js:3854:8)\n' +
+    '    at model.Query._updateOne (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\query.js:3964:23)\n' +
+    '    at model.Query.exec (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\query.js:4429:28)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  timestamp: '2024-03-05T17:04:57.777Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-05T17:08:06.702Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-05T17:08:06.704Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-05T17:08:10.357Z'
+}
+{
+  message: {
+    status: 'success',
+    payload: 12,
+    totalPages: 2,
+    prevPage: null,
+    nextPage: 2,
+    page: 1,
+    hasPrevPage: null,
+    hasNextPage: true,
+    prevLink: null,
+    nextLink: 'http://localhost:8080/api/products?page=2'
+  },
+  level: 'information',
+  timestamp: '2024-03-05T17:08:24.383Z'
+}
+{
+  level: 'information',
+  message: 'signout',
+  timestamp: '2024-03-05T17:08:29.255Z'
+}
+{
+  stringValue: '"{ _id: undefined }"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: { _id: undefined },
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\node_modules\bson\lib\bson.cjs:2055:23)
+      at castObjectId (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\schema\objectid.js:248:12)
+      at SchemaType.applySetters (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\schematype.js:1219:12)
+      at SchemaType.castForQuery (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\schematype.js:1633:15)
+      at cast (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\cast.js:304:34)
+      at Query.cast (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\query.js:4909:12)
+      at Query._castConditions (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\query.js:2232:10)
+      at model.Query._updateThunk (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\query.js:3854:8)
+      at model.Query._updateOne (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\query.js:3964:23),
+  valueType: 'Object',
+  model: Model { users },
+  level: 'error',
+  message: 'Error updating lastConnection in signout: Cast to ObjectId failed for value "{ _id: undefined }" (type Object) at path "_id" for model "users"',
+  stack: 'CastError: Cast to ObjectId failed for value "{ _id: undefined }" (type Object) at path "_id" for model "users"\n' +
+    '    at ObjectId.cast (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\schema\\objectid.js:250:11)\n' +
+    '    at SchemaType.applySetters (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\schematype.js:1219:12)\n' +
+    '    at SchemaType.castForQuery (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\schematype.js:1633:15)\n' +
+    '    at cast (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\cast.js:304:34)\n' +
+    '    at Query.cast (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\query.js:4909:12)\n' +
+    '    at Query._castConditions (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\query.js:2232:10)\n' +
+    '    at model.Query._updateThunk (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\query.js:3854:8)\n' +
+    '    at model.Query._updateOne (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\query.js:3964:23)\n' +
+    '    at model.Query.exec (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\query.js:4429:28)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  timestamp: '2024-03-05T17:08:29.257Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T00:48:45.139Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T00:48:45.142Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T00:48:46.101Z'
+}
+{
+  message: {
+    status: 'success',
+    payload: 12,
+    totalPages: 2,
+    prevPage: null,
+    nextPage: 2,
+    page: 1,
+    hasPrevPage: null,
+    hasNextPage: true,
+    prevLink: null,
+    nextLink: 'http://localhost:8080/api/products?page=2'
+  },
+  level: 'information',
+  timestamp: '2024-03-06T00:48:56.831Z'
+}
+{
+  level: 'information',
+  message: 'signout',
+  timestamp: '2024-03-06T01:04:29.888Z'
+}
+{
+  stringValue: '"{ _id: undefined }"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: { _id: undefined },
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\node_modules\bson\lib\bson.cjs:2055:23)
+      at castObjectId (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\schema\objectid.js:248:12)
+      at SchemaType.applySetters (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\schematype.js:1219:12)
+      at SchemaType.castForQuery (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\schematype.js:1633:15)
+      at cast (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\cast.js:304:34)
+      at Query.cast (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\query.js:4909:12)
+      at Query._castConditions (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\query.js:2232:10)
+      at model.Query._updateThunk (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\query.js:3854:8)
+      at model.Query._updateOne (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\query.js:3964:23),
+  valueType: 'Object',
+  model: Model { users },
+  level: 'error',
+  message: 'Error updating lastConnection in signout: Cast to ObjectId failed for value "{ _id: undefined }" (type Object) at path "_id" for model "users"',
+  stack: 'CastError: Cast to ObjectId failed for value "{ _id: undefined }" (type Object) at path "_id" for model "users"\n' +
+    '    at ObjectId.cast (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\schema\\objectid.js:250:11)\n' +
+    '    at SchemaType.applySetters (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\schematype.js:1219:12)\n' +
+    '    at SchemaType.castForQuery (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\schematype.js:1633:15)\n' +
+    '    at cast (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\cast.js:304:34)\n' +
+    '    at Query.cast (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\query.js:4909:12)\n' +
+    '    at Query._castConditions (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\query.js:2232:10)\n' +
+    '    at model.Query._updateThunk (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\query.js:3854:8)\n' +
+    '    at model.Query._updateOne (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\query.js:3964:23)\n' +
+    '    at model.Query.exec (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\query.js:4429:28)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  timestamp: '2024-03-06T01:04:29.890Z'
+}
+{
+  message: {
+    status: 'success',
+    payload: 12,
+    totalPages: 2,
+    prevPage: null,
+    nextPage: 2,
+    page: 1,
+    hasPrevPage: null,
+    hasNextPage: true,
+    prevLink: null,
+    nextLink: 'http://localhost:8080/api/products?page=2'
+  },
+  level: 'information',
+  timestamp: '2024-03-06T01:04:47.795Z'
+}
+{
+  level: 'information',
+  message: 'signout',
+  timestamp: '2024-03-06T01:05:03.258Z'
+}
+{
+  stringValue: '"{ _id: undefined }"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: { _id: undefined },
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\node_modules\bson\lib\bson.cjs:2055:23)
+      at castObjectId (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\schema\objectid.js:248:12)
+      at SchemaType.applySetters (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\schematype.js:1219:12)
+      at SchemaType.castForQuery (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\schematype.js:1633:15)
+      at cast (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\cast.js:304:34)
+      at Query.cast (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\query.js:4909:12)
+      at Query._castConditions (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\query.js:2232:10)
+      at model.Query._updateThunk (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\query.js:3854:8)
+      at model.Query._updateOne (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\query.js:3964:23),
+  valueType: 'Object',
+  model: Model { users },
+  level: 'error',
+  message: 'Error updating lastConnection in signout: Cast to ObjectId failed for value "{ _id: undefined }" (type Object) at path "_id" for model "users"',
+  stack: 'CastError: Cast to ObjectId failed for value "{ _id: undefined }" (type Object) at path "_id" for model "users"\n' +
+    '    at ObjectId.cast (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\schema\\objectid.js:250:11)\n' +
+    '    at SchemaType.applySetters (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\schematype.js:1219:12)\n' +
+    '    at SchemaType.castForQuery (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\schematype.js:1633:15)\n' +
+    '    at cast (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\cast.js:304:34)\n' +
+    '    at Query.cast (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\query.js:4909:12)\n' +
+    '    at Query._castConditions (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\query.js:2232:10)\n' +
+    '    at model.Query._updateThunk (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\query.js:3854:8)\n' +
+    '    at model.Query._updateOne (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\query.js:3964:23)\n' +
+    '    at model.Query.exec (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\query.js:4429:28)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  timestamp: '2024-03-06T01:05:03.258Z'
+}
+{
+  level: 'information',
+  message: 'signout',
+  timestamp: '2024-03-06T01:25:18.983Z'
+}
+{
+  stringValue: '"{ _id: undefined }"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: { _id: undefined },
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\node_modules\bson\lib\bson.cjs:2055:23)
+      at castObjectId (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\schema\objectid.js:248:12)
+      at SchemaType.applySetters (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\schematype.js:1219:12)
+      at SchemaType.castForQuery (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\schematype.js:1633:15)
+      at cast (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\cast.js:304:34)
+      at Query.cast (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\query.js:4909:12)
+      at Query._castConditions (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\query.js:2232:10)
+      at model.Query._updateThunk (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\query.js:3854:8)
+      at model.Query._updateOne (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\query.js:3964:23),
+  valueType: 'Object',
+  model: Model { users },
+  level: 'error',
+  message: 'Error updating lastConnection in signout: Cast to ObjectId failed for value "{ _id: undefined }" (type Object) at path "_id" for model "users"',
+  stack: 'CastError: Cast to ObjectId failed for value "{ _id: undefined }" (type Object) at path "_id" for model "users"\n' +
+    '    at ObjectId.cast (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\schema\\objectid.js:250:11)\n' +
+    '    at SchemaType.applySetters (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\schematype.js:1219:12)\n' +
+    '    at SchemaType.castForQuery (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\schematype.js:1633:15)\n' +
+    '    at cast (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\cast.js:304:34)\n' +
+    '    at Query.cast (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\query.js:4909:12)\n' +
+    '    at Query._castConditions (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\query.js:2232:10)\n' +
+    '    at model.Query._updateThunk (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\query.js:3854:8)\n' +
+    '    at model.Query._updateOne (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\query.js:3964:23)\n' +
+    '    at model.Query.exec (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\query.js:4429:28)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  timestamp: '2024-03-06T01:25:18.984Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T01:26:41.219Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T01:26:41.222Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T01:26:42.201Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T01:34:30.479Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T01:34:30.482Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T01:34:32.839Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T01:34:32.842Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T01:34:34.655Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T01:35:16.812Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T01:35:16.815Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T01:35:17.594Z'
+}
+{
+  message: {
+    status: 'success',
+    payload: 12,
+    totalPages: 2,
+    prevPage: null,
+    nextPage: 2,
+    page: 1,
+    hasPrevPage: null,
+    hasNextPage: true,
+    prevLink: null,
+    nextLink: 'http://localhost:8080/api/products?page=2'
+  },
+  level: 'information',
+  timestamp: '2024-03-06T01:35:38.621Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T01:43:37.049Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T01:43:37.051Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T01:43:37.933Z'
+}
+{
+  message: {
+    status: 'success',
+    payload: 12,
+    totalPages: 2,
+    prevPage: null,
+    nextPage: 2,
+    page: 1,
+    hasPrevPage: null,
+    hasNextPage: true,
+    prevLink: null,
+    nextLink: 'http://localhost:8080/api/products?page=2'
+  },
+  level: 'information',
+  timestamp: '2024-03-06T01:44:40.894Z'
+}
+{
+  level: 'information',
+  message: 'signout',
+  timestamp: '2024-03-06T01:45:01.364Z'
+}
+{
+  stringValue: '"{ _id: undefined }"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: { _id: undefined },
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\node_modules\bson\lib\bson.cjs:2055:23)
+      at castObjectId (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\schema\objectid.js:248:12)
+      at SchemaType.applySetters (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\schematype.js:1219:12)
+      at SchemaType.castForQuery (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\schematype.js:1633:15)
+      at cast (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\cast.js:304:34)
+      at Query.cast (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\query.js:4909:12)
+      at Query._castConditions (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\query.js:2232:10)
+      at model.Query._updateThunk (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\query.js:3854:8)
+      at model.Query._updateOne (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\query.js:3964:23),
+  valueType: 'Object',
+  model: Model { users },
+  level: 'error',
+  message: 'Error updating lastConnection in signout: Cast to ObjectId failed for value "{ _id: undefined }" (type Object) at path "_id" for model "users"',
+  stack: 'CastError: Cast to ObjectId failed for value "{ _id: undefined }" (type Object) at path "_id" for model "users"\n' +
+    '    at ObjectId.cast (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\schema\\objectid.js:250:11)\n' +
+    '    at SchemaType.applySetters (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\schematype.js:1219:12)\n' +
+    '    at SchemaType.castForQuery (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\schematype.js:1633:15)\n' +
+    '    at cast (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\cast.js:304:34)\n' +
+    '    at Query.cast (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\query.js:4909:12)\n' +
+    '    at Query._castConditions (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\query.js:2232:10)\n' +
+    '    at model.Query._updateThunk (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\query.js:3854:8)\n' +
+    '    at model.Query._updateOne (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\query.js:3964:23)\n' +
+    '    at model.Query.exec (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\query.js:4429:28)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  timestamp: '2024-03-06T01:45:01.366Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T01:45:33.616Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T01:45:33.619Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T01:45:34.732Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T02:16:23.756Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T02:16:23.759Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T02:16:26.764Z'
+}
+{ level: 'error', timestamp: '2024-03-06T02:18:02.392Z' }
+{ level: 'error', timestamp: '2024-03-06T02:18:02.589Z' }
+{ level: 'error', timestamp: '2024-03-06T02:18:02.624Z' }
+{ level: 'error', timestamp: '2024-03-06T02:18:14.916Z' }
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T02:19:47.671Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T02:19:47.673Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T02:19:48.596Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T02:20:06.560Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T02:20:06.562Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T02:20:07.301Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T02:22:10.764Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T02:22:10.767Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T02:22:11.788Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T02:22:15.031Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T02:22:15.034Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T02:22:15.778Z'
+}
+{
+  message: {
+    status: 'success',
+    payload: 12,
+    totalPages: 2,
+    prevPage: null,
+    nextPage: 2,
+    page: 1,
+    hasPrevPage: null,
+    hasNextPage: true,
+    prevLink: null,
+    nextLink: 'http://localhost:8080/api/products?page=2'
+  },
+  level: 'information',
+  timestamp: '2024-03-06T02:22:52.678Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T02:23:54.859Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T02:23:54.861Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T02:23:55.847Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T02:24:14.253Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T02:24:14.257Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T02:24:14.995Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T02:25:25.892Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T02:25:25.894Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T02:25:26.882Z'
+}
+{
+  message: {
+    status: 'success',
+    payload: 12,
+    totalPages: 2,
+    prevPage: null,
+    nextPage: 2,
+    page: 1,
+    hasPrevPage: null,
+    hasNextPage: true,
+    prevLink: null,
+    nextLink: 'http://localhost:8080/api/products?page=2'
+  },
+  level: 'information',
+  timestamp: '2024-03-06T02:25:43.743Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T02:42:29.829Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T02:42:29.832Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T02:42:30.809Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T02:45:05.395Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T02:45:05.397Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T02:45:06.379Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T02:46:03.011Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T02:46:03.013Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T02:46:03.762Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T02:51:05.936Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T02:51:05.939Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T02:51:06.781Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T02:52:00.627Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T02:52:00.629Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T02:52:01.353Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T02:52:31.225Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T02:52:31.228Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T02:52:32.020Z'
+}
+{
+  view: View {
+    defaultEngine: 'handlebars',
+    ext: '.handlebars',
+    name: '/products',
+    root: 'C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\src\\views',
+    engine: [Function: bound renderView],
+    path: undefined
+  },
+  level: 'error',
+  timestamp: '2024-03-06T02:53:13.966Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T02:53:31.424Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T02:53:31.427Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T02:53:32.293Z'
+}
+{
+  message: {
+    status: 'success',
+    payload: 12,
+    totalPages: 2,
+    prevPage: null,
+    nextPage: 2,
+    page: 1,
+    hasPrevPage: null,
+    hasNextPage: true,
+    prevLink: null,
+    nextLink: 'http://localhost:8080/api/products?page=2'
+  },
+  level: 'information',
+  timestamp: '2024-03-06T02:53:46.017Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T02:55:19.617Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T02:55:19.620Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T02:55:20.613Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T02:56:53.744Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T02:56:53.746Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T02:56:54.670Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T02:57:31.265Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T02:57:31.268Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T02:57:31.995Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T02:58:30.869Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T02:58:30.872Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T02:58:31.737Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T02:58:59.741Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T02:58:59.744Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T02:59:00.502Z'
+}
+{ level: 'error', timestamp: '2024-03-06T02:59:05.476Z' }
+{ level: 'error', timestamp: '2024-03-06T02:59:32.929Z' }
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T02:59:58.750Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T02:59:58.752Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T02:59:59.704Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T03:00:15.949Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T03:00:15.952Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T03:00:16.696Z'
+}
+{ level: 'error', timestamp: '2024-03-06T03:00:20.312Z' }
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T03:00:42.234Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T03:00:42.236Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T03:00:42.966Z'
+}
+{ level: 'error', timestamp: '2024-03-06T03:00:43.691Z' }
+{ level: 'error', timestamp: '2024-03-06T03:01:13.245Z' }
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T03:04:29.346Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T03:04:29.348Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T03:04:30.340Z'
+}
+{ level: 'error', timestamp: '2024-03-06T03:04:35.685Z' }
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T03:04:49.715Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T03:04:49.717Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T03:04:50.444Z'
+}
+{ level: 'error', timestamp: '2024-03-06T03:04:56.218Z' }
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T03:05:27.262Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T03:05:27.264Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T03:05:27.990Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T03:06:11.350Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T03:06:11.352Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T03:06:12.410Z'
+}
+{ level: 'error', timestamp: '2024-03-06T03:06:20.441Z' }
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T03:06:47.983Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T03:06:47.986Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T03:06:48.726Z'
+}
+{ level: 'error', timestamp: '2024-03-06T03:06:53.551Z' }
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T03:09:55.754Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T03:09:55.757Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T03:09:56.670Z'
+}
+{
+  level: 'debug',
+  message: '\n///////////\n',
+  timestamp: '2024-03-06T03:09:57.174Z'
+}
+{ level: 'error', timestamp: '2024-03-06T03:09:57.374Z' }
+{
+  level: 'debug',
+  message: '\n///////////\n',
+  timestamp: '2024-03-06T03:10:06.918Z'
+}
+{ level: 'error', timestamp: '2024-03-06T03:10:07.108Z' }
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T03:10:19.992Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T03:10:19.994Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T03:10:20.743Z'
+}
+{
+  level: 'information',
+  message: '\n///////////\n',
+  timestamp: '2024-03-06T03:10:21.313Z'
+}
+{ level: 'error', timestamp: '2024-03-06T03:10:21.514Z' }
+{
+  level: 'information',
+  message: '\n///////////\n',
+  timestamp: '2024-03-06T03:10:27.091Z'
+}
+{ level: 'error', timestamp: '2024-03-06T03:10:27.280Z' }
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T03:10:39.080Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T03:10:39.082Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T03:10:39.805Z'
+}
+{ level: 'error', timestamp: '2024-03-06T03:10:40.903Z' }
+{ level: 'error', timestamp: '2024-03-06T03:10:45.840Z' }
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T03:11:33.596Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T03:11:33.598Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T03:11:34.496Z'
+}
+{ level: 'error', timestamp: '2024-03-06T03:11:38.861Z' }
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T03:11:56.297Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T03:11:56.299Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T03:11:57.031Z'
+}
+{ level: 'error', timestamp: '2024-03-06T03:12:02.075Z' }
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T03:12:21.316Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T03:12:21.318Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T03:12:22.047Z'
+}
+{ level: 'error', timestamp: '2024-03-06T03:12:22.809Z' }
+{ level: 'error', timestamp: '2024-03-06T03:12:28.449Z' }
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T03:12:48.281Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T03:12:48.283Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T03:12:49.135Z'
+}
+{ level: 'error', timestamp: '2024-03-06T03:12:53.666Z' }
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T03:14:21.814Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T03:14:21.816Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T03:14:22.869Z'
+}
+{ level: 'error', timestamp: '2024-03-06T03:14:23.651Z' }
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T03:14:50.970Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T03:14:50.972Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T03:14:51.699Z'
+}
+{ level: 'error', timestamp: '2024-03-06T03:14:59.304Z' }
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T03:15:22.207Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T03:15:22.209Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T03:15:23.026Z'
+}
+{ level: 'error', timestamp: '2024-03-06T03:15:23.753Z' }
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T03:15:36.607Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T03:15:36.610Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T03:15:37.397Z'
+}
+{ level: 'error', timestamp: '2024-03-06T03:15:42.525Z' }
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T03:16:03.299Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T03:16:03.302Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T03:16:04.041Z'
+}
+{ level: 'error', timestamp: '2024-03-06T03:16:09.111Z' }
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T03:16:40.697Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T03:16:40.699Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T03:16:41.547Z'
+}
+{ level: 'error', timestamp: '2024-03-06T03:16:42.342Z' }
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T03:16:52.734Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T03:16:52.736Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T03:16:53.483Z'
+}
+{ level: 'error', timestamp: '2024-03-06T03:17:00.370Z' }
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T03:17:14.470Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T03:17:14.473Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T03:17:15.199Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T03:17:30.556Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T03:17:30.558Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T03:17:31.305Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T03:17:55.574Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T03:17:55.577Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T03:17:56.462Z'
+}
+{
+  message: {
+    status: 'success',
+    payload: 12,
+    totalPages: 2,
+    prevPage: null,
+    nextPage: 2,
+    page: 1,
+    hasPrevPage: null,
+    hasNextPage: true,
+    prevLink: null,
+    nextLink: 'http://localhost:8080/api/products?page=2'
+  },
+  level: 'information',
+  timestamp: '2024-03-06T03:17:57.748Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T03:22:32.343Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T03:22:32.345Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T03:22:33.216Z'
+}
+{
+  message: {
+    status: 'success',
+    payload: 12,
+    totalPages: 2,
+    prevPage: null,
+    nextPage: 2,
+    page: 1,
+    hasPrevPage: null,
+    hasNextPage: true,
+    prevLink: null,
+    nextLink: 'http://localhost:8080/api/products?page=2'
+  },
+  level: 'information',
+  timestamp: '2024-03-06T03:22:40.856Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T03:24:02.023Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T03:24:02.025Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T03:24:02.875Z'
+}
+{
+  message: {
+    status: 'success',
+    payload: 12,
+    totalPages: 2,
+    prevPage: null,
+    nextPage: 2,
+    page: 1,
+    hasPrevPage: null,
+    hasNextPage: true,
+    prevLink: null,
+    nextLink: 'http://localhost:8080/api/products?page=2'
+  },
+  level: 'information',
+  timestamp: '2024-03-06T03:24:08.830Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T03:25:29.500Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T03:25:29.502Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T03:25:30.470Z'
+}
+{
+  message: {
+    status: 'success',
+    payload: 12,
+    totalPages: 2,
+    prevPage: null,
+    nextPage: 2,
+    page: 1,
+    hasPrevPage: null,
+    hasNextPage: true,
+    prevLink: null,
+    nextLink: 'http://localhost:8080/api/products?page=2'
+  },
+  level: 'information',
+  timestamp: '2024-03-06T03:25:38.520Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T03:26:27.543Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T03:26:27.546Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T03:26:28.273Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T03:28:19.055Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T03:28:19.057Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T03:28:19.902Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T03:31:21.218Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T03:31:21.221Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T03:31:22.290Z'
+}
+{
+  message: {
+    status: 'success',
+    payload: 12,
+    totalPages: 2,
+    prevPage: null,
+    nextPage: 2,
+    page: 1,
+    hasPrevPage: null,
+    hasNextPage: true,
+    prevLink: null,
+    nextLink: 'http://localhost:8080/api/products?page=2'
+  },
+  level: 'information',
+  timestamp: '2024-03-06T03:31:29.272Z'
+}
+{
+  level: 'information',
+  message: 'signout',
+  timestamp: '2024-03-06T03:31:34.801Z'
+}
+{
+  stringValue: '"{ _id: undefined }"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: { _id: undefined },
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\node_modules\bson\lib\bson.cjs:2055:23)
+      at castObjectId (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\schema\objectid.js:248:12)
+      at SchemaType.applySetters (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\schematype.js:1219:12)
+      at SchemaType.castForQuery (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\schematype.js:1633:15)
+      at cast (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\cast.js:304:34)
+      at Query.cast (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\query.js:4909:12)
+      at Query._castConditions (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\query.js:2232:10)
+      at model.Query._updateThunk (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\query.js:3854:8)
+      at model.Query._updateOne (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\query.js:3964:23),
+  valueType: 'Object',
+  model: Model { users },
+  level: 'error',
+  message: 'Error updating lastConnection in signout: Cast to ObjectId failed for value "{ _id: undefined }" (type Object) at path "_id" for model "users"',
+  stack: 'CastError: Cast to ObjectId failed for value "{ _id: undefined }" (type Object) at path "_id" for model "users"\n' +
+    '    at ObjectId.cast (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\schema\\objectid.js:250:11)\n' +
+    '    at SchemaType.applySetters (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\schematype.js:1219:12)\n' +
+    '    at SchemaType.castForQuery (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\schematype.js:1633:15)\n' +
+    '    at cast (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\cast.js:304:34)\n' +
+    '    at Query.cast (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\query.js:4909:12)\n' +
+    '    at Query._castConditions (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\query.js:2232:10)\n' +
+    '    at model.Query._updateThunk (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\query.js:3854:8)\n' +
+    '    at model.Query._updateOne (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\query.js:3964:23)\n' +
+    '    at model.Query.exec (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\query.js:4429:28)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  timestamp: '2024-03-06T03:31:34.803Z'
+}
+{
+  message: {
+    status: 'success',
+    payload: 12,
+    totalPages: 2,
+    prevPage: null,
+    nextPage: 2,
+    page: 1,
+    hasPrevPage: null,
+    hasNextPage: true,
+    prevLink: null,
+    nextLink: 'http://localhost:8080/api/products?page=2'
+  },
+  level: 'information',
+  timestamp: '2024-03-06T03:31:45.213Z'
+}
+{
+  level: 'information',
+  message: 'signout',
+  timestamp: '2024-03-06T03:31:50.560Z'
+}
+{
+  stringValue: '"{ _id: undefined }"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: { _id: undefined },
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\node_modules\bson\lib\bson.cjs:2055:23)
+      at castObjectId (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\schema\objectid.js:248:12)
+      at SchemaType.applySetters (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\schematype.js:1219:12)
+      at SchemaType.castForQuery (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\schematype.js:1633:15)
+      at cast (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\cast.js:304:34)
+      at Query.cast (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\query.js:4909:12)
+      at Query._castConditions (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\query.js:2232:10)
+      at model.Query._updateThunk (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\query.js:3854:8)
+      at model.Query._updateOne (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\query.js:3964:23),
+  valueType: 'Object',
+  model: Model { users },
+  level: 'error',
+  message: 'Error updating lastConnection in signout: Cast to ObjectId failed for value "{ _id: undefined }" (type Object) at path "_id" for model "users"',
+  stack: 'CastError: Cast to ObjectId failed for value "{ _id: undefined }" (type Object) at path "_id" for model "users"\n' +
+    '    at ObjectId.cast (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\schema\\objectid.js:250:11)\n' +
+    '    at SchemaType.applySetters (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\schematype.js:1219:12)\n' +
+    '    at SchemaType.castForQuery (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\schematype.js:1633:15)\n' +
+    '    at cast (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\cast.js:304:34)\n' +
+    '    at Query.cast (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\query.js:4909:12)\n' +
+    '    at Query._castConditions (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\query.js:2232:10)\n' +
+    '    at model.Query._updateThunk (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\query.js:3854:8)\n' +
+    '    at model.Query._updateOne (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\query.js:3964:23)\n' +
+    '    at model.Query.exec (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\query.js:4429:28)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  timestamp: '2024-03-06T03:31:50.561Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T03:32:37.010Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T03:32:37.013Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T03:32:37.995Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T03:34:31.888Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T03:34:31.891Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T03:34:32.828Z'
+}
+{
+  message: {
+    status: 'success',
+    payload: 12,
+    totalPages: 2,
+    prevPage: null,
+    nextPage: 2,
+    page: 1,
+    hasPrevPage: null,
+    hasNextPage: true,
+    prevLink: null,
+    nextLink: 'http://localhost:8080/api/products?page=2'
+  },
+  level: 'information',
+  timestamp: '2024-03-06T03:34:36.963Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T03:35:45.563Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T03:35:45.566Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T03:35:48.291Z'
+}
+{
+  message: {
+    status: 'success',
+    payload: 12,
+    totalPages: 2,
+    prevPage: null,
+    nextPage: 2,
+    page: 1,
+    hasPrevPage: null,
+    hasNextPage: true,
+    prevLink: null,
+    nextLink: 'http://localhost:8080/api/products?page=2'
+  },
+  level: 'information',
+  timestamp: '2024-03-06T03:36:07.476Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T03:36:17.909Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T03:36:17.912Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T03:36:18.639Z'
+}
+{
+  message: {
+    status: 'success',
+    payload: 12,
+    totalPages: 2,
+    prevPage: null,
+    nextPage: 2,
+    page: 1,
+    hasPrevPage: null,
+    hasNextPage: true,
+    prevLink: null,
+    nextLink: 'http://localhost:8080/api/products?page=2'
+  },
+  level: 'information',
+  timestamp: '2024-03-06T03:36:19.623Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T03:36:43.407Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T03:36:43.409Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T03:36:44.132Z'
+}
+{
+  message: {
+    status: 'success',
+    payload: 12,
+    totalPages: 2,
+    prevPage: null,
+    nextPage: 2,
+    page: 1,
+    hasPrevPage: null,
+    hasNextPage: true,
+    prevLink: null,
+    nextLink: 'http://localhost:8080/api/products?page=2'
+  },
+  level: 'information',
+  timestamp: '2024-03-06T03:36:48.083Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T03:39:32.833Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T03:39:32.835Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T03:39:33.735Z'
+}
+{
+  message: {
+    status: 'success',
+    payload: 12,
+    totalPages: 2,
+    prevPage: null,
+    nextPage: 2,
+    page: 1,
+    hasPrevPage: null,
+    hasNextPage: true,
+    prevLink: null,
+    nextLink: 'http://localhost:8080/api/products?page=2'
+  },
+  level: 'information',
+  timestamp: '2024-03-06T03:39:41.538Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T03:40:12.361Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T03:40:12.364Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T03:40:13.089Z'
+}
+{
+  message: {
+    status: 'success',
+    payload: 12,
+    totalPages: 2,
+    prevPage: null,
+    nextPage: 2,
+    page: 1,
+    hasPrevPage: null,
+    hasNextPage: true,
+    prevLink: null,
+    nextLink: 'http://localhost:8080/api/products?page=2'
+  },
+  level: 'information',
+  timestamp: '2024-03-06T03:40:19.547Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T03:40:31.039Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T03:40:31.041Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T03:40:31.774Z'
+}
+{
+  message: {
+    status: 'success',
+    payload: 12,
+    totalPages: 2,
+    prevPage: null,
+    nextPage: 2,
+    page: 1,
+    hasPrevPage: null,
+    hasNextPage: true,
+    prevLink: null,
+    nextLink: 'http://localhost:8080/api/products?page=2'
+  },
+  level: 'information',
+  timestamp: '2024-03-06T03:40:42.234Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T03:41:24.846Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T03:41:24.848Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T03:41:25.623Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T03:41:36.128Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T03:41:36.130Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T03:41:36.890Z'
+}
+{
+  message: {
+    status: 'success',
+    payload: 12,
+    totalPages: 2,
+    prevPage: null,
+    nextPage: 2,
+    page: 1,
+    hasPrevPage: null,
+    hasNextPage: true,
+    prevLink: null,
+    nextLink: 'http://localhost:8080/api/products?page=2'
+  },
+  level: 'information',
+  timestamp: '2024-03-06T03:41:45.594Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T03:43:12.200Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T03:43:12.203Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T03:43:13.077Z'
+}
+{
+  message: {
+    status: 'success',
+    payload: 12,
+    totalPages: 2,
+    prevPage: null,
+    nextPage: 2,
+    page: 1,
+    hasPrevPage: null,
+    hasNextPage: true,
+    prevLink: null,
+    nextLink: 'http://localhost:8080/api/products?page=2'
+  },
+  level: 'information',
+  timestamp: '2024-03-06T03:43:26.683Z'
+}
+{
+  message: {
+    status: 'success',
+    payload: 12,
+    totalPages: 2,
+    prevPage: null,
+    nextPage: 2,
+    page: 1,
+    hasPrevPage: null,
+    hasNextPage: true,
+    prevLink: null,
+    nextLink: 'http://localhost:8080/api/products?page=2'
+  },
+  level: 'information',
+  timestamp: '2024-03-06T03:43:29.856Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T03:45:38.720Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T03:45:38.722Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T03:45:39.556Z'
+}
+{ level: 'error', timestamp: '2024-03-06T03:45:44.825Z' }
+{ level: 'error', timestamp: '2024-03-06T03:46:06.016Z' }
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T03:46:35.927Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T03:46:35.930Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T03:46:36.674Z'
+}
+{ level: 'error', timestamp: '2024-03-06T03:46:54.250Z' }
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T03:47:32.215Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T03:47:32.217Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T03:47:32.977Z'
+}
+{ level: 'error', timestamp: '2024-03-06T03:47:40.742Z' }
+{ level: 'error', timestamp: '2024-03-06T03:47:42.643Z' }
+{ level: 'error', timestamp: '2024-03-06T03:47:45.036Z' }
+{ level: 'error', timestamp: '2024-03-06T03:47:46.357Z' }
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T03:49:04.920Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T03:49:04.923Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T03:49:05.761Z'
+}
+{ level: 'error', timestamp: '2024-03-06T03:49:10.833Z' }
+{ level: 'error', timestamp: '2024-03-06T03:49:12.884Z' }
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T03:49:30.234Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T03:49:30.237Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T03:49:30.972Z'
+}
+{ level: 'error', timestamp: '2024-03-06T03:49:36.179Z' }
+{ level: 'error', timestamp: '2024-03-06T03:49:38.769Z' }
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T03:50:04.454Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T03:50:04.457Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T03:50:05.199Z'
+}
+{ level: 'error', timestamp: '2024-03-06T03:50:11.184Z' }
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T03:51:36.790Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T03:51:36.793Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T03:51:37.701Z'
+}
+{ level: 'error', timestamp: '2024-03-06T03:51:44.255Z' }
+{
+  level: 'information',
+  message: 'signout',
+  timestamp: '2024-03-06T03:52:10.710Z'
+}
+{
+  stringValue: '"{ _id: undefined }"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: { _id: undefined },
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\node_modules\bson\lib\bson.cjs:2055:23)
+      at castObjectId (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\schema\objectid.js:248:12)
+      at SchemaType.applySetters (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\schematype.js:1219:12)
+      at SchemaType.castForQuery (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\schematype.js:1633:15)
+      at cast (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\cast.js:304:34)
+      at Query.cast (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\query.js:4909:12)
+      at Query._castConditions (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\query.js:2232:10)
+      at model.Query._updateThunk (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\query.js:3854:8)
+      at model.Query._updateOne (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\query.js:3964:23),
+  valueType: 'Object',
+  model: Model { users },
+  level: 'error',
+  message: 'Error updating lastConnection in signout: Cast to ObjectId failed for value "{ _id: undefined }" (type Object) at path "_id" for model "users"',
+  stack: 'CastError: Cast to ObjectId failed for value "{ _id: undefined }" (type Object) at path "_id" for model "users"\n' +
+    '    at ObjectId.cast (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\schema\\objectid.js:250:11)\n' +
+    '    at SchemaType.applySetters (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\schematype.js:1219:12)\n' +
+    '    at SchemaType.castForQuery (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\schematype.js:1633:15)\n' +
+    '    at cast (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\cast.js:304:34)\n' +
+    '    at Query.cast (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\query.js:4909:12)\n' +
+    '    at Query._castConditions (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\query.js:2232:10)\n' +
+    '    at model.Query._updateThunk (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\query.js:3854:8)\n' +
+    '    at model.Query._updateOne (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\query.js:3964:23)\n' +
+    '    at model.Query.exec (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\query.js:4429:28)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  timestamp: '2024-03-06T03:52:10.712Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T03:52:25.782Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T03:52:25.784Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T03:52:26.499Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T03:53:37.625Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T03:53:37.628Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T03:53:52.291Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T03:53:52.294Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T03:53:53.032Z'
+}
+{
+  level: 'information',
+  message: 'signout',
+  timestamp: '2024-03-06T03:53:59.246Z'
+}
+{
+  stringValue: '"{ _id: undefined }"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: { _id: undefined },
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\node_modules\bson\lib\bson.cjs:2055:23)
+      at castObjectId (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\schema\objectid.js:248:12)
+      at SchemaType.applySetters (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\schematype.js:1219:12)
+      at SchemaType.castForQuery (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\schematype.js:1633:15)
+      at cast (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\cast.js:304:34)
+      at Query.cast (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\query.js:4909:12)
+      at Query._castConditions (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\query.js:2232:10)
+      at model.Query._updateThunk (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\query.js:3854:8)
+      at model.Query._updateOne (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\query.js:3964:23),
+  valueType: 'Object',
+  model: Model { users },
+  level: 'error',
+  message: 'Error updating lastConnection in signout: Cast to ObjectId failed for value "{ _id: undefined }" (type Object) at path "_id" for model "users"',
+  stack: 'CastError: Cast to ObjectId failed for value "{ _id: undefined }" (type Object) at path "_id" for model "users"\n' +
+    '    at ObjectId.cast (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\schema\\objectid.js:250:11)\n' +
+    '    at SchemaType.applySetters (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\schematype.js:1219:12)\n' +
+    '    at SchemaType.castForQuery (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\schematype.js:1633:15)\n' +
+    '    at cast (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\cast.js:304:34)\n' +
+    '    at Query.cast (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\query.js:4909:12)\n' +
+    '    at Query._castConditions (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\query.js:2232:10)\n' +
+    '    at model.Query._updateThunk (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\query.js:3854:8)\n' +
+    '    at model.Query._updateOne (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\query.js:3964:23)\n' +
+    '    at model.Query.exec (C:\\Users\\Arman\\Desktop\\Coderhouse\\fullstack\\clase4\\node_modules\\mongoose\\lib\\query.js:4429:28)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  timestamp: '2024-03-06T03:53:59.251Z'
+}
+{ level: 'error', timestamp: '2024-03-06T03:54:14.385Z' }
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T03:55:37.094Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T03:55:37.097Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T03:55:37.976Z'
+}
+{ level: 'error', timestamp: '2024-03-06T03:55:48.582Z' }
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T03:56:21.274Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T03:56:21.276Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T03:56:22.012Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T03:57:02.049Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T03:57:02.052Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T03:57:02.966Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T03:57:09.889Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T03:57:09.891Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T03:57:10.617Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T03:57:17.018Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T03:57:17.021Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T03:57:17.768Z'
+}
+{ level: 'error', timestamp: '2024-03-06T03:57:29.690Z' }
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T03:58:19.697Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T03:58:19.699Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T03:58:20.601Z'
+}
+{ level: 'error', timestamp: '2024-03-06T03:58:25.884Z' }
+{
+  level: 'information',
+  message: '/////////\n',
+  timestamp: '2024-03-06T03:58:31.115Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T03:59:53.586Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T03:59:53.589Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T03:59:54.561Z'
+}
+{ level: 'error', timestamp: '2024-03-06T03:59:59.784Z' }
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T04:00:29.381Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T04:00:29.383Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T04:00:30.122Z'
+}
+{ level: 'error', timestamp: '2024-03-06T04:00:36.773Z' }
+{
+  level: 'information',
+  message: '/////////\n desde messages controller',
+  timestamp: '2024-03-06T04:00:40.367Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T04:01:06.049Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T04:01:06.052Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T04:01:06.876Z'
+}
+{ level: 'error', timestamp: '2024-03-06T04:01:13.573Z' }
+{
+  level: 'information',
+  message: '/////////\n desde messages controller',
+  timestamp: '2024-03-06T04:01:17.295Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T04:01:30.936Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T04:01:30.938Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T04:01:31.705Z'
+}
+{ level: 'error', timestamp: '2024-03-06T04:01:37.472Z' }
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T04:02:03.313Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T04:02:03.315Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T04:02:04.080Z'
+}
+{ level: 'error', timestamp: '2024-03-06T04:02:08.657Z' }
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T04:02:54.005Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T04:02:54.008Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T04:02:55.039Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T04:03:31.360Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T04:03:31.362Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T04:03:32.169Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T04:03:50.827Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T04:03:50.830Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T04:03:51.563Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T04:03:56.926Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T04:03:56.929Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T04:03:57.680Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T04:04:49.903Z'
+}
+{
+  message: 'Test error',
+  level: 'error',
+  timestamp: '2024-03-06T04:04:49.905Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T04:04:50.659Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T04:05:22.176Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T04:05:23.044Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T04:06:28.534Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T04:06:29.271Z'
+}
+{
+  email: 'armandorodriguezm1998@gmail.com',
+  first_name: 'ARMANDO',
+  username: 'armandorodriguez.1',
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaXJzdF9uYW1lIjoiQVJNQU5ETyIsImxhc3RfbmFtZSI6IlJPRFJJR1VFWiIsImVtYWlsIjoiYXJtYW5kb3JvZHJpZ3Vlem0xOTk4QGdtYWlsLmNvbSIsInJvbGUiOiJwcmVtaXVtIiwiaWF0IjoxNzA5Njk3OTk3fQ.ZCkTYyTjFp08PkhFg8VnWCHeqa03cEKDlEiW5Ip3fwY',
+  level: 'information',
+  message: 'session desde router',
+  timestamp: '2024-03-06T04:06:37.298Z'
+}
+{ level: 'error', timestamp: '2024-03-06T04:06:37.901Z' }
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T04:07:05.633Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T04:07:06.585Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T04:07:44.026Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T04:07:44.774Z'
+}
+{ level: 'error', timestamp: '2024-03-06T04:08:07.346Z' }
+{ level: 'error', timestamp: '2024-03-06T04:08:27.952Z' }
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T04:10:57.990Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T04:10:58.889Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T04:11:38.852Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T04:11:39.587Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T04:12:03.608Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T04:12:04.352Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T04:14:44.028Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T04:14:44.910Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T04:15:19.424Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T04:15:20.174Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T04:16:18.606Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T04:16:19.453Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T04:17:43.327Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T04:17:44.251Z'
+}
+{ level: 'error', timestamp: '2024-03-06T04:17:46.754Z' }
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T04:18:30.486Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T04:18:31.257Z'
+}
+{ level: 'error', timestamp: '2024-03-06T04:18:36.812Z' }
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T04:20:15.733Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T04:20:16.610Z'
+}
+{ level: 'error', timestamp: '2024-03-06T04:20:22.353Z' }
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T04:21:11.351Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T04:21:12.074Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T04:21:42.617Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T04:21:43.380Z'
+}
+{ level: 'error', timestamp: '2024-03-06T04:21:49.473Z' }
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T04:24:12.293Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T04:24:13.215Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T04:24:52.004Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T04:24:52.731Z'
+}
+{ level: 'error', timestamp: '2024-03-06T04:24:56.271Z' }
+{
+  level: 'information',
+  message: 'signout',
+  timestamp: '2024-03-06T04:24:58.336Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T04:26:49.330Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T04:26:50.157Z'
+}
+{ level: 'error', timestamp: '2024-03-06T04:27:05.275Z' }
+{
+  level: 'information',
+  message: 'signout',
+  timestamp: '2024-03-06T04:27:19.607Z'
+}
+{ level: 'error', timestamp: '2024-03-06T04:27:43.281Z' }
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T04:28:23.287Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T04:28:24.244Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T04:29:04.483Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T04:29:05.231Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T04:30:02.025Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T04:30:03.009Z'
+}
+{ level: 'error', timestamp: '2024-03-06T04:30:04.865Z' }
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T04:31:23.495Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T04:31:24.437Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T04:31:40.951Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T04:31:41.665Z'
+}
+{ level: 'error', timestamp: '2024-03-06T04:31:50.843Z' }
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T04:33:10.571Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T04:33:11.470Z'
+}
+{ level: 'error', timestamp: '2024-03-06T04:33:34.173Z' }
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T16:49:51.502Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T16:49:52.458Z'
+}
+{ level: 'error', timestamp: '2024-03-06T16:50:23.150Z' }
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T16:50:50.063Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T16:50:50.812Z'
+}
+{ level: 'error', timestamp: '2024-03-06T16:50:54.528Z' }
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T16:51:49.465Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T16:51:50.242Z'
+}
+{ level: 'error', timestamp: '2024-03-06T16:52:33.682Z' }
+{ level: 'error', timestamp: '2024-03-06T16:52:55.463Z' }
+{ level: 'error', timestamp: '2024-03-06T16:53:43.441Z' }
+{ level: 'error', timestamp: '2024-03-06T16:54:39.319Z' }
+{ level: 'error', timestamp: '2024-03-06T16:54:52.334Z' }
+{ level: 'error', timestamp: '2024-03-06T16:54:57.602Z' }
+{
+  level: 'information',
+  message: 'signout',
+  timestamp: '2024-03-06T17:07:32.808Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T17:22:37.136Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T17:22:38.053Z'
+}
+{ level: 'error', timestamp: '2024-03-06T17:22:45.971Z' }
+{ level: 'error', timestamp: '2024-03-06T17:22:53.809Z' }
+{
+  level: 'information',
+  message: 'signout',
+  timestamp: '2024-03-06T17:24:25.126Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T17:25:19.100Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T17:25:19.851Z'
+}
+{ level: 'error', timestamp: '2024-03-06T17:25:20.629Z' }
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T17:26:08.630Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T17:26:09.759Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T17:27:25.045Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T17:27:25.803Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T17:32:26.846Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T17:32:27.668Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T17:33:58.333Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T17:33:59.232Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T17:35:41.749Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T17:35:42.638Z'
+}
+{
+  message: 'Prueba debug',
+  level: 'debug',
+  timestamp: '2024-03-06T17:48:26.481Z'
+}
+{
+  message: 'Prueba http',
+  level: 'http',
+  timestamp: '2024-03-06T17:48:26.481Z'
+}
+{
+  message: 'Prueba information',
+  level: 'information',
+  timestamp: '2024-03-06T17:48:26.482Z'
+}
+{
+  message: 'Prueba warning',
+  level: 'warning',
+  timestamp: '2024-03-06T17:48:26.482Z'
+}
+{
+  message: 'Prueba error',
+  level: 'error',
+  timestamp: '2024-03-06T17:48:26.482Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T17:50:29.144Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T17:50:30.041Z'
+}
+{ level: 'error', timestamp: '2024-03-06T17:52:24.313Z' }
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T17:53:02.943Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T17:53:03.881Z'
+}
+{ level: 'error', timestamp: '2024-03-06T17:53:44.185Z' }
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T17:53:54.539Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T17:53:55.299Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T17:55:39.100Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T17:55:40.030Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T17:56:01.224Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T17:56:01.965Z'
+}
+{ level: 'error', timestamp: '2024-03-06T17:56:04.093Z' }
+{
+  level: 'information',
+  message: 'signout',
+  timestamp: '2024-03-06T17:56:05.974Z'
+}
+{ level: 'error', timestamp: '2024-03-06T17:56:11.998Z' }
+{
+  level: 'information',
+  message: 'Role de usuario: ',
+  timestamp: '2024-03-06T17:56:14.406Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T17:57:22.365Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T17:57:23.365Z'
+}
+{ level: 'error', timestamp: '2024-03-06T17:57:25.345Z' }
+{
+  level: 'information',
+  message: 'signout',
+  timestamp: '2024-03-06T17:57:26.850Z'
+}
+{ level: 'error', timestamp: '2024-03-06T17:57:32.445Z' }
+{
+  level: 'information',
+  message: 'Role de usuario: ',
+  timestamp: '2024-03-06T17:57:34.050Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T18:00:05.228Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T18:00:06.115Z'
+}
+{
+  level: 'information',
+  message: 'signout',
+  timestamp: '2024-03-06T18:00:08.952Z'
+}
+{ level: 'error', timestamp: '2024-03-06T18:00:42.689Z' }
+{
+  level: 'information',
+  message: 'Role de usuario: ',
+  timestamp: '2024-03-06T18:00:47.117Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T18:01:57.301Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T18:02:01.859Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T18:02:42.199Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T18:02:42.967Z'
+}
+{
+  level: 'information',
+  message: 'signout',
+  timestamp: '2024-03-06T18:02:43.755Z'
+}
+{ level: 'error', timestamp: '2024-03-06T18:02:49.485Z' }
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T18:03:06.758Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T18:03:07.590Z'
+}
+{
+  level: 'information',
+  message: 'signout',
+  timestamp: '2024-03-06T18:03:09.717Z'
+}
+{ level: 'error', timestamp: '2024-03-06T18:03:18.502Z' }
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T18:03:50.790Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T18:03:51.551Z'
+}
+{
+  level: 'information',
+  message: 'signout',
+  timestamp: '2024-03-06T18:03:51.921Z'
+}
+{ level: 'error', timestamp: '2024-03-06T18:03:57.989Z' }
+{
+  level: 'information',
+  message: 'Role de usuario: ',
+  timestamp: '2024-03-06T18:03:59.038Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T18:05:50.694Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T18:05:51.709Z'
+}
+{
+  level: 'information',
+  message: 'signout',
+  timestamp: '2024-03-06T18:05:52.732Z'
+}
+{ level: 'error', timestamp: '2024-03-06T18:06:07.578Z' }
+{
+  level: 'information',
+  message: 'Role de usuario: ',
+  timestamp: '2024-03-06T18:06:11.722Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T18:08:23.849Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T18:08:26.515Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T18:25:04.118Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T18:25:06.066Z'
+}
+{
+  level: 'information',
+  message: 'signout',
+  timestamp: '2024-03-06T18:25:41.765Z'
+}
+{ level: 'error', timestamp: '2024-03-06T18:25:50.969Z' }
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T18:26:45.386Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T18:26:46.376Z'
+}
+{ level: 'error', timestamp: '2024-03-06T18:26:47.299Z' }
+{
+  level: 'information',
+  message: 'signout',
+  timestamp: '2024-03-06T18:26:51.185Z'
+}
+{ level: 'error', timestamp: '2024-03-06T18:26:55.705Z' }
+{ level: 'error', timestamp: '2024-03-06T18:27:52.713Z' }
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T18:32:09.925Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T18:32:10.805Z'
+}
+{ level: 'error', timestamp: '2024-03-06T18:32:11.727Z' }
+{ level: 'error', timestamp: '2024-03-06T18:32:29.768Z' }
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T18:33:05.060Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T18:33:05.840Z'
+}
+{ level: 'error', timestamp: '2024-03-06T18:33:12.598Z' }
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T18:35:06.640Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T18:35:07.668Z'
+}
+{ level: 'error', timestamp: '2024-03-06T18:35:17.395Z' }
+{ level: 'error', timestamp: '2024-03-06T18:35:23.505Z' }
+{ level: 'error', timestamp: '2024-03-06T18:35:26.627Z' }
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T18:36:14.850Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T18:36:15.605Z'
+}
+{ level: 'error', timestamp: '2024-03-06T18:36:22.131Z' }
+{
+  level: 'information',
+  message: 'signout',
+  timestamp: '2024-03-06T18:36:23.395Z'
+}
+{ level: 'error', timestamp: '2024-03-06T18:36:29.397Z' }
+{ level: 'error', timestamp: '2024-03-06T18:36:34.101Z' }
+{
+  level: 'information',
+  message: 'signout',
+  timestamp: '2024-03-06T18:36:34.792Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T18:38:00.693Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T18:38:01.610Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T18:38:21.266Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T18:38:22.010Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T18:38:35.612Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T18:38:36.361Z'
+}
+{
+  code: 'ERR_HTTP_INVALID_STATUS_CODE',
+  level: 'error',
+  timestamp: '2024-03-06T18:38:50.067Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T18:39:41.139Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T18:39:42.091Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T18:40:07.189Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T18:40:07.936Z'
+}
+{ level: 'error', timestamp: '2024-03-06T18:55:53.862Z' }
+{ level: 'error', timestamp: '2024-03-06T18:56:02.985Z' }
+{ level: 'error', timestamp: '2024-03-06T18:56:17.584Z' }
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T18:57:51.877Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T18:57:52.899Z'
+}
+{ level: 'error', timestamp: '2024-03-06T18:58:08.906Z' }
+{ level: 'error', timestamp: '2024-03-06T18:58:13.357Z' }
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T19:01:37.599Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T19:01:38.400Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T19:03:23.559Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T19:03:24.560Z'
+}
+{ level: 'error', timestamp: '2024-03-06T19:04:29.685Z' }
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T19:06:00.092Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T19:06:01.004Z'
+}
+{ level: 'error', timestamp: '2024-03-06T19:06:08.150Z' }
+{
+  level: 'information',
+  message: 'signout',
+  timestamp: '2024-03-06T19:06:10.468Z'
+}
+{ level: 'error', timestamp: '2024-03-06T19:06:14.836Z' }
+{ level: 'error', timestamp: '2024-03-06T19:08:34.402Z' }
+{ level: 'error', timestamp: '2024-03-06T19:08:36.597Z' }
+{
+  level: 'information',
+  message: 'signout',
+  timestamp: '2024-03-06T19:08:38.592Z'
+}
+{ level: 'error', timestamp: '2024-03-06T19:09:32.124Z' }
+{
+  level: 'information',
+  message: 'signout',
+  timestamp: '2024-03-06T19:09:33.265Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T19:14:33.534Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T19:14:34.552Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T19:14:56.714Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T19:14:57.476Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T19:16:10.001Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T19:16:11.043Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T19:16:32.347Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T19:16:33.098Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T19:17:36.623Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T19:17:37.624Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T19:18:16.677Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T19:18:17.428Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T19:20:19.999Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T19:20:21.010Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T19:22:13.988Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T19:22:14.877Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T19:22:44.679Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T19:22:45.431Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T19:23:01.378Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T19:23:02.137Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T19:25:16.283Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T19:25:17.215Z'
+}
+{ level: 'error', timestamp: '2024-03-06T19:25:18.137Z' }
+{
+  level: 'information',
+  message: 'signout',
+  timestamp: '2024-03-06T19:25:20.224Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T19:25:27.404Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T19:25:28.152Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T19:26:37.883Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T19:26:38.837Z'
+}
+{ level: 'error', timestamp: '2024-03-06T19:26:39.803Z' }
+{
+  level: 'information',
+  message: 'signout',
+  timestamp: '2024-03-06T19:26:43.085Z'
+}
+{ level: 'error', timestamp: '2024-03-06T19:26:53.653Z' }
+{
+  level: 'information',
+  message: 'signout',
+  timestamp: '2024-03-06T19:27:06.827Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T19:30:05.166Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T19:30:06.118Z'
+}
+{ level: 'error', timestamp: '2024-03-06T19:31:51.785Z' }
+{ level: 'error', timestamp: '2024-03-06T19:31:53.374Z' }
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T19:37:14.532Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T19:37:15.478Z'
+}
+{ level: 'error', timestamp: '2024-03-06T19:37:16.414Z' }
+{
+  level: 'information',
+  message: 'signout',
+  timestamp: '2024-03-06T19:37:18.449Z'
+}
+{ level: 'error', timestamp: '2024-03-06T19:37:23.496Z' }
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T19:38:59.353Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T19:39:00.385Z'
+}
+{ level: 'error', timestamp: '2024-03-06T19:39:01.309Z' }
+{
+  level: 'information',
+  message: 'signout',
+  timestamp: '2024-03-06T19:39:03.173Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T19:39:32.957Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T19:39:33.709Z'
+}
+{ level: 'error', timestamp: '2024-03-06T19:39:54.841Z' }
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T19:43:28.388Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T19:43:29.340Z'
+}
+{ level: 'error', timestamp: '2024-03-06T19:43:30.335Z' }
+{
+  level: 'information',
+  message: 'signout',
+  timestamp: '2024-03-06T19:43:32.342Z'
+}
+{ level: 'error', timestamp: '2024-03-06T19:44:07.314Z' }
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T19:45:09.608Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T19:45:10.621Z'
+}
+{ level: 'error', timestamp: '2024-03-06T19:45:11.579Z' }
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-06T19:45:32.967Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-06T19:45:33.735Z'
+}
+{ level: 'error', timestamp: '2024-03-06T19:45:43.041Z' }

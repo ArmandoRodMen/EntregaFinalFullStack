@@ -7,11 +7,11 @@ import { logger } from "../utils/logger.js";
 
 const router = Router();
 
-router.post("/signup", passport.authenticate("signup"), async (req, res) => {
+router.post("/signup", passport.authenticate("signup"), async (req, res) => { // :)
     const { first_name, last_name, email, password, username } = req.body;
     const mailOptions = {
         from: "Armando Ecommerce",
-        to: email,  // Usar la dirección de correo electrónico proporcionada en el formulario de registro
+        to: email, 
         subject: "Bienvenido Coder",
         html: `
             <h1>Bienvenido a Armando Ecommerce</h1>
@@ -36,15 +36,15 @@ router.post("/signup", passport.authenticate("signup"), async (req, res) => {
             return res.redirect(redirectUrl);
         }
         const createdUser = await usersDao.createOne({ ...req.body, password: hashedPassword });
-        const userId = createdUser.id;
         res.redirect(redirectUrl);
     } catch (error) {
         res.status(500).json({ error });
     }
 });
 
-router.post("/login", passport.authenticate("login"),  async (req, res) => {
+router.post("/login", passport.authenticate("login"),  async (req, res) => { // :)
     const { email, password } = req.body;
+    const redirectUrl = "/products";
     if (!email || !password) {
         return done(null, false, {message: "Some data is missing"});
     }
@@ -61,30 +61,18 @@ router.post("/login", passport.authenticate("login"),  async (req, res) => {
         await usersDao.updateOne({ _id: userId }, { lastConnection: Date.now() });
         const {first_name, last_name, role} = user; 
         const token = generateToken({first_name, last_name, email, role});
-        res
-            .status(200)
-            .cookie("tokenDeLogin", token, {httpOnly: true})
-            .redirect("/products");
+        req.session.user = {id: userId, email, first_name: user.first_name, username: user.username, role: user.role,token};
+        res.redirect(redirectUrl);
     } catch (error) {
-        done(error);;
+        logger.error(error);
     }
 });
 
 router.get(
-    "/current", passport.authenticate("jwt", {session: false}), async(req,res) =>{
-        const {name} = req.body;
-        logger.information("Role de usuario: ", req.user.role);
-        if (req.user.role === "user"){
-            return res.status(403).json({message: "Hi! you have an user role"});
-        }
-        if (req.user.role === "admin"){
-            return res.status(403).json({message: "Hi! you have an admin role"});
-        }
-        if (req.user.role === "premium"){
-            return res.status(403).json({message: "Hi! you have a premium role"});
-        }
-        if (!name){
-            return res.status(400).json({message: "Name is missing"});
+    "/current", async(req,res) =>{
+        if(req.session.user.role){
+            const role = req.session.user.role;
+            res.render("current", {role})
         }
     }
 );
@@ -114,19 +102,24 @@ router.get(
 
 router.get("/:idUser/signout", async (req, res) => {
     const { idUser } = req.params;
-    logger.information("signout",idUser);
+    logger.information("signout", idUser);
     try {
         await usersDao.updateOne({ _id: idUser }, { lastConnection: Date.now() });
-        req.session.destroy(() => {
+        req.session.destroy((error) => {
+            if (error) {
+                logger.error("Error during session destruction:", error);
+            }
+            res.clearCookie();
             res.redirect("/login");
         });
     } catch (error) {
-        logger.error("Error actualizando lastConnection en signout:", error);
+        logger.error("Error updating lastConnection in signout:", error);
         req.session.destroy(() => {
+            res.clearCookie();
             res.redirect("/login");
         });
     }
-    });
+});
 
 router.post("/restaurar", async(req, res)=>{
     const {email, password} = req.body;
@@ -145,18 +138,6 @@ router.post("/restaurar", async(req, res)=>{
     }
 });
 
-router.post("/chat", async (req, res) => {
-    /*
-    console.log("chat: \n /////",req);
-    if(!req.session.user){
-        res.redirect(`/login`);
-    }else{
-        const messages = await messagesDao.findAll();
-        const {username} = username;
-        res.render("chat", { messages, username });
-    }
-    */
-});
 
 
 export default router;

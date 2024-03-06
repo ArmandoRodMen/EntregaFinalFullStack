@@ -35,7 +35,6 @@ export const findUser = async (req, res) => {
             const role = user.role;
             res.status(200).json({ message: "User", user });
         } catch (error) {
-            //res.status(500).json({ error: error.message });
             CustomError.generateError(
                 ErrorMessages.USER_NOT_FOUND,
                 500,
@@ -53,7 +52,6 @@ export const deleteUser = async (req, res) => {
             await deleteOne(idUser);
             res.status(200).json({ message: "User deleted:" });
         } catch (error) {
-            //res.status(500).json({ error: error.message });
             CustomError.generateError(
                 ErrorMessages.USER_NOT_DELETED,
                 500,
@@ -62,6 +60,10 @@ export const deleteUser = async (req, res) => {
         }
     };
 };
+
+export const deleteUserWithNoConnection = async (req, res) =>{
+    
+}
 
 export const createUser = async (req, res) => {
     const { first_name, last_name, email, password, username } = req.body;
@@ -72,7 +74,6 @@ export const createUser = async (req, res) => {
         const createdUser = await createOne(req.body);
         res.redirect(`/profile/${createdUser._id}`);
     } catch (error) {
-        //res.status(500).json({ error: error.message });
         CustomError.generateError(
             ErrorMessages.USER_NOT_CREATED,
             500,
@@ -88,7 +89,6 @@ export const updateUser = async (req, res) => {
         const updatedUser = await updateOne(idUser, updateData);
         res.status(200).json({ message: "User updated", user: updatedUser });
     } catch (error) {
-        //res.status(500).json({ error: error.message });
         CustomError.generateError(
             ErrorMessages.USER_NOT_UPDATED,
             500,
@@ -103,7 +103,6 @@ export const findUserByEmail = async (req, res) => {
                 const user = await findByEmail(email);
                 res.status(200).json({ message: "User found by email", user });
             } catch (error) {
-                //res.status(500).json({ error: error.message });
                 CustomError.generateError(
                     ErrorMessages.USER_NOT_FOUND_BY_EMAIL,
                     500,
