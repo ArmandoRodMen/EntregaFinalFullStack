@@ -1,5 +1,4 @@
 <div class="section">
-
     <div class="section">
         <a class="btn btn-warning" href="/api/sessions/current">Checar mi rol</a>
         <a class="btn btn-info" href="/chat">Chat</a>
@@ -21,7 +20,7 @@
     </div>
 
     <h3 class="subtitle is-3">Chat de {{username}}</h3>
-    <h4 class="subtitle is-4" id="role">con role: {{role}}</h4>
+    <h4 class="subtitle is-4" id="role">{{role}}</h4>
 
     <form action="/api/chat" method="post">
         <div class="mb-3">
@@ -31,18 +30,11 @@
             <label for="exampleFormControlTextarea1" class="form-label">Manda un mensaje</label>
             <textarea type="text" class="form-control" name="message" id="message" rows="3"></textarea>
             <br>
+            {{#if (role === "premium")}}
+            <button type="submit" class="btn btn-primary" value="SEND" id="enviar" disabled>Enviar (Deshabilitado para Premium)</button>
+            {{else}}
             <button type="submit" class="btn btn-primary" value="SEND" id="enviar">Enviar</button>
+            {{/if}}
         </div>
     </form>
-
-    <script>
-        function validateRole(){
-            var role = document.getElementById("role").value;
-            if(role === "premium"){
-                document.getElementById("enviar").disabled = true;
-                return false;
-            }
-            return true;
-        }
-    </script>
 </div>

@@ -1,13 +1,22 @@
 import { productsDao } from "../DAL/DAO/mongodb/products.dao.js";
+    
+export const findAll = async () => {
+    try{
+        const products = await productsDao.findAll();
+        return products;
+    } catch (error) {
+        throw new Error("All products not found");
+    }
+};
 
-    export const findAggregation = async (query) => {
-        try {
-            const products = await productsDao.findAggregation(query);
-            return products;
-        } catch (error) {
-            throw new Error("Products not found");
-        }
-    };
+export const findAggregation = async (query) => {
+    try {
+        const products = await productsDao.findAggregation(query);
+        return products;
+    } catch (error) {
+        throw new Error("Products agreggation not found");
+    }
+};
 
     export const findById = async (idProduct) => {
         try {

@@ -29,7 +29,6 @@ passport.use(
                 role: role,
                 cart: createdCart,
         });
-        logger.information(createdUser);
         done(null, createdUser);
         }catch(error){
             done(error);
@@ -54,6 +53,7 @@ passport.use("login", new LocalStrategy({usernameField: "email"},async(email, pa
         done(error);
     }
 }));
+
 
 //github
 passport.use(

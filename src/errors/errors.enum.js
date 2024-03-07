@@ -38,6 +38,7 @@ export const ErrorMessages = {
   CAN_NOT_CREATE_MESSAGE: "Error creating message",
 
   //PRODUCTS
+  CAN_NOT_FIND_PRODUCTS: "Can not find products",
   CAN_NOT_FIND_AGGREGATION: "Can not find aggregation",
   CAN_NOT_FIND_PRODUCT_BY_ID: "Can not find product by id",
   CAN_NOT_CREATE_PRODUCT: "Can not create product",

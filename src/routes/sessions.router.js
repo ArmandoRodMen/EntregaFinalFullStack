@@ -4,6 +4,8 @@ import { hashData, compareData, generateToken } from "../utils.js";
 import passport from "passport";
 import { transporter } from "../utils/nodemailer.js";
 import { logger } from "../utils/logger.js";
+import bcrypt from "bcrypt";
+import jwt from "jsonwebtoken";
 
 const router = Router();
 
@@ -92,6 +94,7 @@ router.get(
         '/auth/google',
         passport.authenticate('google', { scope:[ 'email', 'profile' ] })
     );
+
     router.get( 
         '/auth/google/callback',
         passport.authenticate( 'google', { failureRedirect: '/error'}),
@@ -121,23 +124,65 @@ router.get("/:idUser/signout", async (req, res) => {
     }
 });
 
-router.post("/restaurar", async(req, res)=>{
-    const {email, password} = req.body;
-    try{
-        const user = await usersManager.findByEmail(email);
-        if (!user) {
-            return res.redirect("/");
-        }
-        const hashedPassword = await hashData(password);
-        user.password = hashedPassword;
+router.post("/restaurar", async (req, res) => {
+    const { email } = req.body;
+    const user = await usersDao.findByEmail(email);
+
+    if (user != null) {
+        const expirationTime = Date.now() + 3600000;
+        const randomNumber = Math.floor(Math.random() * 1000000);
+        const stringNumber = randomNumber.toString();
         await user.save();
-        res.status(200).json({message: "Password updated"});
-        res.status();
-    }catch(error){
-        res.status(500).json({error});
+        const hashedToken = await bcrypt.hash(stringNumber, 10);
+        let token = Buffer.from(hashedToken, 'binary').toString('hex');
+        token = token.slice(0, 13);
+        user.resetToken = token;
+        user.resetTokenExpiration = expirationTime;
+        await usersDao.updatePasswordResetToken(email, token, expirationTime);
+        const resetLink = `http://localhost:8080/reset/${token}`;
+        const mailOptions = {
+        from: "Armando Ecommerce",
+        to: email,
+        subject: "Restaurar contraseña",
+        html: `
+            <h1>Un saludo desde Armando Ecommerce</h1>
+            <p>Hola,</p>
+            <p>Para restablecer tu contraseña, haz clic en el siguiente enlace:</p>
+            <a href="${resetLink}">Restablecer Contraseña</a>
+            <p>Este enlace expirará en 1 hora.</p>
+            <p>Atentamente,<br>El equipo de Ecommerce</p>
+        `,
+        };
+        await transporter.sendMail(mailOptions);
+        res.redirect("/signup");
+    } else {
+        res.redirect("/signup");
     }
 });
 
-
+router.post("/reset/:token", async (req, res) => {
+    const { password, confirmPassword } = req.body;
+    const { token } = req.params;
+    const user = await usersDao.findByResetToken(token);
+    if (user && user.resetTokenExpiration > Date.now()) {
+        try {
+            const hashedPassword = await hashData(password);
+            const isPasswordInValid = await compareData(hashedPassword, user.password);
+            if(!isPasswordInValid){
+            console.log("anterior password",user.password);
+            user.password = hashedPassword;
+            user.resetToken = undefined;
+            user.resetTokenExpiration = undefined;
+            await user.save();
+            console.log("nuevo password",user.password);
+            return res.redirect("/signup");
+            };
+        } catch (error) {
+            console.error("Error al guardar la nueva contraseña:", error);
+            return res.render("reset", { error: "Error al restablecer la contraseña", token });
+        }
+    }
+    res.render("reset", { error: "Token no válido o expirado", token });
+});
 
 export default router;

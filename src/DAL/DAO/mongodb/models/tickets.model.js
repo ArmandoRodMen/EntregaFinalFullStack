@@ -10,6 +10,7 @@ const JWTStrategy = passportJWT.Strategy;
 const ticketsSchema = new mongoose.Schema({
     code: {
         type: String,
+        required: true,
         unique: true,
     },
     purchase_datetime: {
@@ -20,11 +21,18 @@ const ticketsSchema = new mongoose.Schema({
         type: Number,
         required: true,
     },
+
+    purchaser: {
+        type: String, 
+        required: true
+    },
+    
     /*
     purchaser: {
         type: mongoose.SchemaTypes.ObjectId,
         ref: "users",
-    },*/
+    },
+    */
 });
 
 export const ticketsModel = mongoose.model("tickets", ticketsSchema);

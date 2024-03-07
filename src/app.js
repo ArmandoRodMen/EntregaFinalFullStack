@@ -1,4 +1,5 @@
 import express from "express";
+
 import handlebars from "express-handlebars";
 import cookieParser from "cookie-parser";
 import productsRouter from "./routes/products.router.js";
@@ -56,6 +57,7 @@ app.use(
 //passport
 app.use(passport.initialize());
 app.use(passport.session());
+
 
 app.engine("handlebars", handlebars.engine());
 app.set("views", join(__dirname, "views"));

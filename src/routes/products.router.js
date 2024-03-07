@@ -1,19 +1,20 @@
 import { Router } from "express";
 import {
+  findAllProducts,
   findProductAggregation,
   findProductById,
   updateProductById,
   createProduct,
-  deleteProduct,
-  saveProduct
+  deleteProduct
 } from "../controllers/products.controller.js";
-import upload from "../middlewares/multer.middleware.js";
+import { authMiddleware } from "../middlewares/auth.middleware.js";
+import passport from "passport";
 const router = Router();
 
-router.get("/", findProductAggregation);
+router.get("/", findAllProducts);
+router.post("/", authMiddleware(["premium", "admin"]),createProduct);
 router.get("/:idProduct", findProductById);
-router.put("/:idProduct", updateProductById);
-router.post("/", createProduct);
-router.delete("/:idProduct", deleteProduct);
+router.put("/:idProduct", authMiddleware(["admin"]), updateProductById);
+router.delete("/:idProduct", authMiddleware(["premium", "admin"]), deleteProduct);
 
 export default router;
