@@ -33,6 +33,11 @@ class UsersDao{
         return response;
     }
 
+    async findUsersByLastConnection(condition) {
+        const response = await usersModel.find(condition);
+        return response;
+    }
+
     async updatePasswordResetToken(email, token, expirationTime) {
         const response = await usersModel.findOneAndUpdate(
             { email },

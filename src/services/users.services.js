@@ -33,8 +33,12 @@ export const deleteOne = async (id) => {
     return response;
 };
 
+export const findUsersByLastConnection = async (condition) => {
+    const inactiveUsers = await usersDao.findUsersByLastConnection(condition);
+    return inactiveUsers;
+};
+
 export const saveUserDocumentsService = async ({idUser, dni, address, bank}) => {
-    //return "Saved";
     const id = idUser;
     const saveDocuments = await usersDao.updateOne(id, 
     {
@@ -76,12 +80,9 @@ export const saveUserProductsService = async ({ idUser, products }) => {
         name: 'product', 
         reference: product.path 
     }));
-
     const saveProducts = await usersDao.updateOne(id, {
         $set: { products: productReferences }
     });
-
     const updatedUser = await usersDao.findById(id);
-
-    return updatedUser; // Or return saveProducts based on your requirements.
+    return updatedUser; 
 };

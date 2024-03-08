@@ -30,11 +30,7 @@
             <label for="exampleFormControlTextarea1" class="form-label">Manda un mensaje</label>
             <textarea type="text" class="form-control" name="message" id="message" rows="3"></textarea>
             <br>
-            {{#if (role === "premium")}}
-            <button type="submit" class="btn btn-primary" value="SEND" id="enviar" disabled>Enviar (Deshabilitado para Premium)</button>
-            {{else}}
             <button type="submit" class="btn btn-primary" value="SEND" id="enviar">Enviar</button>
-            {{/if}}
         </div>
     </form>
 </div>

@@ -1,5 +1,6 @@
 import { productsDao } from "../DAL/DAO/mongodb/products.dao.js";
-    
+import { usersDao } from "../DAL/DAO/mongodb/users.dao.js";    
+
 export const findAll = async () => {
     try{
         const products = await productsDao.findAll();
@@ -83,3 +84,12 @@ export const findAggregation = async (query) => {
         }
         return product;
     };
+
+    export const findOwnerById = async (ownerId) =>{
+        try{
+            const owner = await usersDao.findById(ownerId);
+            return owner;
+        }catch(error){
+            throw new Error("Error finding owner by ID");
+        }
+    }

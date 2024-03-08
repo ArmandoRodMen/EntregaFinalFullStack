@@ -6,6 +6,7 @@ import {
     createOne,
     updateOne,
     deleteOne,
+    findUsersByLastConnection,
     saveUserDocumentsService,
     saveUserProfilesService,
     saveUserProductsService
@@ -14,11 +15,18 @@ import CustomError from "../errors/error.generator.js";
 import { ErrorMessages } from "../errors/errors.enum.js";
 import { authMiddleware } from '../middlewares/auth.middleware.js';
 import { logger } from '../utils/logger.js';
+import { transporter } from '../utils/nodemailer.js';
 
 export const findUsers = async (req, res) => {
     try {
         const users = await findAll();
-        res.status(200).json({ message: "Users", users });
+        const simplifiedUsers = users.map(user => ({
+            first_name: user.first_name, 
+            email: user.email,
+            role: user.role
+        }));
+
+        res.status(200).json({ message: "Users", users: simplifiedUsers });
     } catch (error) {
         CustomError.generateError(
             ErrorMessages.USERS_NOT_FOUND,
@@ -61,8 +69,36 @@ export const deleteUser = async (req, res) => {
     };
 };
 
-export const deleteUserWithNoConnection = async (req, res) =>{
-    
+export const deleteUserWithNoConnection = async (req, res) => {
+    try {
+        const twoDaysAgo = new Date();
+        twoDaysAgo.setDate(twoDaysAgo.getDate() - 2);
+        const twoDaysAgoISO = twoDaysAgo.toISOString();
+        const inactiveUsers = await findUsersByLastConnection({ lastConnection: { $lte: twoDaysAgoISO } });
+        if (inactiveUsers.length === 0) {
+            return res.status(200).json({ message: "No hay usuarios sin conexión en los últimos dos días." });
+        }
+        for (const user of inactiveUsers) {
+            const mailOptions = {
+                from: "Armando Ecommerce",
+                to: user.email, 
+                subject: "Información importante sobre tu ceunta",
+                html: `
+                    <h1>Información importante</h1>
+                    <p>Hola ${user.first_name},</p>
+                    <p>Lamentamos informarte que tu cuenta ha sido eliminada debido a inactividad.</p>
+                    <p>Si crees que esto es un error o necesitas asistencia, por favor contacta a nuestro equipo de soporte.</p>
+                    <p>Atentamente,<br>El equipo de Armando Ecommerce</p>
+                `
+            };
+            await transporter.sendMail(mailOptions);
+            await deleteOne(user._id);
+        }
+        res.status(200).json({ message: "Usuarios eliminados y notificaciones enviadas" });
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ error: "Error al eliminar usuarios inactivos y enviar notificaciones" });
+    }
 }
 
 export const createUser = async (req, res) => {
