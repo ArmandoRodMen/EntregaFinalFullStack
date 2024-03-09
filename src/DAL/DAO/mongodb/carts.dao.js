@@ -11,6 +11,7 @@ class CartsDao{
         const response = await cartsModel.findById(idCart).populate("products.product");
         return response;
     }
+    
     async addProductToCart(idCart, idProduct){
         const cart = await cartsModel.findById(idCart);
         const productIndex = cart.products.findIndex(

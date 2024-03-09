@@ -22,7 +22,7 @@ router.get("/", getAllCartsData);
 router.post("/", createNewCart);
 
 router.get("/:idCart", findCart);
-router.post("/:idCart/products/:idProduct", authMiddleware(["user", "premium"]), avoidAddToCart(), addProduct);
+router.post("/:idCart/products/:idProduct", avoidAddToCart(), addProduct);
 router.get("/:idCart/products", getProductsInCart);
 router.get("/:idCart/products/:idProduct", getProductInCart );
 router.put("/:idCart/products/:idProduct", updateProductQuantity);

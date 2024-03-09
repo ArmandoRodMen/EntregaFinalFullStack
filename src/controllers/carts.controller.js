@@ -19,17 +19,26 @@ import { logger } from '../utils/logger.js';
 import mongoose from 'mongoose';
 
 export const createNewCart = async (req, res) => {
+    /*
+    console.log(req.params);
     try {
-        const newCart = await createCart();
+        const userId = req.user._id;
+        if (!userId) {
+            return res.status(401).json({ message: "User not authenticated" });
+        }
+        const newCart = await createCart(userId);
         res.status(200).json({ message: "Cart created", cart: newCart });
     } catch (error) {
+        logger.error(error); 
         CustomError.generateError(
             ErrorMessages.CART_NOT_CREATED,
             500,
             ErrorMessages.CART_NOT_CREATED
         );
     }
+    */
 };
+
 
 export const findCart = async (req, res) => {
     const { idCart } = req.params; 

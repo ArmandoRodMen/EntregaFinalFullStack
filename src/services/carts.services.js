@@ -3,10 +3,17 @@ import { cartsDao } from "../DAL/DAO/mongodb/carts.dao.js";
 import { ticketsDao } from "../DAL/DAO/mongodb/tickets.dao.js";
 import { v4 as uuidv4 } from "uuid";
 
-export const createCart = async () => {
-        const newCart = { products:[]};
-        const response = await cartsModel.create(newCart);
-        return response;
+
+export const createCart = async (userId) => {
+    if (!userId) {
+        throw new Error("User ID is required to create a cart");
+    }
+    const newCart = {
+        owner: userId, 
+        products: [] 
+    };
+    const response = await cartsModel.create(newCart);
+    return response;
 }
     
 export const findCartById = async (idCart) =>{

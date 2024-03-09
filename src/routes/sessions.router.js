@@ -25,7 +25,7 @@ router.post("/signup", passport.authenticate("signup"), async (req, res) => { //
             <p>Atentamente,<br>El equipo de Ecommerce</p>
         `
     };
-    logger.information("Mail enviado signup: ", email);
+    logger.information("Mail enviado");
     await transporter.sendMail(mailOptions);
     if (!first_name || !last_name || !email || !password || !username) {
         return res.status(400).json({ message: "Some data is missing" });

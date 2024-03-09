@@ -21,6 +21,7 @@ export const findUsers = async (req, res) => {
     try {
         const users = await findAll();
         const simplifiedUsers = users.map(user => ({
+            id: user.id,
             first_name: user.first_name, 
             email: user.email,
             role: user.role
@@ -72,7 +73,7 @@ export const deleteUser = async (req, res) => {
 export const deleteUserWithNoConnection = async (req, res) => {
     try {
         const twoDaysAgo = new Date();
-        twoDaysAgo.setDate(twoDaysAgo.getDate() - 2);
+        twoDaysAgo.setDate(twoDaysAgo.getDate() - 1);
         const twoDaysAgoISO = twoDaysAgo.toISOString();
         const inactiveUsers = await findUsersByLastConnection({ lastConnection: { $lte: twoDaysAgoISO } });
         if (inactiveUsers.length === 0) {
