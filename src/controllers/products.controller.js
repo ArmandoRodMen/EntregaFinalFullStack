@@ -30,8 +30,6 @@ export const findAllProducts = async (req, res) =>{
 
 
     export const findProductAggregation = async (req, res) => {
-        console.log(req.query);
-
         try {
             const products = await findAggregation(req.query);
             res.status(200).json({ message: "Products found", products });
@@ -63,7 +61,6 @@ export const findAllProducts = async (req, res) =>{
     
 export const createProduct = async (req, res) => {
     const { title, description, code, price, stock } = req.body;
-    console.log("Entrando a create product",req.body);
     if (!title || !description || !code || !price) {
         return res.status(400).json({ message: "Required data is missing" });
     }

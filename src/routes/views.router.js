@@ -11,23 +11,28 @@ router.get("/chat", async (req,res)=>{
   if(!req.session.user){
     res.redirect(`/login`);
   }else{
+    const idUser = req.session.user.id;
     const username = req.session.user.username;
+    const cart = req.session.user.cart;
     const role = req.session.user.role
     const messages = await messagesDao.findAll();
-    res.render("chat", { username, role, messages});
+    res.render("chat", {idUser, username, idCart:cart, role, messages});
   }
 });
 
 router.get("/products", async (req, res) => {
-  const logOut = req.session.user.id
-  const products = await productsDao.findAggregation(req.query);
-  res.render("products", { products: products, idUser: logOut });
+  const idUser = req.session.user.id;
+  const username = req.session.user.username;
+  const cart = req.session.user.cart;
+  const products = await productsDao.findAll();
+  res.render("products", { idUser, username, products, idCart:cart});
 });
 
 router.get("/cart/:idCart", async (req, res) => {
   const {idCart} = req.params;
-  const cartProducts = await cartsDao.findProductsInCart(idCart);
-  res.render("cart", {idCart, products:cartProducts} );
+  const idUser = req.session.user.id;
+  const products = await cartsDao.findProductsInCart(idCart);
+  res.render("cart", {idCart, idUser, products});
 });
 
 router.get("/signup", (req, res) => {
@@ -58,24 +63,12 @@ router.get("/profile/:idUser", async (req, res) => {
   }
 });
 
-router.get("/profile",(req, res)=>{
-  if (!req.session.passport){
-    return res.redirect("/login");
-  }
-  const {username} = req.user;
-  res.render("profile", {username});
-});
-
 router.get("/restaurar",(req, res) =>{
   res.render("restaurar");
 });
 
 router.get("/documents", (req, res)=>{
   res.render("documents");
-});
-
-router.get("/admin", (req,res)=>{
-  res.render("admin");
 });
 
 router.get("/reset/:token", async (req, res) => {

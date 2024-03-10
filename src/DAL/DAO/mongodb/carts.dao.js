@@ -27,13 +27,19 @@ class CartsDao{
     }
 
     async findProductsInCart(idCart){
-      const cart = await cartsModel.findCartById(idCart);
+      const cart = await cartsModel.findById(idCart).populate('products.product');
       if (!cart) {
         throw new Error("Cart not found");
       }
-      const productsInCart = cart.products.map(doc => doc.toObject());
+      const productsInCart = cart.products.map(doc => {
+          const productObj = doc.product.toObject();
+          return {
+              ...productObj,
+              quantity: doc.quantity
+          };
+      });
       return productsInCart;
-    }
+  }
 
     async updateProductInCart(idCart, idProduct, quantity) {
       const cart = await cartsModel.findCartById(idCart);

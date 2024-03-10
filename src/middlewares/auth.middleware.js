@@ -1,5 +1,6 @@
 import config from "../config.js";
 import jwt from "jsonwebtoken";
+import { logger } from "../utils/logger.js";
 
 const SECRET_KEY_JWT = config.SECRET_KEY_JWT;
 
@@ -11,13 +12,13 @@ export const authMiddleware = (roles) => {
             token = req.cookies.token; 
         }
         if (!token) {
-            console.log("token", token, "req.cookies: ", req.cookies," ", SECRET_KEY_JWT);
+            logger.information("token", token, "req.cookies: ", req.cookies," ", SECRET_KEY_JWT);
             return res.status(401).json({ message: 'Unauthorized: no hay usuario con token' });
         }
         try {      
             const decoded = jwt.verify(token, SECRET_KEY_JWT);
             req.user = decoded;
-                console.log(req.user.role, "estamos aca dentro")
+                logger.information(req.user.role, "estamos aca dentro")
         if (roles && !roles.includes(req.user.role)) {
             return res.status(403).json({ message: 'Your role is not authorized' });
         }

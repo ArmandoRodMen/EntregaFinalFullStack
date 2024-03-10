@@ -25,8 +25,6 @@ router.post("/signup", passport.authenticate("signup"), async (req, res) => { //
             <p>Atentamente,<br>El equipo de Ecommerce</p>
         `
     };
-    logger.information("Mail enviado");
-    await transporter.sendMail(mailOptions);
     if (!first_name || !last_name || !email || !password || !username) {
         return res.status(400).json({ message: "Some data is missing" });
     }
@@ -38,6 +36,7 @@ router.post("/signup", passport.authenticate("signup"), async (req, res) => { //
             return res.redirect(redirectUrl);
         }
         const createdUser = await usersDao.createOne({ ...req.body, password: hashedPassword });
+        await transporter.sendMail(mailOptions);
         res.redirect(redirectUrl);
     } catch (error) {
         res.status(500).json({ error });
@@ -61,9 +60,9 @@ router.post("/login", passport.authenticate("login"),  async (req, res) => { // 
         }
         const userId = user.id;
         await usersDao.updateOne({ _id: userId }, { lastConnection: Date.now() });
-        const {first_name, last_name, role} = user; 
+        const {first_name, last_name, role, cart} = user; 
         const token = generateToken({first_name, last_name, email, role});
-        req.session.user = {id: userId, email, first_name: user.first_name, username: user.username, role: user.role,token};
+        req.session.user = {id: userId, email, first_name: user.first_name, username: user.username, role: user.role, token, cart};
         res.redirect(redirectUrl);
     } catch (error) {
         logger.error(error);
@@ -74,7 +73,9 @@ router.get(
     "/current", async(req,res) =>{
         if(req.session.user.role){
             const role = req.session.user.role;
-            res.render("current", {role})
+            const idUser = req.session.user.id;
+            const idCart = req.session.user.cart;
+            res.render("current", {role, idUser, idCart});
         }
     }
 );
@@ -169,12 +170,10 @@ router.post("/reset/:token", async (req, res) => {
             const hashedPassword = await hashData(password);
             const isPasswordInValid = await compareData(hashedPassword, user.password);
             if(!isPasswordInValid){
-            console.log("anterior password",user.password);
             user.password = hashedPassword;
             user.resetToken = undefined;
             user.resetTokenExpiration = undefined;
             await user.save();
-            console.log("nuevo password",user.password);
             return res.redirect("/signup");
             };
         } catch (error) {

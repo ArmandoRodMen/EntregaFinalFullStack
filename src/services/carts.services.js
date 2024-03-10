@@ -3,7 +3,6 @@ import { cartsDao } from "../DAL/DAO/mongodb/carts.dao.js";
 import { ticketsDao } from "../DAL/DAO/mongodb/tickets.dao.js";
 import { v4 as uuidv4 } from "uuid";
 
-
 export const createCart = async (userId) => {
     if (!userId) {
         throw new Error("User ID is required to create a cart");
@@ -102,7 +101,7 @@ export const deleteCart= async (id)=>{
         return result;
 }
 
-export const purchase = async (idCart, req, res) =>{
+export const purchase = async (idCart, email, req, res) =>{
     const cart = await cartsDao.findCartById(idCart);
     const products = cart.products;
     let availableProducts = [];
@@ -121,13 +120,14 @@ export const purchase = async (idCart, req, res) =>{
     }
 
     cart.products = unavailableProducts;
+
     await cart.save();
     if(availableProducts.length){
         const ticket ={
             code: uuidv4(),
             purchase_datetime: new Date(),
             amount: total,
-            //purchaser: "test@mail.com",
+            purchaser: email,
         };
         await ticketsDao.createTicket(ticket);
         return {availableProducts, total};

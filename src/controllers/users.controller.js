@@ -24,7 +24,8 @@ export const findUsers = async (req, res) => {
             id: user.id,
             first_name: user.first_name, 
             email: user.email,
-            role: user.role
+            role: user.role,
+            cart: user.cart
         }));
 
         res.status(200).json({ message: "Users", users: simplifiedUsers });
@@ -54,20 +55,16 @@ export const findUser = async (req, res) => {
 };
 
 export const deleteUser = async (req, res) => {
-    const { idUser } = req.params;
-    const role = user.role;
-    if(role === "admin"){
-        try {
-            await deleteOne(idUser);
-            res.status(200).json({ message: "User deleted:" });
-        } catch (error) {
-            CustomError.generateError(
-                ErrorMessages.USER_NOT_DELETED,
-                500,
-                ErrorMessages.USER_NOT_DELETED
-            );
-        }
-    };
+    try {
+        await deleteOne(idUser);
+        res.status(200).json({ message: "User deleted:" });
+    } catch (error) {
+        CustomError.generateError(
+            ErrorMessages.USER_NOT_DELETED,
+            500,
+            ErrorMessages.USER_NOT_DELETED
+        );
+    }
 };
 
 export const deleteUserWithNoConnection = async (req, res) => {

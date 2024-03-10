@@ -23,7 +23,6 @@ class UsersDao{
     }
 
     async updateOne(id, obj){
-        console.log("id: ",id,"obj: ",obj);
         const response = await usersModel.updateOne({_id:id}, obj);
         return response;
     }

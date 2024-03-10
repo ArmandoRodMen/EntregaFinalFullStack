@@ -5038,3 +5038,1536 @@
   level: 'information',
   timestamp: '2024-03-09T03:53:16.398Z'
 }
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T04:01:03.955Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T04:01:11.454Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T04:01:30.078Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T04:01:42.188Z'
+}
+{
+  errors: {
+    owner: ValidatorError: Path `owner` is required.
+        at validate (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\schematype.js:1365:13)
+        at SchemaType.doValidate (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\schematype.js:1349:7)
+        at C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\document.js:2968:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        validator: [Function (anonymous)],
+        message: 'Path `owner` is required.',
+        type: 'required',
+        path: 'owner',
+        fullPath: undefined,
+        value: undefined
+      },
+      kind: 'required',
+      path: 'owner',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    }
+  },
+  _message: 'carts validation failed',
+  level: 'error',
+  timestamp: '2024-03-09T04:02:13.555Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T04:02:50.559Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T04:03:20.502Z'
+}
+{
+  errors: {
+    owner: ValidatorError: Path `owner` is required.
+        at validate (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\schematype.js:1365:13)
+        at SchemaType.doValidate (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\schematype.js:1349:7)
+        at C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\document.js:2968:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        validator: [Function (anonymous)],
+        message: 'Path `owner` is required.',
+        type: 'required',
+        path: 'owner',
+        fullPath: undefined,
+        value: undefined
+      },
+      kind: 'required',
+      path: 'owner',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    }
+  },
+  _message: 'carts validation failed',
+  level: 'error',
+  timestamp: '2024-03-09T04:03:53.621Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T04:14:25.175Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T04:14:26.802Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T04:14:48.081Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T04:14:49.254Z'
+}
+{
+  errors: {
+    owner: CastError: Cast to ObjectId failed for value "0" (type number) at path "owner" because of "BSONError"
+        at ObjectId.cast (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\schema\objectid.js:250:11)
+        at SchemaType.applySetters (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\schematype.js:1219:12)
+        at SchemaType.getDefault (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\schematype.js:1160:25)
+        at applyDefaults (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\helpers\document\applyDefaults.js:99:24)
+        at model.Document (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\document.js:157:7)
+        at model.Model (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\model.js:123:12)
+        at new model (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\model.js:4705:15)
+        at C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\model.js:2911:18
+        at Array.map (<anonymous>)
+        at Function.create (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\model.js:2900:30) {
+      stringValue: '"0"',
+      messageFormat: undefined,
+      kind: 'ObjectId',
+      value: 0,
+      path: 'owner',
+      reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+          at new ObjectId (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\node_modules\bson\lib\bson.cjs:2055:23)
+          at castObjectId (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\cast\objectid.js:25:12)
+          at ObjectId.cast (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\schema\objectid.js:248:12)
+          at SchemaType.applySetters (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\schematype.js:1219:12)
+          at SchemaType.getDefault (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\schematype.js:1160:25)
+          at applyDefaults (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\helpers\document\applyDefaults.js:99:24)
+          at model.Document (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\document.js:157:7)
+          at model.Model (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\model.js:123:12)
+          at new model (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\model.js:4705:15)
+          at C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\model.js:2911:18,
+      valueType: 'number'
+    }
+  },
+  _message: 'carts validation failed',
+  level: 'error',
+  timestamp: '2024-03-09T04:20:00.951Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T04:20:43.335Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T04:20:44.597Z'
+}
+{
+  errors: {
+    owner: CastError: Cast to ObjectId failed for value "0" (type number) at path "owner" because of "BSONError"
+        at ObjectId.cast (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\schema\objectid.js:250:11)
+        at SchemaType.applySetters (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\schematype.js:1219:12)
+        at SchemaType.getDefault (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\schematype.js:1160:25)
+        at applyDefaults (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\helpers\document\applyDefaults.js:99:24)
+        at model.Document (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\document.js:157:7)
+        at model.Model (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\model.js:123:12)
+        at new model (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\model.js:4705:15)
+        at C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\model.js:2911:18
+        at Array.map (<anonymous>)
+        at Function.create (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\model.js:2900:30) {
+      stringValue: '"0"',
+      messageFormat: undefined,
+      kind: 'ObjectId',
+      value: 0,
+      path: 'owner',
+      reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+          at new ObjectId (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\node_modules\bson\lib\bson.cjs:2055:23)
+          at castObjectId (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\cast\objectid.js:25:12)
+          at ObjectId.cast (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\schema\objectid.js:248:12)
+          at SchemaType.applySetters (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\schematype.js:1219:12)
+          at SchemaType.getDefault (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\schematype.js:1160:25)
+          at applyDefaults (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\helpers\document\applyDefaults.js:99:24)
+          at model.Document (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\document.js:157:7)
+          at model.Model (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\model.js:123:12)
+          at new model (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\model.js:4705:15)
+          at C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\model.js:2911:18,
+      valueType: 'number'
+    }
+  },
+  _message: 'carts validation failed',
+  level: 'error',
+  timestamp: '2024-03-09T04:20:51.678Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T04:21:07.700Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T04:21:10.761Z'
+}
+{
+  errors: {
+    owner: CastError: Cast to ObjectId failed for value "0" (type string) at path "owner" because of "BSONError"
+        at ObjectId.cast (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\schema\objectid.js:250:11)
+        at SchemaType.applySetters (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\schematype.js:1219:12)
+        at SchemaType.getDefault (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\schematype.js:1160:25)
+        at applyDefaults (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\helpers\document\applyDefaults.js:99:24)
+        at model.Document (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\document.js:157:7)
+        at model.Model (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\model.js:123:12)
+        at new model (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\model.js:4705:15)
+        at C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\model.js:2911:18
+        at Array.map (<anonymous>)
+        at Function.create (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\model.js:2900:30) {
+      stringValue: '"0"',
+      messageFormat: undefined,
+      kind: 'ObjectId',
+      value: '0',
+      path: 'owner',
+      reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+          at new ObjectId (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\node_modules\bson\lib\bson.cjs:2055:23)
+          at castObjectId (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\cast\objectid.js:25:12)
+          at ObjectId.cast (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\schema\objectid.js:248:12)
+          at SchemaType.applySetters (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\schematype.js:1219:12)
+          at SchemaType.getDefault (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\schematype.js:1160:25)
+          at applyDefaults (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\helpers\document\applyDefaults.js:99:24)
+          at model.Document (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\document.js:157:7)
+          at model.Model (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\model.js:123:12)
+          at new model (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\model.js:4705:15)
+          at C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\model.js:2911:18,
+      valueType: 'string'
+    }
+  },
+  _message: 'carts validation failed',
+  level: 'error',
+  timestamp: '2024-03-09T04:21:13.022Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T04:22:02.258Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T04:22:13.737Z'
+}
+{
+  errors: {
+    owner: CastError: Cast to ObjectId failed for value "000000" (type string) at path "owner" because of "BSONError"
+        at ObjectId.cast (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\schema\objectid.js:250:11)
+        at SchemaType.applySetters (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\schematype.js:1219:12)
+        at SchemaType.getDefault (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\schematype.js:1160:25)
+        at applyDefaults (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\helpers\document\applyDefaults.js:99:24)
+        at model.Document (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\document.js:157:7)
+        at model.Model (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\model.js:123:12)
+        at new model (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\model.js:4705:15)
+        at C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\model.js:2911:18
+        at Array.map (<anonymous>)
+        at Function.create (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\model.js:2900:30) {
+      stringValue: '"000000"',
+      messageFormat: undefined,
+      kind: 'ObjectId',
+      value: '000000',
+      path: 'owner',
+      reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+          at new ObjectId (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\node_modules\bson\lib\bson.cjs:2055:23)
+          at castObjectId (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\cast\objectid.js:25:12)
+          at ObjectId.cast (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\schema\objectid.js:248:12)
+          at SchemaType.applySetters (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\schematype.js:1219:12)
+          at SchemaType.getDefault (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\schematype.js:1160:25)
+          at applyDefaults (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\helpers\document\applyDefaults.js:99:24)
+          at model.Document (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\document.js:157:7)
+          at model.Model (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\model.js:123:12)
+          at new model (C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\model.js:4705:15)
+          at C:\Users\Arman\Desktop\Coderhouse\fullstack\clase4\node_modules\mongoose\lib\model.js:2911:18,
+      valueType: 'string'
+    }
+  },
+  _message: 'carts validation failed',
+  level: 'error',
+  timestamp: '2024-03-09T04:22:16.867Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T04:25:58.351Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T04:26:02.782Z'
+}
+{
+  message: 'Mail enviado',
+  level: 'information',
+  timestamp: '2024-03-09T04:26:05.944Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T04:30:55.298Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T04:30:56.536Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T04:33:23.814Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T04:33:25.052Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T04:43:51.478Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T04:43:52.870Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T04:44:13.878Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T04:44:14.932Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T04:45:55.184Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T04:45:56.460Z'
+}
+{
+  message: 'Mail enviado',
+  level: 'information',
+  timestamp: '2024-03-09T04:46:20.796Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T04:48:24.987Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T04:48:26.193Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T04:49:03.024Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T04:49:20.207Z'
+}
+{
+  message: 'Mail enviado',
+  level: 'information',
+  timestamp: '2024-03-09T04:50:20.923Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T04:50:46.397Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T04:50:47.915Z'
+}
+{ level: 'error', timestamp: '2024-03-09T04:50:51.189Z' }
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T04:51:18.368Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T04:51:19.466Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T04:51:40.533Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T04:51:41.598Z'
+}
+{
+  message: 'Mail enviado',
+  level: 'information',
+  timestamp: '2024-03-09T04:51:50.201Z'
+}
+{ level: 'error', timestamp: '2024-03-09T04:51:57.093Z' }
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T04:54:28.786Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T04:54:33.222Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T04:54:46.835Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T04:54:49.888Z'
+}
+{ level: 'error', timestamp: '2024-03-09T04:55:33.469Z' }
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T04:59:52.653Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T04:59:54.183Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T05:01:28.220Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T05:01:40.362Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T05:04:55.282Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T05:05:13.525Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T05:05:50.042Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T05:05:51.196Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T05:06:37.954Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T05:06:39.038Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T05:07:56.981Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T05:07:58.361Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T05:14:06.481Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T05:14:07.708Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T05:16:30.391Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T05:16:31.961Z'
+}
+{ level: 'error', timestamp: '2024-03-09T05:17:23.685Z' }
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T05:18:10.962Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T05:18:12.530Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T05:19:18.259Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T05:19:19.418Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T05:20:37.550Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T05:20:40.758Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T05:22:54.883Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T05:22:56.005Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T05:23:16.975Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T05:23:17.991Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T05:29:03.601Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T05:29:10.896Z'
+}
+{
+  message: 'Mail enviado',
+  level: 'information',
+  timestamp: '2024-03-09T05:29:25.853Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T05:33:37.985Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T05:33:43.213Z'
+}
+{
+  level: 'information',
+  message: 'Mail enviado signup: ',
+  timestamp: '2024-03-09T05:34:03.248Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T05:36:47.153Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T05:36:48.332Z'
+}
+{
+  level: 'information',
+  message: 'Mail enviado signup: ',
+  timestamp: '2024-03-09T05:37:19.676Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T05:37:59.561Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T05:38:01.730Z'
+}
+{
+  level: 'information',
+  message: 'Mail enviado signup: ',
+  timestamp: '2024-03-09T05:38:31.354Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T05:39:10.017Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T05:39:11.659Z'
+}
+{ level: 'error', timestamp: '2024-03-09T05:39:40.481Z' }
+{ level: 'error', timestamp: '2024-03-09T05:41:52.158Z' }
+{ level: 'error', timestamp: '2024-03-09T05:42:28.700Z' }
+{ level: 'error', timestamp: '2024-03-09T05:42:30.516Z' }
+{ level: 'error', timestamp: '2024-03-09T05:42:39.523Z' }
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T05:42:48.044Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T05:43:15.693Z'
+}
+{ level: 'error', timestamp: '2024-03-09T05:43:16.938Z' }
+{ level: 'error', timestamp: '2024-03-09T05:43:16.964Z' }
+{ level: 'error', timestamp: '2024-03-09T05:43:49.286Z' }
+{ level: 'error', timestamp: '2024-03-09T05:43:57.320Z' }
+{ level: 'error', timestamp: '2024-03-09T05:44:16.849Z' }
+{ level: 'error', timestamp: '2024-03-09T05:44:22.213Z' }
+{ level: 'error', timestamp: '2024-03-09T05:48:56.383Z' }
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T05:50:53.645Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T05:50:54.799Z'
+}
+{ level: 'error', timestamp: '2024-03-09T05:51:02.283Z' }
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T05:51:26.055Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T05:51:27.388Z'
+}
+{ level: 'error', timestamp: '2024-03-09T05:51:29.961Z' }
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T05:52:01.388Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T05:52:13.677Z'
+}
+{ level: 'error', timestamp: '2024-03-09T05:52:20.118Z' }
+{ level: 'error', timestamp: '2024-03-09T05:53:12.614Z' }
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T05:53:20.156Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T05:53:21.290Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T05:53:50.213Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T05:54:01.417Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T05:57:09.130Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T05:57:16.860Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T05:58:20.724Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T05:58:21.935Z'
+}
+{ level: 'error', timestamp: '2024-03-09T05:58:24.492Z' }
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T05:58:43.647Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T05:58:44.672Z'
+}
+{ level: 'error', timestamp: '2024-03-09T05:58:46.840Z' }
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T06:00:35.707Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T06:00:37.245Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T06:01:42.238Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T06:01:43.523Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T15:18:34.908Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T15:18:36.275Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T15:20:20.381Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T15:20:21.460Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T15:21:30.833Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T15:21:32.119Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T15:28:06.426Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T15:28:07.720Z'
+}
+{
+  level: 'information',
+  message: 'signout',
+  timestamp: '2024-03-09T15:31:38.320Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T15:33:27.849Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T15:33:28.917Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T15:34:08.119Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T15:34:09.190Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T15:34:32.541Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T15:34:33.623Z'
+}
+{
+  level: 'information',
+  message: 'signout',
+  timestamp: '2024-03-09T15:34:35.055Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T15:36:42.479Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T15:36:43.692Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T16:02:12.057Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T16:02:13.475Z'
+}
+{
+  level: 'information',
+  message: 'signout',
+  timestamp: '2024-03-09T16:02:17.306Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T16:02:31.895Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T16:02:33.770Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T16:03:15.337Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T16:03:16.549Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T16:03:45.734Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T16:03:46.840Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T16:03:59.236Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T16:04:00.381Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T16:04:25.697Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T16:04:27.200Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T16:05:13.176Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T16:05:14.225Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T16:05:36.694Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T16:05:38.953Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T16:06:03.708Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T16:06:04.709Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T16:07:31.370Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T16:07:32.519Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T16:08:36.191Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T16:08:37.543Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T16:10:16.984Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T16:10:18.206Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T16:15:23.088Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T16:15:24.314Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T16:19:20.229Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T16:19:23.715Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T16:19:28.675Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T16:19:33.825Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T16:21:51.922Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T16:21:53.490Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T16:22:09.628Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T16:22:10.625Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T16:22:41.650Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T16:22:42.639Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T16:23:14.404Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T16:23:16.058Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T16:23:34.561Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T16:23:36.105Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T16:24:06.433Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T16:24:07.569Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T16:25:12.023Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T16:25:13.114Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T16:25:32.860Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T16:25:33.896Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T16:28:22.801Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T16:28:23.966Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T16:28:47.603Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T16:28:48.593Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T16:30:41.219Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T16:30:42.490Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T16:31:22.017Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T16:31:23.059Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T16:33:28.202Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T16:33:29.449Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T16:35:10.013Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T16:35:11.218Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T16:35:13.260Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T16:35:14.245Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T16:38:15.944Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T16:38:17.737Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T16:40:10.228Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T16:40:11.511Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T16:42:22.421Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T16:42:23.843Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T16:43:32.604Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T16:43:33.871Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-09T16:46:03.927Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-09T16:46:05.115Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-10T01:35:41.807Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-10T01:35:44.529Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-10T01:36:31.152Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-10T01:36:32.165Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-10T01:37:08.619Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-10T01:37:10.899Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-10T01:57:53.024Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-10T01:57:56.661Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-10T02:05:35.630Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-10T02:05:36.807Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-10T02:09:34.781Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-10T02:09:36.061Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-10T02:10:29.580Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-10T02:10:30.948Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-10T02:10:39.302Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-10T02:10:40.618Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-10T02:13:50.733Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-10T02:13:52.385Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-10T02:14:55.107Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-10T02:14:56.571Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-10T02:19:08.867Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-10T02:19:10.228Z'
+}
+{
+  level: 'information',
+  message: 'signout',
+  timestamp: '2024-03-10T02:19:33.504Z'
+}
+{
+  level: 'information',
+  message: 'signout',
+  timestamp: '2024-03-10T02:20:34.356Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-10T02:20:57.095Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-10T02:20:59.227Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-10T02:21:42.671Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-10T02:21:43.732Z'
+}
+{
+  level: 'information',
+  message: 'signout',
+  timestamp: '2024-03-10T02:21:54.935Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-10T02:22:46.084Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-10T02:22:47.300Z'
+}
+{
+  level: 'information',
+  message: 'signout',
+  timestamp: '2024-03-10T02:22:49.950Z'
+}
+{
+  level: 'information',
+  message: 'signout',
+  timestamp: '2024-03-10T02:33:09.678Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-10T02:33:25.216Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-10T02:33:26.423Z'
+}
+{
+  message: 'Cart not found with the id provided',
+  level: 'warning',
+  timestamp: '2024-03-10T02:43:43.046Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-10T02:44:48.691Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-10T02:44:50.066Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-10T02:45:09.941Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-10T02:45:11.041Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-10T02:45:42.711Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-10T02:45:43.778Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-10T02:51:07.706Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-10T02:51:08.850Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-10T03:01:49.560Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-10T03:01:50.670Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-10T03:03:14.259Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-10T03:03:15.695Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-10T03:04:54.185Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-10T03:05:00.212Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-10T03:07:32.946Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-10T03:07:37.361Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-10T03:08:21.024Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-10T03:08:23.029Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-10T03:09:51.323Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-10T03:09:52.355Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-10T03:10:04.146Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-10T03:10:05.820Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-10T03:12:28.076Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-10T03:12:29.935Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-10T03:14:49.764Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-10T03:14:50.882Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-10T03:15:00.168Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-10T03:15:01.320Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-10T03:21:22.577Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-10T03:21:24.758Z'
+}

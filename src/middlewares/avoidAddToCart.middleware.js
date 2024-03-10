@@ -1,6 +1,7 @@
 import { findById as findProductById } from "../services/products.services.js";
 import { findById as findUserById } from "../services/users.services.js";
 import { findCartById } from "../services/carts.services.js";
+import { logger } from "../utils/logger.js";
 
 export const avoidAddToCart = () => {
     return async (req, res, next) => {      
@@ -21,7 +22,7 @@ export const avoidAddToCart = () => {
             }
             next();
         } catch (error) { 
-            console.log("error: ", error);       
+            logger.error("error: ", error);       
             return res.status(401).json({ message: 'Unauthorized error' });        
         }
     };

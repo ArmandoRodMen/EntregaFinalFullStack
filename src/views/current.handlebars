@@ -4,10 +4,10 @@
         <a class="btn btn-info" href="/chat">Chat</a>
         <a class="btn btn-danger" href="/api/sessions/{{idUser}}/signout">Logout</a>
         <a class="btn btn-success" href="/products">Productos</a>
-        <a class="btn btn-success" href="/api/carts/">Mi carrito</a>
+        <a class="btn btn-secondary" href="/cart/{{idCart}}">Mi carrito {{idCart}}</a>
     </div>
 
     <div class="mb-3">
-        <h3 class="subtitle is-3" >Hi! you have a {{role}} role</h3>
+        <h3 class="subtitle is-3" >Hi! {{idUser}} you have a {{role}} role</h3>
     </div>
 </div>

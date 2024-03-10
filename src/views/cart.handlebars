@@ -4,26 +4,125 @@
         <a class="btn btn-info" href="/chat">Chat</a>
         <a class="btn btn-danger" href="/api/sessions/{{idUser}}/signout">Logout</a>
         <a class="btn btn-success" href="/products">Productos</a>
-        <a class="btn btn-success" href="/api/carts/">Mi carrito</a>
+        <a class="btn btn-secondary" href="/cart/{{idCart}}">Mi carrito {{idCart}}</a>
     </div>
 
     <h2 class="subtitle is-2">Los productos del carrito {{idCart}} son:</h2>
 
     {{#each products}}
         <div class="section" >
-            <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="{{product.thumbnail}}" width="100" alt="{{product.description}}">
+            <div class="card" style="width: 100%;">
                 <div class="card-body">
-                    <h5 class="card-title">{{product.title}}</h5>
-                    <p class="card-text">{{product.description}}</p>
-                    <p class="card-text">Precio: $ {{product.price}}</p>
-                    <p class="card-text">Stock: {{product.stock}}</p>
-                    <p class="card-text">Category: {{product.category}}</p>
+                    <h5 class="card-title">{{title}}</h5>
+                    <p class="card-text">{{description}}</p>
+                    <p class="card-text">Precio: $ {{price}}</p>
+                    <p class="card-text">Stock: {{stock}}</p>
+                    <p class="card-text">Category: {{category}}</p>
                     <p class="card-text">Quantity: {{quantity}}</p>
                     <br>
-                    <button type="button" class="btn btn-danger">Eliminar</button>
+                    <button type="button" onclick="deleteProduct('{{../idCart}}', '{{_id}}')" class="btn btn-danger">Eliminar {{_id}} del carrito {{../idCart}}</button>
                 </div>
             </div>
         </div>
     {{/each}}
+    <button type="button" class="btn btn-primary" onclick="completePurchaseAndRedirect('{{idCart}}')">Check Out {{idCart}}</button>
 </div>
+
+<script>
+    function deleteProduct(idCart, idProduct) {
+        fetch(`/api/carts/${idCart}/products/${idProduct}`, {
+            method: 'DELETE',
+        }).then(response => {
+            if(response.ok) {
+                Toastify({
+                    text: "Producto eliminado del carrito exitosamente",
+                    duration: 3000,
+                    newWindow: true,
+                    close: true,
+                    gravity: "top", 
+                    position: "right", 
+                    stopOnFocus: true,
+                    style: {
+                        background: "linear-gradient(to right, #ff416c, #ff4b2b)",
+                    },
+                }).showToast();
+                location.reload();
+            } else {
+                Toastify({
+                    text: "Error al eliminar el producto",
+                    duration: 3000,
+                    newWindow: true,
+                    close: true,
+                    gravity: "top",
+                    position: "right",
+                    stopOnFocus: true,
+                    style: {
+                        background: "linear-gradient(to right, #ff416c, #ff4b2b)",
+                    },
+                }).showToast();
+            }
+        }).catch(error => {
+            console.error('Error:', error);
+            Toastify({
+                text: "Error al procesar la petición",
+                duration: 3000,
+                newWindow: true,
+                close: true,
+                gravity: "top",
+                position: "right",
+                stopOnFocus: true,
+                style: {
+                    background: "linear-gradient(to right, #ff416c, #ff4b2b)",
+                },
+            }).showToast();
+        });
+    }
+
+    function completePurchaseAndRedirect(idCart) {
+        fetch(`/api/carts/${idCart}/purchase`, {
+            method: 'GET', // Asegúrate de que este método coincida con cómo está configurado tu endpoint
+        }).then(response => {
+            if(response.ok) {
+                // SweetAlert para notificar al usuario
+                Swal.fire({
+                    title: '¡Compra completada!',
+                    text: 'Se ha realizado tu compra y se ha enviado un correo electrónico de confirmación.',
+                    icon: 'success',
+                    confirmButtonText: 'Ok'
+                }).then((result) => {
+                    // Redirección después de cerrar el SweetAlert
+                    if (result.isConfirmed) {
+                        window.location.href = '/products';
+                    }
+                });
+            } else {
+                Toastify({
+                    text: "Error al completar la compra",
+                    duration: 3000,
+                    newWindow: true,
+                    close: true,
+                    gravity: "top", 
+                    position: "right", 
+                    stopOnFocus: true,
+                    style: {
+                        background: "linear-gradient(to right, #ff416c, #ff4b2b)",
+                    },
+                }).showToast();
+            }
+        }).catch(error => {
+            console.error('Error:', error);
+            Toastify({
+                text: "Error al procesar la petición",
+                duration: 3000,
+                newWindow: true,
+                close: true,
+                gravity: "top",
+                position: "right",
+                stopOnFocus: true,
+                style: {
+                    background: "linear-gradient(to right, #ff416c, #ff4b2b)",
+                },
+            }).showToast();
+        });
+    }
+</script>

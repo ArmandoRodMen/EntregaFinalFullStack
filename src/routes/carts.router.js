@@ -1,6 +1,5 @@
 import { Router } from "express";
 import {
-    createNewCart,
     findCart,
     addProduct,
     getProductsInCart,
@@ -19,10 +18,9 @@ import { avoidAddToCart } from "../middlewares/avoidAddToCart.middleware.js";
 const router = Router();
 
 router.get("/", getAllCartsData);
-router.post("/", createNewCart);
 
 router.get("/:idCart", findCart);
-router.post("/:idCart/products/:idProduct", avoidAddToCart(), addProduct);
+router.post("/:idCart/products/:idProduct", addProduct);
 router.get("/:idCart/products", getProductsInCart);
 router.get("/:idCart/products/:idProduct", getProductInCart );
 router.put("/:idCart/products/:idProduct", updateProductQuantity);
