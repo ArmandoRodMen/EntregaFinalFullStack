@@ -69,7 +69,6 @@ app.use("/api/products", productsRouter);
 app.use("/api/cookie", cookieRouter);
 app.use("/api/carts", cartsRouter);
 app.use("/api/users", usersRouter);
-//app.use("/api/chat", messageRouter);
 app.use("/", viewsRouter);
 app.use("/api/docs", swaggerUi.serve, swaggerUi.setup(swaggerSetup)); // :)
 app.use(errorMiddleware);
@@ -102,14 +101,13 @@ const socketServer = new Server(httpServer);
 socketServer.on("connection", (socket) => {
     logger.information(`Nueva detección: ${socket.id}`);
     
-    socket.on("newUser", (username) => { // Asegúrate de recibir el nombre correcto del usuario
+    socket.on("newUser", (username) => { 
         logger.information(`Cliente conectado: ${username}`);
         socket.broadcast.emit("userConnected", username);
         socket.emit("connected");
     });
 
     socket.on("message", async (messageData) => {
-        // messageData ya debería incluir { email, message }
         try {
             await messagesDao.createOne(messageData);
             let allMessages = await messagesDao.findAll();

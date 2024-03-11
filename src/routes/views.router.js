@@ -52,24 +52,17 @@ router.get("/login", async (req, res) => {
   }
 });
 
-router.get("/profile/:idUser", async (req, res) => {
-  if(!req.session.user){
-    res.redirect(`/login`);
-  }else{
-    const { idUser } = req.params;
-    const user = await usersDao.findById(idUser);
-    const products = await productsDao.findAll();
-    const { first_name, last_name, username } = user;
-    res.render("profile", { first_name, last_name, username, products });
-  }
-});
-
 router.get("/restaurar",(req, res) =>{
   res.render("restaurar");
 });
 
 router.get("/documents", (req, res)=>{
-  res.render("documents");
+  const idUser = req.session.user.id;
+  const username = req.session.user.username;
+  const cart = req.session.user.cart;
+  const role = req.session.user.role;
+  const email = req.session.user.email;
+  res.render("documents", {idUser, username, idCart:cart, role, email});
 });
 
 router.get("/reset/:token", async (req, res) => {

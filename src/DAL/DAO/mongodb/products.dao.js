@@ -61,29 +61,3 @@ class ProductsDao {
 }
 
 export const productsDao = new ProductsDao();
-
-
-    /*
-    async findAggregation(){
-        
-        const result = await productsModel.aggregate([
-            {$match :{
-                $and: [
-                    {stock: {$gt: 0}}, 
-                    {stock:{$lt:9}},
-                    {statues: true }
-                ],
-                },
-            },
-            
-            {
-                $group:{
-                    _id: "$category",
-                },
-            },
-            
-            {$sort: { price: -1}},
-        ]);
-        return result;
-    }
-    */

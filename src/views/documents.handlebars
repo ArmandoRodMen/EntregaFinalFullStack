@@ -1,16 +1,44 @@
-<form action="/api/users/65d76243907bed1d8a7f573f/documents" enctype="multipart/form-data" method="post">
-    DNI: <input type="file" name="dni" id="dni">
-    ADDRESS: <input type="file" name="address" id="address">
-    BANK: <input type="file" name="bank" id="bank">
-    <input type="submit" value="Enviar">
-</form>
+<div class="section">
+    <div class="section">
+        <a class="btn btn-warning" href="/api/sessions/current">Checar mi rol</a>
+        <a class="btn btn-info" href="/chat">Chat</a>
+        <a class="btn btn-success" href="/products">Productos</a>
+        <a class="btn btn-dark" href="/documents">Subir documentos</a>
+        <a class="btn btn-secondary" href="/cart/{{idCart}}">Mi Carrito {{idCart}}</a>
+        <a class="btn btn-danger" href="/api/sessions/{{idUser}}/signout">Logout {{idUser}}</a>
+    </div>
 
-<form action="/api/users/65d76243907bed1d8a7f573f/profiles" enctype="multipart/form-data" method="post">
-    Profile Picture: <input type="file" name="profiles" id="profiles">
-    <input type="submit" value="Enviar">
-</form>
+    <h2 class="subtitle is-1">¡Hola {{username}}!</h2>
+    <h2 class="subtitle is-2">Puedes subir tus docuemntos: </h2>
 
-<form action="/api/users/65d76243907bed1d8a7f573f/products" enctype="multipart/form-data" method="post">
-    thumbnail: <input type="file" name="products" id="products" multiple>
-    <input type="submit" value="Enviar">
-</form>
+    <div class="container-fluid">
+        <form action="/api/users/{{idUser}}/documents" enctype="multipart/form-data" method="post">
+            <div class="form-group">
+                DNI: <input type="file" name="dni" id="dni" class="form-control">
+                ADDRESS: <input type="file" name="address" id="address" class="form-control">
+                BANK: <input type="file" name="bank" id="bank" class="form-control">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+
+        <form action="/api/users/{{idUser}}/profiles" enctype="multipart/form-data" method="post">
+            <div class="container-fluid">
+                Profile Picture: <input type="file" name="profiles" id="profiles" class="form-control" >
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+
+        <form action="/api/users/{{idUser}}/products" enctype="multipart/form-data" method="post">
+            <div class="container-fluid">
+                thumbnail: <input type="file" name="products" id="products" multiple class="form-control">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+
+    </div>
+    <form action="/api/users/premium/{{idUser}}" method="POST" id="changeRoleForm">
+        <button type="submit" class="btn btn-light">Cambiar role</button>
+    </form>
+</div>
+
+

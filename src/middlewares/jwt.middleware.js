@@ -14,7 +14,6 @@ export const jwtValidation = (req, res, next)=>{
     }catch(error){
         logger.error("JWT Validation Error:", error);
         res.status(401).json({ error: "Unauthorized: Invalid token" });
-
     }
 }
 

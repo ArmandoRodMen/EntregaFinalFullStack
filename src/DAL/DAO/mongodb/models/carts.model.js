@@ -2,14 +2,6 @@
 import mongoose from "mongoose";
 
 const cartsSchema = new mongoose.Schema({
-    /*
-    owner: { 
-        type: mongoose.Schema.Types.ObjectId, 
-        ref: 'user',
-        default: new mongoose.Types.ObjectId('65ebd68d1b17e2fc0913242e'),
-        required: true
-    },
-    */
     products: [
         {
             product: {

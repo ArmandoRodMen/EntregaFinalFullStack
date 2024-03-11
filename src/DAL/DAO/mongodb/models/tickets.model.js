@@ -27,12 +27,6 @@ const ticketsSchema = new mongoose.Schema({
         required: true
     },
     
-    /*
-    purchaser: {
-        type: mongoose.SchemaTypes.ObjectId,
-        ref: "users",
-    },
-    */
 });
 
 export const ticketsModel = mongoose.model("tickets", ticketsSchema);
@@ -47,7 +41,6 @@ passport.use(
         },
         async function (jwt_payload, done) {
             try {
-                // Asociar el email con el campo purchaser
                 const user = await usersDao.findByEmail(jwt_payload.email);
                 if (!user) {
                     return done(null, false, { message: "Usuario no encontrado" });

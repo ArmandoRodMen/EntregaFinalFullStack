@@ -27,6 +27,3 @@ export const avoidAddToCart = () => {
         }
     };
 };
-
-
-//http://localhost:8080/api/carts/6590ecddc462610925a7e6cc/products/65c3dd2ab08563648a677caf adminCod3r123 adminCoder@coder.com
