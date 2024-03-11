@@ -14,9 +14,10 @@ router.get("/chat", async (req,res)=>{
     const idUser = req.session.user.id;
     const username = req.session.user.username;
     const cart = req.session.user.cart;
-    const role = req.session.user.role
+    const role = req.session.user.role;
+    const email = req.session.user.email;
     const messages = await messagesDao.findAll();
-    res.render("chat", {idUser, username, idCart:cart, role, messages});
+    res.render("chat", {idUser, username, idCart:cart, role, messages, email});
   }
 });
 

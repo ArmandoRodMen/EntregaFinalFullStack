@@ -8,6 +8,8 @@ import { hashData, compareData } from "./utils.js";
 import { ExtractJwt, Strategy as JWTStrategy} from "passport-jwt";
 import config from "./config.js";
 import { logger } from "./utils/logger.js";
+import UsersRequestDto from "./DAL/DTO/users-request.dto.js";
+import UsersResponseDto from "./DAL/DTO/users-response.dto.js";
 
 //local
 passport.use(
@@ -35,23 +37,25 @@ passport.use(
         }
 }));
 
-passport.use("login", new LocalStrategy({usernameField: "email"},async(email, password, done)=>{
-    if (!email || !password) {
-        done(null, false);
-    }
-    try {
-        const user = await usersDao.findByEmail(email);
-        if (!user) {
-            return done(null, false);       
+passport.use("login", new LocalStrategy({
+        usernameField: "email"
+    },async(email, password, done)=>{
+        if (!email || !password) {
+            done(null, false, {message: 'All fields are required'});
         }
-        const isPasswordValid = await compareData(password, user.password);
-        if (!isPasswordValid) {
-            return done(null, false);
+        try {
+            const user = await usersDao.findByEmail(email);
+            if (!user) {
+                return done(null, false);       
+            }
+            const isPasswordValid = await compareData(password, user.password);
+            if (!isPasswordValid) {
+                return done(null, false);
+            }
+            done(null,user);
+        } catch (error) {
+            done(error);
         }
-        done(null,user);
-    } catch (error) {
-        done(error);
-    }
 }));
 
 
@@ -126,25 +130,30 @@ passport.use(
     }
 ));
 
-const current = (req) =>{
+const fromCookies = (req) =>{ //-
     return req.cookies.token;
 };
 
 //JWT
-passport.use("jwt", 
-    new JWTStrategy({
-        jwtFromRequest: ExtractJwt.fromExtractors([current]),
-        secretOrKey: config.SECRET_KEY_JWT,
-}, async function (jwt_payload, done) {
-    logger.information("jwt: ",jwt_payload.email);
+passport.use( //-
+    "jwt", 
+    new JWTStrategy(
+        {
+            jwtFromRequest: ExtractJwt.fromExtractors([fromCookies]),
+            secretOrKey: config.SECRET_KEY_JWT,
+        }, 
+        async function (jwt_payload, done) {
+        logger.information("jwt: ",jwt_payload.email);
         done(null,jwt_payload);
-}));
+        }
+    )
+);
 
-passport.serializeUser((user, done) =>{
+passport.serializeUser((user, done) =>{ //-
     done(null, user._id);
 });
 
-passport.deserializeUser(async (id, done) =>{
+passport.deserializeUser(async (id, done) =>{ //-
     try{
         const user = await usersDao.findById(id);
         done(null, user);

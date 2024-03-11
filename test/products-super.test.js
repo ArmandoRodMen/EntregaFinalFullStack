@@ -33,28 +33,6 @@ describe("Products endpoints", ()=>{
         });
     });
     
-    /*
-    describe("POST /api/products ",()=>{
-        it("Should create a product", async()=>{
-            const response = await requester.post("/api/products").send(productMock);
-            expect(response.status).to.equal(201);
-            expect(response._body).to.have.property('message', 'Product created');
-            expect(response._body).to.have.property('product').that.is.an('object');
-            expect(response._body.product).to.include({
-                title: productMock.title,
-                description: productMock.description,
-                code: productMock.code,
-                category: productMock.category,
-            });
-            expect(response._body.product.price).to.be.a('number');
-            expect(response._body.product.price).to.equal(productMock.price);
-            expect(response._body.product.stock).to.equal(productMock.stock);
-            expect(response._body.product).to.have.property('_id').that.is.a('string');
-
-        });
-    });
-    */
-    
     describe("GET /api/products/:id ",()=>{
         it("Should get an especific product", async()=>{
             const response = await requester.get(`/api/products/${prodId}`);
@@ -64,7 +42,6 @@ describe("Products endpoints", ()=>{
         });
     });
     
-    
     describe("PUT /api/products/:id ",()=>{
         it("Should update an especific product", async()=>{
             const response = await requester.put(`/api/products/${prodId}`).send(updateMock);
@@ -72,15 +49,4 @@ describe("Products endpoints", ()=>{
             expect(response._body).to.have.property('message', 'Product updated');
         });
     });
-    
-    /*
-    describe("DELETE /api/products/:id ",()=>{
-        it("Should delete a product", async()=>{
-            const response = await requester.delete(`/api/products/${prodId}`);
-            expect(response.status).to.equal(200);
-            expect(response._body).to.have.property('message', 'Product deleted');
-        });
-    });
-    */
-    
 });

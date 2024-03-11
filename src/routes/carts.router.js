@@ -31,3 +31,5 @@ router.delete("/:idCart", removeCartById);
 router.get("/:idCart/purchase", getTotal);
 
 export default router;
+
+//authMiddleware(["user", "premium"]), avoidAddToCart()

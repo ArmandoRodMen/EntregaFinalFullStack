@@ -1,8 +1,8 @@
-export default class UsersResponse {
-    constructor(user) {
-      this.first_name = user.name.split(" ")[0];
-      this.last_name = user.name.split(" ")[1];
-      this.email = user.email;
-      this.orders = user.orders;
-    }
+export default class UsersResponseDto {
+  constructor(user) {
+    this.first_name = user.name ? user.name.split(" ")[0] : user.first_name,
+    this.last_name = user.name ? user.name.split(" ")[user.name.split(" ").length - 1] : user.last_name,
+    this.email = user.email;
+    this.role = user.role
   }
+}

@@ -7,7 +7,7 @@ import cartsRouter from "./routes/carts.router.js";
 import usersRouter from "./routes/users.router.js";
 import { __dirname } from "./utils.js";
 import viewsRouter from "./routes/views.router.js";
-import messageRouter from "./routes/messages.router.js";
+//import messageRouter from "./routes/messages.router.js";
 import cookieRouter from "./routes/cookie.router.js";
 import sessionsRouter from "./routes/sessions.router.js";
 import session from "express-session";
@@ -26,6 +26,7 @@ import { swaggerSetup } from "./utils/swagger.js";
 import swaggerUi from "swagger-ui-express";
 import {join} from "path";
 import { Server } from "socket.io";
+import { messagesDao } from "./DAL/DAO/mongodb/messages.dao.js";
 
 const app = express();
 
@@ -68,9 +69,10 @@ app.use("/api/products", productsRouter);
 app.use("/api/cookie", cookieRouter);
 app.use("/api/carts", cartsRouter);
 app.use("/api/users", usersRouter);
-app.use("/api/chat", messageRouter);
+//app.use("/api/chat", messageRouter);
 app.use("/", viewsRouter);
 app.use("/api/docs", swaggerUi.serve, swaggerUi.setup(swaggerSetup)); // :)
+app.use(errorMiddleware);
 
 app.get("/mockingproducts",(req, res) =>{ // :)
     const products = [];
@@ -95,19 +97,25 @@ const httpServer = app.listen(8080, () => {
     logger.information("Escuchando puerto 8080 con logger");
 });
 
-app.use(errorMiddleware);
-
 const socketServer = new Server(httpServer);
 
 socketServer.on("connection", (socket) => {
-    logger.info(`Cliente conectado: ${socket.id}`);
-    socket.on("newUser", (user) => {
-        socket.broadcast.emit("userConnected", user);
+    logger.information(`Nueva detección: ${socket.id}`);
+    
+    socket.on("newUser", (username) => { // Asegúrate de recibir el nombre correcto del usuario
+        logger.information(`Cliente conectado: ${username}`);
+        socket.broadcast.emit("userConnected", username);
         socket.emit("connected");
     });
-    socket.on("message", async(infoMessage) => {
-        await messagesManager.createOne(infoMessage);
-        const allMessages = await messagesManager.findAll()
-        socketServer.emit("chat", allMessages);
+
+    socket.on("message", async (messageData) => {
+        // messageData ya debería incluir { email, message }
+        try {
+            await messagesDao.createOne(messageData);
+            let allMessages = await messagesDao.findAll();
+            socketServer.emit("chat", allMessages);
+        } catch (error) {
+            console.error("Error handling message event:", error);
+        }
     });
 });

@@ -2,12 +2,12 @@
     <div class="section">
         <a class="btn btn-warning" href="/api/sessions/current">Checar mi rol</a>
         <a class="btn btn-info" href="/chat">Chat</a>
-        <a class="btn btn-danger" href="/api/sessions/{{idUser}}/signout">Logout</a>
         <a class="btn btn-success" href="/products">Productos</a>
-        <a class="btn btn-secondary" href="/cart/{{idCart}}">Mi carrito {{idCart}}</a>
+        <a class="btn btn-secondary" href="/cart/{{idCart}}">Mi carrito</a>
+        <a class="btn btn-danger" href="/api/sessions/{{idUser}}/signout">Logout</a>
     </div>
     
-    <div class="mb-3">
+    <div id="chat" class="mb-3">
         {{#each messages}}
         <article class="message is-link">
             <div class="message-header">
@@ -20,18 +20,20 @@
         {{/each}}
     </div>
 
-    <h3 class="subtitle is-3">Chat de {{username}}</h3>
+    <h2 class="subtitle is-2" >Chat de</h2>
+    <h2 class="subtitle is-3" id="idUser">{{idUser}}</h2>
+    <h2 class="subtitle is-3" id="email">{{email}}</h2>
+    <h3 class="subtitle is-3" id="username">{{username}}</h3>
     <h4 class="subtitle is-4" id="role">{{role}}</h4>
-
-    <form action="/api/chat" method="post">
+    <form id="chatForm">
         <div class="mb-3">
-            <input type="text" name="username" id="username" class="form-control" value="{{username}}" aria-label="Disabled input example" readonly>
-        </div>
-        <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Manda un mensaje</label>
-            <textarea type="text" class="form-control" name="message" id="message" rows="3"></textarea>
+            <label for="messageInput" class="form-label">Manda un mensaje</label>
+            <textarea class="form-control" id="messageInput" rows="3"></textarea>
             <br>
-            <button type="submit" class="btn btn-primary" value="SEND" id="enviar">Enviar</button>
+            <button class="btn btn-primary" id="sendMessage">Enviar</button>
         </div>
     </form>
 </div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script type="text/javascript" src="/js/chat.js"></script>

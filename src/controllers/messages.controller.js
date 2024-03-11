@@ -1,3 +1,4 @@
+/*
 import passport from 'passport';
 import {
     findAll,
@@ -21,15 +22,18 @@ export const findMessages = async (req, res) => {
     }
 };
 
-export const createMessage = async (req, res) => {
-    const { username, message} = req.body;
-    if (!username && !message) {
-        CustomError.generateError(
-            ErrorMessages.BAD_DATA,
-            400,
-            ErrorMessages.BAD_DATA
-        );
-    }else{
-        message = createOne(username, message)
+export const createMessage = async (infoMessage) => {
+    const { username, message } = infoMessage;
+
+    if (!username || !message) {
+        return res.status(400).send({ error: 'Username and message are required.' });
+    }
+
+    try {
+        const newMessage = await createOne({ username, message }); // Asume que esta función está definida para tomar un objeto con username y message
+        logger.information(newMessage);
+    } catch (error) {
+        logger.error({ error: 'Error creating the message.' });
     }
 };
+*/

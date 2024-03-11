@@ -9,12 +9,7 @@ describe("Get all users", function(){
     it("should return an array", async function(){
         const result = await this.usersDao.findAll();
         expect(result).to.be.an("array");
-        //expect(result).to.have.lengthOf(0);
     });
-    /*
-    it("should have a length", async function(){
-
-    })*/
 });
 
 describe("Create user", function(){

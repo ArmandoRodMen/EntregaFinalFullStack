@@ -1,3 +1,4 @@
+/*
 import { Router } from "express";
 import {
     findMessages,
@@ -9,7 +10,8 @@ import { authMiddleware } from "../middlewares/auth.middleware.js";
 const router = Router();
 
 router.get("/", findMessages);
-router.post("/", avoidMessages(), createMessage);
+router.post("/", createMessage);
 //router.post("/", authMiddleware(["premium"]), avoidMessages(), createMessage);
 
 export default router;
+*/

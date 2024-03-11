@@ -2,9 +2,9 @@
     <div class="section">
         <a class="btn btn-warning" href="/api/sessions/current">Checar mi rol</a>
         <a class="btn btn-info" href="/chat">Chat</a>
-        <a class="btn btn-danger" href="/api/sessions/{{idUser}}/signout">Logout</a>
         <a class="btn btn-success" href="/products">Productos</a>
-        <a class="btn btn-secondary" href="/cart/{{idCart}}">Mi carrito {{idCart}}</a>
+        <a class="btn btn-secondary" href="/cart/{{idCart}}">Mi carrito</a>
+        <a class="btn btn-danger" href="/api/sessions/{{idUser}}/signout">Logout</a>
     </div>
 
     <h2 class="subtitle is-2">Los productos del carrito {{idCart}} son:</h2>
@@ -46,6 +46,7 @@
                         background: "linear-gradient(to right, #ff416c, #ff4b2b)",
                     },
                 }).showToast();
+                setTimeout(3000);
                 location.reload();
             } else {
                 Toastify({
@@ -63,18 +64,6 @@
             }
         }).catch(error => {
             console.error('Error:', error);
-            Toastify({
-                text: "Error al procesar la petición",
-                duration: 3000,
-                newWindow: true,
-                close: true,
-                gravity: "top",
-                position: "right",
-                stopOnFocus: true,
-                style: {
-                    background: "linear-gradient(to right, #ff416c, #ff4b2b)",
-                },
-            }).showToast();
         });
     }
 
@@ -83,14 +72,12 @@
             method: 'GET', // Asegúrate de que este método coincida con cómo está configurado tu endpoint
         }).then(response => {
             if(response.ok) {
-                // SweetAlert para notificar al usuario
                 Swal.fire({
                     title: '¡Compra completada!',
                     text: 'Se ha realizado tu compra y se ha enviado un correo electrónico de confirmación.',
                     icon: 'success',
                     confirmButtonText: 'Ok'
                 }).then((result) => {
-                    // Redirección después de cerrar el SweetAlert
                     if (result.isConfirmed) {
                         window.location.href = '/products';
                     }
