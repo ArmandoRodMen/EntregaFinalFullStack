@@ -1,0 +1,23 @@
+{{#each user}}
+    <div class="section">
+        <div class="card" style="width: 50rem;">
+            <div class="card-body">
+                <h5 class="card-title">{{this.username}}</h5>
+                <p class="card-text">{{this.idUser}}</p>
+                <p class="card-text">{{this.first_name}}</p>
+                <p class="card-text">{{this.email}}</p>
+                <p class="card-text">Rol actual: {{this.role}}</p>
+                <form onsubmit="changeUserRole(event, '{{this.idUser}}')">
+                    <select name="newRole">
+                        <option value="user">user</option>
+                        <option value="premium">premium</option>
+                    </select>
+                    <button type="submit">Cambiar rol</button>
+                </form>
+                <button onclick="deleteUser('{{this.idUser}}')">Eliminar usuario</button>
+            </div>
+        </div>
+    </div>
+{{/each}}
+
+<script type="text/javascript" src="/js/admin.js"></script>

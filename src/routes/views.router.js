@@ -4,7 +4,8 @@ import { usersDao } from "../DAL/DAO/mongodb/users.dao.js";
 import { productsDao } from "../DAL/DAO/mongodb/products.dao.js";
 import { cartsDao } from "../DAL/DAO/mongodb/carts.dao.js";
 import { compareData, hashData } from "../utils.js";
-
+import { findUsers } from "../controllers/users.controller.js";
+import { findAll } from "../services/users.services.js";
 const router = Router();
 
 router.get("/chat", async (req,res)=>{
@@ -18,6 +19,23 @@ router.get("/chat", async (req,res)=>{
     const email = req.session.user.email;
     const messages = await messagesDao.findAll();
     res.render("chat", {idUser, username, idCart:cart, role, messages, email});
+  }
+});
+
+router.get("/admin", async (req, res)=>{
+  try {
+      const users = await findAll();
+      const simplifiedUsers = users.map(user => ({
+          idUser: user._id,
+          first_name: user.first_name,
+          username: user.username,
+          email: user.email,
+          role: user.role,
+          cart: user.cart
+      }));
+      res.render("admin", {user:simplifiedUsers});
+  } catch (error) {
+    res.status(500).send(error.message);
   }
 });
 

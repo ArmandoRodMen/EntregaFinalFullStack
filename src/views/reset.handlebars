@@ -14,18 +14,6 @@
             <button type="submit" class="btn btn-primary" onclick="return validatePasswords()">Submit</button>
         </form>
     </div>
-
-    <script>
-        function validatePasswords() {
-            var password = document.getElementById("password").value;
-            var confirmPassword = document.getElementById("confirmPassword").value;
-
-            if (password !== confirmPassword) {
-                document.getElementById("passwordMismatch").style.display = "block";
-                return false;
-            }
-
-            return true;
-        }
-    </script>
 </div>
+
+<script type="text/javascript" src="/js/reset.js"></script>

@@ -8586,3 +8586,488 @@
   level: 'information',
   timestamp: '2024-03-11T16:36:27.397Z'
 }
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-11T17:53:18.940Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-11T17:53:30.709Z'
+}
+{
+  level: 'information',
+  message: 'signout',
+  timestamp: '2024-03-11T17:53:34.647Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-11T17:55:23.939Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-11T17:55:27.539Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-11T17:56:01.271Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-11T17:56:02.288Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-11T17:56:52.489Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-11T17:56:53.692Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-11T17:58:16.226Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-11T17:58:17.347Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-11T17:59:03.457Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-11T18:00:48.407Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-11T18:00:49.834Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-11T18:01:28.419Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-11T18:01:29.454Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-11T18:06:34.037Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-11T18:06:35.183Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-11T18:07:14.584Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-11T18:07:15.573Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-11T18:07:49.014Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-11T18:07:55.215Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-11T18:08:26.719Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-11T18:08:27.766Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-11T18:10:18.559Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-11T18:10:19.792Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-11T18:16:02.748Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-11T18:16:05.050Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-11T18:31:26.970Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-11T18:31:28.213Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-11T18:32:28.788Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-11T18:32:29.936Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-11T18:32:38.951Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-11T18:32:39.898Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-11T18:32:55.760Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-11T18:32:56.773Z'
+}
+{
+  message: 'Nueva detección: QBl5D_8SCcU9Ys7mAAAB',
+  level: 'information',
+  timestamp: '2024-03-11T18:35:15.395Z'
+}
+{
+  message: 'Cliente conectado: armandorodriguez.1',
+  level: 'information',
+  timestamp: '2024-03-11T18:35:15.509Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-11T18:39:25.626Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-11T18:39:26.901Z'
+}
+{
+  level: 'information',
+  message: 'signout',
+  timestamp: '2024-03-11T18:40:11.004Z'
+}
+{
+  message: 'Nueva detección: TfaXtAz0P29K48R7AAAB',
+  level: 'information',
+  timestamp: '2024-03-11T18:40:26.184Z'
+}
+{
+  message: 'Cliente conectado: armandorodriguez.1',
+  level: 'information',
+  timestamp: '2024-03-11T18:40:26.311Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-11T18:41:18.418Z'
+}
+{
+  message: 'Nueva detección: W2awcU_fYU9K5bSiAAAB',
+  level: 'information',
+  timestamp: '2024-03-11T18:41:18.523Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-11T18:41:19.893Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-11T18:41:27.180Z'
+}
+{
+  message: 'Nueva detección: 1xsgycgVg0QJHs_GAAAB',
+  level: 'information',
+  timestamp: '2024-03-11T18:41:27.272Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-11T18:41:28.233Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-11T18:41:43.563Z'
+}
+{
+  message: 'Nueva detección: -Lpj5Bx3_BtRjpsqAAAB',
+  level: 'information',
+  timestamp: '2024-03-11T18:41:43.588Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-11T18:41:45.054Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-11T18:42:28.885Z'
+}
+{
+  message: 'Nueva detección: iK-tIGHZJs1ziqFKAAAB',
+  level: 'information',
+  timestamp: '2024-03-11T18:42:29.280Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-11T18:42:30.138Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-11T18:42:44.848Z'
+}
+{
+  message: 'Nueva detección: hQe9Bt7Il4d0-CDNAAAB',
+  level: 'information',
+  timestamp: '2024-03-11T18:42:45.280Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-11T18:42:47.213Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-11T18:43:57.474Z'
+}
+{
+  message: 'Nueva detección: S2TAKO3IrvuX1HqcAAAB',
+  level: 'information',
+  timestamp: '2024-03-11T18:43:57.572Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-11T18:43:59.134Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-11T18:44:14.387Z'
+}
+{
+  message: 'Nueva detección: IVXFVWmhignTWWo6AAAB',
+  level: 'information',
+  timestamp: '2024-03-11T18:44:14.554Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-11T18:44:15.659Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-11T18:44:29.733Z'
+}
+{
+  message: 'Nueva detección: HiHhhxkC7zNiT0htAAAB',
+  level: 'information',
+  timestamp: '2024-03-11T18:44:30.281Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-11T18:44:31.081Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-11T18:44:46.547Z'
+}
+{
+  message: 'Nueva detección: Zo2kwC2scufABAmDAAAB',
+  level: 'information',
+  timestamp: '2024-03-11T18:44:47.268Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-11T18:44:47.553Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-11T18:45:10.242Z'
+}
+{
+  message: 'Nueva detección: 7vVeZl7sxf2rZLdBAAAB',
+  level: 'information',
+  timestamp: '2024-03-11T18:45:10.278Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-11T18:45:11.580Z'
+}
+{
+  level: 'information',
+  message: 'signout',
+  timestamp: '2024-03-11T18:45:24.485Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-11T19:21:14.243Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-11T19:21:28.457Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-11T23:42:19.677Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-11T23:42:30.560Z'
+}
+{ level: 'error', timestamp: '2024-03-11T23:42:31.038Z' }
+{ level: 'error', timestamp: '2024-03-11T23:42:31.712Z' }
+{ level: 'error', timestamp: '2024-03-11T23:43:19.088Z' }
+{ level: 'error', timestamp: '2024-03-11T23:43:24.069Z' }
+{ level: 'error', timestamp: '2024-03-11T23:43:24.269Z' }
+{ level: 'error', timestamp: '2024-03-11T23:43:58.516Z' }
+{ level: 'error', timestamp: '2024-03-11T23:43:59.205Z' }
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-11T23:45:25.111Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-11T23:45:26.356Z'
+}
+{ level: 'error', timestamp: '2024-03-11T23:45:52.743Z' }
+{ level: 'error', timestamp: '2024-03-11T23:45:53.027Z' }
+{ level: 'error', timestamp: '2024-03-11T23:46:04.523Z' }
+{ level: 'error', timestamp: '2024-03-11T23:46:05.516Z' }
+{ level: 'error', timestamp: '2024-03-11T23:46:05.813Z' }
+{ level: 'error', timestamp: '2024-03-11T23:46:08.059Z' }
+{ level: 'error', timestamp: '2024-03-11T23:46:08.867Z' }
+{ level: 'error', timestamp: '2024-03-11T23:46:09.152Z' }
+{
+  message: 'Nueva detección: sBEiNrgHEzyRAEwEAAAB',
+  level: 'information',
+  timestamp: '2024-03-11T23:51:26.941Z'
+}
+{
+  message: 'Cliente conectado: tvynovelas',
+  level: 'information',
+  timestamp: '2024-03-11T23:51:27.057Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-12T00:09:12.934Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-12T00:09:14.482Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-12T00:14:24.714Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-12T00:14:35.976Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-12T00:22:52.801Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-12T00:22:58.437Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-12T00:24:02.552Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-12T00:24:03.679Z'
+}
+{
+  level: 'information',
+  message: 'signout',
+  timestamp: '2024-03-12T00:24:39.577Z'
+}
+{
+  level: 'information',
+  message: 'signout',
+  timestamp: '2024-03-12T00:26:09.339Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-12T00:43:08.700Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-12T00:43:09.778Z'
+}

@@ -22,7 +22,8 @@ export const findUsers = async (req, res) => {
         const users = await findAll();
         const simplifiedUsers = users.map(user => ({
             id: user.id,
-            first_name: user.first_name, 
+            first_name: user.first_name,
+            username: user.username,
             email: user.email,
             role: user.role,
             cart: user.cart
@@ -37,6 +38,7 @@ export const findUsers = async (req, res) => {
         );
     }
 };
+
 
 export const findUser = async (req, res) => {
         const { idUser } = req.params;
@@ -55,6 +57,7 @@ export const findUser = async (req, res) => {
 };
 
 export const deleteUser = async (req, res) => {
+    const { idUser } = req.params;
     try {
         await deleteOne(idUser);
         res.status(200).json({ message: "User deleted:" });
@@ -118,10 +121,15 @@ export const createUser = async (req, res) => {
 
 export const updateUser = async (req, res) => {
     const { idUser } = req.params;
-    const updateData = req.body;
+    const { role } = req.body;
     try {
-        const updatedUser = await updateOne(idUser, updateData);
-        res.status(200).json({ message: "User updated", user: updatedUser });
+        const user = await findById(idUser);
+        if (!user) {
+            return res.status(404).json({ message: "Usuario no encontrado" });
+        }
+        user.role = role;
+        await user.save();
+        res.status(200).json({ message: "Rol de usuario actualizado" });
     } catch (error) {
         CustomError.generateError(
             ErrorMessages.USER_NOT_UPDATED,

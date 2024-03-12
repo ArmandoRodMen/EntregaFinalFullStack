@@ -1,12 +1,21 @@
-import { productsService } from "../repositoryServices/index.js";
+import {
+    findAll,
+    findAggregation,
+    findById,
+    createOne,
+    deleteOne,
+    updateOne,
+    findOwnerById,
+    saveProductService
+} from "../services/products.services"; 
 
 export const avoidDeletion = () => {
     return async (req, res, next) => {      
         try {      
-            const { pid } = req.params
-            const product = await productsService.findProdById(pid)
+            const { idProduct } = req.params
+            const product = await findById(idProduct)
             if ((req.user.role === 'premium') && (product.owner != req.user._id)) {
-                return res.status(403).json({message: 'You cant delete a product that you dont own'})
+                return res.status(403).json({message: 'You cant delete a product that you do not own'})
             }                        
             next();
             } catch (error) {
