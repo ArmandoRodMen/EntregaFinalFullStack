@@ -20,7 +20,7 @@ const router = Router();
 router.get("/", getAllCartsData);
 
 router.get("/:idCart", findCart);
-router.post("/:idCart/products/:idProduct", authMiddleware(["premium", "admin"]), avoidAddToCart(), addProduct);
+router.post("/:idCart/products/:idProduct", authMiddleware(["premium", "user"]), avoidAddToCart(), addProduct);
 router.get("/:idCart/products", getProductsInCart);
 router.get("/:idCart/products/:idProduct", getProductInCart );
 router.put("/:idCart/products/:idProduct", updateProductQuantity);
@@ -32,4 +32,3 @@ router.get("/:idCart/purchase", getTotal);
 
 export default router;
 
-//authMiddleware(["user", "premium"]), avoidAddToCart()

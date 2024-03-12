@@ -1,10 +1,8 @@
-import passport from 'passport';
 import {
     findAll,
     findById,
     findByEmail,
     createOne,
-    updateOne,
     deleteOne,
     findUsersByLastConnection,
     saveUserDocumentsService,

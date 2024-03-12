@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 import passportJWT from "passport-jwt";
-import passport from "passport"; // Agrega esta línea para importar passport
+import passport from "passport"; 
 import { usersDao } from "../users.dao.js";
 import config from "../../../../config.js";
 

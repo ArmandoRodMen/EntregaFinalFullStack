@@ -9071,3 +9071,558 @@
   level: 'information',
   timestamp: '2024-03-12T00:43:09.778Z'
 }
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-12T00:53:30.177Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-12T00:53:31.346Z'
+}
+{
+  message: 'Nueva detección: VxLzVIzt5ZTYQ6X4AAAB',
+  level: 'information',
+  timestamp: '2024-03-12T00:53:44.205Z'
+}
+{
+  message: 'Cliente conectado: tvynovelas',
+  level: 'information',
+  timestamp: '2024-03-12T00:53:44.231Z'
+}
+{
+  message: 'Nueva detección: jUA2IUL9t2FqmS_2AAAD',
+  level: 'information',
+  timestamp: '2024-03-12T00:54:04.331Z'
+}
+{
+  message: 'Cliente conectado: tvynovelas',
+  level: 'information',
+  timestamp: '2024-03-12T00:54:04.447Z'
+}
+{
+  level: 'information',
+  message: 'signout',
+  timestamp: '2024-03-12T00:54:15.940Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-12T00:54:32.119Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-12T00:54:33.305Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-12T04:15:37.447Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-12T04:15:38.724Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-12T04:16:06.712Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-12T04:16:07.735Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-12T04:32:08.279Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-12T04:32:09.402Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-12T04:32:59.290Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-12T04:33:00.270Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-12T04:35:23.378Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-12T04:35:24.557Z'
+}
+{
+  level: 'information',
+  message: 'token',
+  timestamp: '2024-03-12T04:35:57.738Z'
+}
+{
+  level: 'information',
+  message: 'token',
+  timestamp: '2024-03-12T04:35:59.633Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-12T04:37:18.057Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-12T04:37:19.156Z'
+}
+{
+  level: 'information',
+  message: 'token',
+  timestamp: '2024-03-12T04:37:25.463Z'
+}
+{
+  level: 'information',
+  message: 'token',
+  timestamp: '2024-03-12T04:37:26.851Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-12T04:37:35.045Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-12T04:37:36.000Z'
+}
+{
+  level: 'information',
+  message: 'token',
+  timestamp: '2024-03-12T04:37:38.988Z'
+}
+{
+  level: 'information',
+  message: 'token',
+  timestamp: '2024-03-12T04:37:40.009Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-12T04:38:27.315Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-12T04:38:28.551Z'
+}
+{
+  level: 'information',
+  message: 'token',
+  timestamp: '2024-03-12T04:38:31.401Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-12T04:39:28.875Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-12T04:39:30.240Z'
+}
+{
+  level: 'information',
+  message: 'token',
+  timestamp: '2024-03-12T04:39:31.352Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-12T04:39:38.190Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-12T04:39:39.191Z'
+}
+{
+  level: 'information',
+  message: 'token',
+  timestamp: '2024-03-12T04:39:41.039Z'
+}
+{
+  level: 'information',
+  message: 'signout',
+  timestamp: '2024-03-12T04:43:41.647Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-12T04:44:24.224Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-12T04:44:25.334Z'
+}
+{
+  level: 'information',
+  message: 'signout',
+  timestamp: '2024-03-12T04:44:25.761Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-12T04:46:00.659Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-12T04:46:02.021Z'
+}
+{
+  level: 'information',
+  message: 'signout',
+  timestamp: '2024-03-12T04:46:02.492Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-12T04:48:30.285Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-12T04:48:31.407Z'
+}
+{
+  level: 'information',
+  message: 'signout',
+  timestamp: '2024-03-12T04:48:32.716Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-12T04:50:56.110Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-12T04:50:57.292Z'
+}
+{
+  level: 'information',
+  message: 'signout',
+  timestamp: '2024-03-12T04:50:57.728Z'
+}
+{
+  level: 'information',
+  message: 'admin',
+  timestamp: '2024-03-12T04:51:12.787Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-12T04:51:35.015Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-12T04:51:36.035Z'
+}
+{
+  level: 'information',
+  message: 'admin',
+  timestamp: '2024-03-12T04:51:37.552Z'
+}
+{
+  message: 'Nueva detección: cVmClCdQXYYTrGvZAAAB',
+  level: 'information',
+  timestamp: '2024-03-12T04:52:21.700Z'
+}
+{
+  message: 'Cliente conectado: armandorodriguez.1',
+  level: 'information',
+  timestamp: '2024-03-12T04:52:21.810Z'
+}
+{
+  level: 'information',
+  message: 'user',
+  timestamp: '2024-03-12T04:52:27.994Z'
+}
+{
+  level: 'information',
+  message: 'user',
+  timestamp: '2024-03-12T04:52:29.000Z'
+}
+{
+  message: 'Nueva detección: vCEdsTkPIYeHuWkTAAAD',
+  level: 'information',
+  timestamp: '2024-03-12T04:52:31.456Z'
+}
+{
+  message: 'Cliente conectado: armandorodriguez.1',
+  level: 'information',
+  timestamp: '2024-03-12T04:52:31.458Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-12T04:52:50.639Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-12T04:52:51.650Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-12T04:53:08.532Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-12T04:53:09.478Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-12T04:53:24.757Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-12T04:53:25.702Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-12T04:53:35.740Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-12T04:53:36.696Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-12T04:53:41.931Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-12T04:53:42.888Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-12T04:54:23.910Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-12T04:54:25.058Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-12T04:54:30.141Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-12T04:54:31.092Z'
+}
+{
+  level: 'information',
+  message: 'signout',
+  timestamp: '2024-03-12T04:56:44.494Z'
+}
+{
+  level: 'information',
+  message: 'signout',
+  timestamp: '2024-03-12T04:56:55.213Z'
+}
+{
+  level: 'information',
+  message: 'premium',
+  timestamp: '2024-03-12T04:57:05.804Z'
+}
+{
+  level: 'error',
+  message: "error:  Cannot read properties of null (reading 'role')",
+  stack: "TypeError: Cannot read properties of null (reading 'role')\n" +
+    '    at file:///C:/Users/Arman/Desktop/Coderhouse/fullstack/clase4/src/middlewares/avoidAddToCart.middleware.js:14:22\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  timestamp: '2024-03-12T04:57:06.083Z'
+}
+{
+  level: 'information',
+  message: 'premium',
+  timestamp: '2024-03-12T04:57:12.448Z'
+}
+{
+  level: 'error',
+  message: "error:  Cannot read properties of null (reading 'role')",
+  stack: "TypeError: Cannot read properties of null (reading 'role')\n" +
+    '    at file:///C:/Users/Arman/Desktop/Coderhouse/fullstack/clase4/src/middlewares/avoidAddToCart.middleware.js:14:22\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  timestamp: '2024-03-12T04:57:12.723Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-12T04:58:54.306Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-12T04:58:55.610Z'
+}
+{
+  level: 'information',
+  message: 'signout',
+  timestamp: '2024-03-12T04:58:57.272Z'
+}
+{
+  level: 'information',
+  message: 'premium',
+  timestamp: '2024-03-12T04:59:12.976Z'
+}
+{
+  level: 'information',
+  message: 'signout',
+  timestamp: '2024-03-12T04:59:44.980Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-12T05:00:08.150Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-12T05:00:09.275Z'
+}
+{
+  level: 'information',
+  message: 'signout',
+  timestamp: '2024-03-12T05:00:13.018Z'
+}
+{
+  level: 'information',
+  message: 'user',
+  timestamp: '2024-03-12T05:00:30.254Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-12T05:00:46.068Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-12T05:00:47.034Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-12T05:01:04.720Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-12T05:01:05.733Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-12T05:02:44.401Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-12T05:02:45.708Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-12T05:03:39.511Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-12T05:03:40.475Z'
+}
+{
+  level: 'error',
+  message: "error:  Cannot read properties of null (reading 'role')",
+  stack: "TypeError: Cannot read properties of null (reading 'role')\n" +
+    '    at file:///C:/Users/Arman/Desktop/Coderhouse/fullstack/clase4/src/middlewares/avoidAddToCart.middleware.js:14:22\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  timestamp: '2024-03-12T05:03:46.981Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-12T05:04:41.542Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-12T05:04:42.590Z'
+}
+{
+  level: 'error',
+  message: "error:  Cannot read properties of null (reading 'role')",
+  stack: "TypeError: Cannot read properties of null (reading 'role')\n" +
+    '    at file:///C:/Users/Arman/Desktop/Coderhouse/fullstack/clase4/src/middlewares/avoidAddToCart.middleware.js:17:22\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  timestamp: '2024-03-12T05:04:43.821Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-12T05:05:22.160Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-12T05:05:23.125Z'
+}
+{
+  level: 'error',
+  message: "error:  Cannot read properties of null (reading 'role')",
+  stack: "TypeError: Cannot read properties of null (reading 'role')\n" +
+    '    at file:///C:/Users/Arman/Desktop/Coderhouse/fullstack/clase4/src/middlewares/avoidAddToCart.middleware.js:16:22\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  timestamp: '2024-03-12T05:05:25.354Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-12T05:07:16.148Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-12T05:07:17.299Z'
+}
+{
+  level: 'information',
+  message: 'signout',
+  timestamp: '2024-03-12T05:07:18.918Z'
+}

@@ -6,12 +6,14 @@ import { logger } from "../utils/logger.js";
 export const avoidAddToCart = () => {
     return async (req, res, next) => {      
         const { idProduct, idCart } = req.params;
-
         try {
             const product = await findProductById(idProduct);
+            console.log("product:\n/////////////////",product);
             const cart = await findCartById(idCart);
+            console.log("cart:\n/////////////////",cart);
             const user = await findUserById(cart.owner);
-            if (user.role != "user") {
+
+            if (user.role != "user" && user.role != "premium") {
                 return res.status(403).json({ message: 'Only user roles can buy products' });
             }
             if (user.cart.toString() !== idCart) {

@@ -1,5 +1,4 @@
 import express from "express";
-
 import handlebars from "express-handlebars";
 import cookieParser from "cookie-parser";
 import productsRouter from "./routes/products.router.js";
@@ -7,7 +6,6 @@ import cartsRouter from "./routes/carts.router.js";
 import usersRouter from "./routes/users.router.js";
 import { __dirname } from "./utils.js";
 import viewsRouter from "./routes/views.router.js";
-//import messageRouter from "./routes/messages.router.js";
 import cookieRouter from "./routes/cookie.router.js";
 import sessionsRouter from "./routes/sessions.router.js";
 import session from "express-session";
@@ -70,10 +68,10 @@ app.use("/api/cookie", cookieRouter);
 app.use("/api/carts", cartsRouter);
 app.use("/api/users", usersRouter);
 app.use("/", viewsRouter);
-app.use("/api/docs", swaggerUi.serve, swaggerUi.setup(swaggerSetup)); // :)
+app.use("/api/docs", swaggerUi.serve, swaggerUi.setup(swaggerSetup)); 
 app.use(errorMiddleware);
 
-app.get("/mockingproducts",(req, res) =>{ // :)
+app.get("/mockingproducts",(req, res) =>{ 
     const products = [];
     for (let i=0; i<100; i++) {
         const product = generateProuct();
@@ -82,7 +80,7 @@ app.get("/mockingproducts",(req, res) =>{ // :)
     res.json({products});
 });
 
-app.get("/loggerTest", (req, res) => { // :)
+app.get("/loggerTest", (req, res) => { 
     logger.debug("Prueba debug");
     logger.http("Prueba http");
     logger.information("Prueba information"); 

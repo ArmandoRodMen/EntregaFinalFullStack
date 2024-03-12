@@ -5,11 +5,10 @@ import passport from "passport";
 import { transporter } from "../utils/nodemailer.js";
 import { logger } from "../utils/logger.js";
 import bcrypt from "bcrypt";
-import jwt from "jsonwebtoken";
 
 const router = Router();
 
-router.post("/signup", passport.authenticate("signup"), async (req, res) => { // :)
+router.post("/signup", passport.authenticate("signup"), async (req, res) => { 
     const { first_name, last_name, email, password, username } = req.body;
     const mailOptions = {
         from: "Armando Ecommerce",
@@ -43,7 +42,7 @@ router.post("/signup", passport.authenticate("signup"), async (req, res) => { //
     }
 });
 
-router.post("/login", passport.authenticate("login"),  async (req, res) => { // :)
+router.post("/login", passport.authenticate("login"),  async (req, res) => { 
     const { email, password } = req.body;
     const redirectUrl = "/products";
     if (!email || !password) {
@@ -62,6 +61,7 @@ router.post("/login", passport.authenticate("login"),  async (req, res) => { // 
         await usersDao.updateOne({ _id: userId }, { lastConnection: Date.now() });
         const {first_name, last_name, role, cart} = user; 
         const token = generateToken({first_name, last_name, email, role});
+        res.cookie('token', token, { httpOnly: true, secure: true });
         req.session.user = {id: userId, email, first_name: user.first_name, username: user.username, role: user.role, token, cart};
         res.redirect(redirectUrl);
     } catch (error) {

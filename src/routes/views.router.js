@@ -1,11 +1,9 @@
 import { Router } from "express";
 import { messagesDao } from "../DAL/DAO/mongodb/messages.dao.js";
-import { usersDao } from "../DAL/DAO/mongodb/users.dao.js";
 import { productsDao } from "../DAL/DAO/mongodb/products.dao.js";
 import { cartsDao } from "../DAL/DAO/mongodb/carts.dao.js";
-import { compareData, hashData } from "../utils.js";
-import { findUsers } from "../controllers/users.controller.js";
 import { findAll } from "../services/users.services.js";
+import { authMiddleware } from "../middlewares/auth.middleware.js";
 const router = Router();
 
 router.get("/chat", async (req,res)=>{
@@ -22,7 +20,10 @@ router.get("/chat", async (req,res)=>{
   }
 });
 
-router.get("/admin", async (req, res)=>{
+router.get("/admin", 
+  authMiddleware(["admin"]), 
+  async (req, res)=>
+  {
   try {
       const users = await findAll();
       const simplifiedUsers = users.map(user => ({
@@ -36,8 +37,7 @@ router.get("/admin", async (req, res)=>{
       res.render("admin", {user:simplifiedUsers});
   } catch (error) {
     res.status(500).send(error.message);
-  }
-});
+  }});
 
 router.get("/products", async (req, res) => {
   const idUser = req.session.user.id;

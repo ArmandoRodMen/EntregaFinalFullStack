@@ -12,13 +12,11 @@ export const authMiddleware = (roles) => {
             token = req.cookies.token; 
         }
         if (!token) {
-            logger.information("token", token, "req.cookies: ", req.cookies," ", SECRET_KEY_JWT);
             return res.status(401).json({ message: 'Unauthorized: no hay usuario con token' });
         }
         try {      
             const decoded = jwt.verify(token, SECRET_KEY_JWT);
             req.user = decoded;
-                logger.information(req.user.role, "estamos aca dentro")
         if (roles && !roles.includes(req.user.role)) {
             return res.status(403).json({ message: 'Your role is not authorized' });
         }

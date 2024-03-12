@@ -1,4 +1,3 @@
-import passport from 'passport';
 import {
     findAll,
     findAggregation,
@@ -6,8 +5,7 @@ import {
     createOne,
     deleteOne,
     updateOne,
-    findOwnerById,
-    saveProductService
+    findOwnerById
 } from "../services/products.services.js";
 import CustomError from "../errors/error.generator.js";
 import { ErrorMessages } from "../errors/errors.enum.js";
