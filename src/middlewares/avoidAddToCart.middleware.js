@@ -1,5 +1,5 @@
 import { findById as findProductById } from "../services/products.services.js";
-import { findById as findUserById } from "../services/users.services.js";
+import { findByIdCart } from "../services/users.services.js";
 import { findCartById } from "../services/carts.services.js";
 import { logger } from "../utils/logger.js";
 
@@ -8,19 +8,14 @@ export const avoidAddToCart = () => {
         const { idProduct, idCart } = req.params;
         try {
             const product = await findProductById(idProduct);
-            console.log("product:\n/////////////////",product);
             const cart = await findCartById(idCart);
-            console.log("cart:\n/////////////////",cart);
-            const user = await findUserById(cart.owner);
-
-            if (user.role != "user" && user.role != "premium") {
-                return res.status(403).json({ message: 'Only user roles can buy products' });
+            const user = await findByIdCart(idCart);
+            const userCart = user.cart;
+            if (user.role === "admin") {
+                return res.status(403).json({ message: 'Only role users & premium can buy products' });
             }
-            if (user.cart.toString() !== idCart) {
-                return res.status(403).json({ message: 'This cart does not belong to the authenticated user.' });
-            }
-            if (product.owner.toString() === cart.owner.toString()) {
-                return res.json({ message: 'You cannot buy this product as you own it' });
+            if (product.owner === user.id) {
+                return res.json({ message: 'You can not buy this product as you own it' });
             }
             next();
         } catch (error) { 

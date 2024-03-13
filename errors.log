@@ -9626,3 +9626,513 @@
   message: 'signout',
   timestamp: '2024-03-12T05:07:18.918Z'
 }
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-12T15:31:30.843Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-12T15:31:31.987Z'
+}
+{
+  level: 'information',
+  message: 'signout',
+  timestamp: '2024-03-12T15:31:35.558Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-12T15:31:53.896Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-12T15:31:54.878Z'
+}
+{
+  level: 'information',
+  message: 'signout',
+  timestamp: '2024-03-12T15:31:59.531Z'
+}
+{
+  level: 'information',
+  message: 'signout',
+  timestamp: '2024-03-12T15:32:20.735Z'
+}
+{
+  level: 'error',
+  message: "error:  Cannot read properties of null (reading 'role')",
+  stack: "TypeError: Cannot read properties of null (reading 'role')\n" +
+    '    at file:///C:/Users/Arman/Desktop/Coderhouse/fullstack/clase4/src/middlewares/avoidAddToCart.middleware.js:16:22\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  timestamp: '2024-03-12T15:32:37.238Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-12T15:33:08.748Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-12T15:33:09.840Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-12T15:34:05.747Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-12T15:34:06.758Z'
+}
+{
+  level: 'error',
+  message: "error:  Cannot read properties of null (reading 'role')",
+  stack: "TypeError: Cannot read properties of null (reading 'role')\n" +
+    '    at file:///C:/Users/Arman/Desktop/Coderhouse/fullstack/clase4/src/middlewares/avoidAddToCart.middleware.js:18:22\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  timestamp: '2024-03-12T15:34:13.132Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-12T15:43:22.259Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-12T15:43:23.471Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-12T15:44:10.671Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-12T15:44:11.625Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-12T15:46:37.858Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-12T15:46:38.942Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-12T15:46:40.395Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-12T15:46:41.340Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-12T15:48:03.755Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-12T15:48:04.993Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-12T15:48:55.605Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-12T15:48:56.585Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-12T15:49:12.244Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-12T15:49:13.271Z'
+}
+{
+  level: 'error',
+  message: "error:  Cannot read properties of undefined (reading 'status')",
+  stack: "TypeError: Cannot read properties of undefined (reading 'status')\n" +
+    '    at findUserCart (file:///C:/Users/Arman/Desktop/Coderhouse/fullstack/clase4/src/controllers/users.controller.js:165:20)\n' +
+    '    at file:///C:/Users/Arman/Desktop/Coderhouse/fullstack/clase4/src/middlewares/avoidAddToCart.middleware.js:16:32\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  timestamp: '2024-03-12T15:49:35.928Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-12T15:50:24.139Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-12T15:50:25.258Z'
+}
+{
+  level: 'error',
+  message: "error:  Cannot read properties of undefined (reading 'status')",
+  stack: "TypeError: Cannot read properties of undefined (reading 'status')\n" +
+    '    at findUserCart (file:///C:/Users/Arman/Desktop/Coderhouse/fullstack/clase4/src/controllers/users.controller.js:165:20)\n' +
+    '    at file:///C:/Users/Arman/Desktop/Coderhouse/fullstack/clase4/src/middlewares/avoidAddToCart.middleware.js:16:32\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  timestamp: '2024-03-12T15:50:26.663Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-12T16:01:21.558Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-12T16:01:22.762Z'
+}
+{
+  level: 'error',
+  message: "error:  Cannot destructure property 'idCart' of 'req.params' as it is undefined.",
+  stack: "TypeError: Cannot destructure property 'idCart' of 'req.params' as it is undefined.\n" +
+    '    at findUserByIdCart (file:///C:/Users/Arman/Desktop/Coderhouse/fullstack/clase4/src/controllers/users.controller.js:156:13)\n' +
+    '    at file:///C:/Users/Arman/Desktop/Coderhouse/fullstack/clase4/src/middlewares/avoidAddToCart.middleware.js:16:32\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  timestamp: '2024-03-12T16:01:32.414Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-12T16:01:58.852Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-12T16:01:59.826Z'
+}
+{
+  level: 'error',
+  message: "error:  Cannot destructure property 'idCart' of 'req.params' as it is undefined.",
+  stack: "TypeError: Cannot destructure property 'idCart' of 'req.params' as it is undefined.\n" +
+    '    at findUserByIdCart (file:///C:/Users/Arman/Desktop/Coderhouse/fullstack/clase4/src/controllers/users.controller.js:156:13)\n' +
+    '    at file:///C:/Users/Arman/Desktop/Coderhouse/fullstack/clase4/src/middlewares/avoidAddToCart.middleware.js:16:32\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  timestamp: '2024-03-12T16:02:01.705Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-12T16:02:39.617Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-12T16:02:40.725Z'
+}
+{
+  level: 'error',
+  message: "error:  Cannot destructure property 'idCart' of 'req.params' as it is undefined.",
+  stack: "TypeError: Cannot destructure property 'idCart' of 'req.params' as it is undefined.\n" +
+    '    at findUserByIdCart (file:///C:/Users/Arman/Desktop/Coderhouse/fullstack/clase4/src/controllers/users.controller.js:156:13)\n' +
+    '    at file:///C:/Users/Arman/Desktop/Coderhouse/fullstack/clase4/src/middlewares/avoidAddToCart.middleware.js:17:32\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  timestamp: '2024-03-12T16:02:42.180Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-12T16:04:49.273Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-12T16:04:50.381Z'
+}
+{
+  level: 'error',
+  message: "error:  Cannot read properties of undefined (reading 'toString')",
+  stack: "TypeError: Cannot read properties of undefined (reading 'toString')\n" +
+    '    at file:///C:/Users/Arman/Desktop/Coderhouse/fullstack/clase4/src/middlewares/avoidAddToCart.middleware.js:25:57\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  timestamp: '2024-03-12T16:04:52.629Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-12T16:05:28.711Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-12T16:05:29.799Z'
+}
+{
+  level: 'error',
+  message: "error:  Cannot read properties of undefined (reading 'toString')",
+  stack: "TypeError: Cannot read properties of undefined (reading 'toString')\n" +
+    '    at file:///C:/Users/Arman/Desktop/Coderhouse/fullstack/clase4/src/middlewares/avoidAddToCart.middleware.js:20:57\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  timestamp: '2024-03-12T16:05:35.999Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-12T16:06:16.770Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-12T16:06:17.860Z'
+}
+{
+  level: 'error',
+  message: "error:  Cannot read properties of undefined (reading 'toString')",
+  stack: "TypeError: Cannot read properties of undefined (reading 'toString')\n" +
+    '    at file:///C:/Users/Arman/Desktop/Coderhouse/fullstack/clase4/src/middlewares/avoidAddToCart.middleware.js:20:57\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  timestamp: '2024-03-12T16:06:21.341Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-12T16:06:47.681Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-12T16:06:48.652Z'
+}
+{
+  level: 'error',
+  message: "error:  Cannot read properties of undefined (reading 'toString')",
+  stack: "TypeError: Cannot read properties of undefined (reading 'toString')\n" +
+    '    at file:///C:/Users/Arman/Desktop/Coderhouse/fullstack/clase4/src/middlewares/avoidAddToCart.middleware.js:21:57\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  timestamp: '2024-03-12T16:06:50.607Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-12T16:07:05.590Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-12T16:07:06.540Z'
+}
+{
+  level: 'error',
+  message: "error:  Cannot read properties of undefined (reading 'toString')",
+  stack: "TypeError: Cannot read properties of undefined (reading 'toString')\n" +
+    '    at file:///C:/Users/Arman/Desktop/Coderhouse/fullstack/clase4/src/middlewares/avoidAddToCart.middleware.js:21:57\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  timestamp: '2024-03-12T16:07:09.004Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-12T16:07:27.561Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-12T16:07:28.563Z'
+}
+{
+  level: 'error',
+  message: "error:  Cannot read properties of undefined (reading 'toString')",
+  stack: "TypeError: Cannot read properties of undefined (reading 'toString')\n" +
+    '    at file:///C:/Users/Arman/Desktop/Coderhouse/fullstack/clase4/src/middlewares/avoidAddToCart.middleware.js:21:57\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  timestamp: '2024-03-12T16:07:30.636Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-12T16:07:37.135Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-12T16:07:38.103Z'
+}
+{
+  level: 'error',
+  message: "error:  Cannot read properties of undefined (reading 'toString')",
+  stack: "TypeError: Cannot read properties of undefined (reading 'toString')\n" +
+    '    at file:///C:/Users/Arman/Desktop/Coderhouse/fullstack/clase4/src/middlewares/avoidAddToCart.middleware.js:21:57\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  timestamp: '2024-03-12T16:07:45.687Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-12T16:08:00.969Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-12T16:08:01.933Z'
+}
+{
+  level: 'error',
+  message: "error:  Cannot read properties of undefined (reading 'toString')",
+  stack: "TypeError: Cannot read properties of undefined (reading 'toString')\n" +
+    '    at file:///C:/Users/Arman/Desktop/Coderhouse/fullstack/clase4/src/middlewares/avoidAddToCart.middleware.js:21:57\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  timestamp: '2024-03-12T16:08:05.362Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-12T16:08:54.233Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-12T16:08:55.340Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-12T16:09:17.099Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-12T16:09:18.055Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-12T16:10:01.686Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-12T16:10:02.780Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-12T16:10:31.591Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-12T16:10:32.560Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-12T16:11:15.197Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-12T16:11:16.308Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-12T16:12:18.804Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-12T16:12:19.916Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-12T16:12:42.932Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-12T16:12:43.884Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-12T16:13:28.997Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-12T16:13:30.148Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-12T16:13:44.571Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-12T16:13:45.525Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-12T16:14:48.386Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-12T16:14:49.386Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-12T16:15:04.664Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-12T16:15:05.631Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-12T16:15:41.235Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-12T16:15:42.373Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-12T16:15:58.874Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-12T16:15:59.835Z'
+}
+{
+  message: 'Escuchando puerto 8080 con logger',
+  level: 'information',
+  timestamp: '2024-03-12T16:16:23.916Z'
+}
+{
+  message: 'Conectado a la DB',
+  level: 'information',
+  timestamp: '2024-03-12T16:16:24.872Z'
+}

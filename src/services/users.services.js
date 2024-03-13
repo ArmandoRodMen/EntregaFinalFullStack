@@ -33,6 +33,11 @@ export const deleteOne = async (id) => {
     return response;
 };
 
+export const findByIdCart = async (idCart) => {
+    const user = await usersDao.findByIdCart(idCart);
+    return user;
+};
+
 export const findUsersByLastConnection = async (condition) => {
     const inactiveUsers = await usersDao.findUsersByLastConnection(condition);
     return inactiveUsers;

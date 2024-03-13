@@ -32,6 +32,11 @@ class UsersDao{
         return response;
     }
 
+    async findByIdCart(idCart) {
+        const response = await usersModel.findOne({ cart: idCart });
+        return response;
+    }
+
     async findUsersByLastConnection(condition) {
         const response = await usersModel.find(condition);
         return response;
